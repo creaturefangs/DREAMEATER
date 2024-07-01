@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class BttnSFX : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public AudioSource btnSFX;
+    public AudioClip hoverSFX;
+    public AudioClip clickSFX;
+
+    public void HoverSound()
     {
-        
+        btnSFX.PlayOneShot(hoverSFX);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ClickSound()
     {
-        
+        btnSFX.PlayOneShot(clickSFX);
     }
 }
