@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class TabManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject inventoryUI; // Assign your inventory panel in the Inspector
+    private bool isInventoryOpen = false;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            ToggleInventory();
+        }
     }
+
+    public void ToggleInventory()
+    {
+        isInventoryOpen = !isInventoryOpen;
+        inventoryUI.SetActive(isInventoryOpen);
+    }
+
 }
