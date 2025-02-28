@@ -14,14 +14,14 @@ public class HealthBarManager : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = 0f; // Start at 0 instead of maxHealth
         UpdateHealthBar();
     }
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        currentHealth += damage; // Increase health instead of subtracting
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // Prevent overflow
         UpdateHealthBar();
         playerAudio.PlayOneShot(damageSFX);
     }
