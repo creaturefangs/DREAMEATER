@@ -392,7 +392,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9202951524275560097}
   m_Father: {fileID: 2364877602141703929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26700002, y: 0.8162501}
@@ -1016,7 +1017,7 @@ GameObject:
   - component: {fileID: 4463030876387874465}
   - component: {fileID: 6655594924193911278}
   m_Layer: 0
-  m_Name: Image
+  m_Name: outlinebar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1029,17 +1030,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4679956412796706501}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2364877602141703929}
+  m_Father: {fileID: 6990328869077642147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 186.1}
-  m_SizeDelta: {x: -342, y: -412}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4463030876387874465
 CanvasRenderer:
@@ -1313,7 +1314,6 @@ RectTransform:
   m_Children:
   - {fileID: 4697936477400139605}
   - {fileID: 6990328869077642147}
-  - {fileID: 9202951524275560097}
   m_Father: {fileID: 6897524300157233507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
