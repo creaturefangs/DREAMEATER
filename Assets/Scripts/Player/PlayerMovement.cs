@@ -30,5 +30,9 @@ public class PlayerMovement : MonoBehaviour
         // Move the player
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Triggered with: " + other.gameObject.name);
+    }
 }
 
