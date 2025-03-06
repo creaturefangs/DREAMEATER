@@ -2,74 +2,83 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class Interaction : MonoBehaviour
-
 {
-    public string interactionMessage = "Press Enter or Space to interact"; // Message displayed to the player
-    private bool isInRange = false;  // To check if the player is in range to interact
+    [Header("Interaction Settings")]
+    public float interactionRadius = 3f; // How close the player must be
+    public string interactionMessage = "Press Space to interact";
+    private bool isInRange = false; // Track if the player is nearby
+    private Transform player; // Reference to the player
 
-    // Reference to the UI Text or any UI element that displays the interaction message
-    public GameObject interactionUI;
+    [Header("UI Elements")]
+    public GameObject interactionUI; // UI to show when near
+    public GameObject dialoguePanel; // Panel containing dialogue text
+    public TMP_Text dialogueText; // Text component for typewriter effect
+    
 
-    // UnityEvent that can be assigned in the Inspector for custom interaction logic
-    public UnityEvent onInteract;
+    [Header("Interaction Event")]
+    public UnityEvent onInteract; // Assignable Unity event
 
-    // Update is called once per frame
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player")?.transform; // Find player by tag
+    }
+
     void Update()
     {
-        if (isInRange)
-        {
-            // Show the interaction UI message
-            if (interactionUI != null)
-            {
-                interactionUI.SetActive(true);
-            }
+        if (player == null) return;
 
-            // Check for player input to interact
-            if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
-            {
-                Interact();  // Call the interaction function
-            }
-        }
-        else
-        {
-            if (interactionUI != null)
-            {
-                interactionUI.SetActive(false);
-            }
-        }
-    }
+        // Check if player is within range
+        isInRange = Vector2.Distance(transform.position, player.position) <= interactionRadius;
 
-    // Trigger event when the player enters the collider range
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))  // Make sure the player has the tag "Player"
+        // Show UI prompt if in range
+        if (interactionUI != null)
         {
-            isInRange = true;
+            interactionUI.SetActive(isInRange);
+        }
+
+        // Interact when pressing Spacebar in range
+        if (isInRange && Input.GetKeyDown(KeyCode.Space))
+        {
+            Interact();
+        }
+
+        // Check for mouse click interaction
+        if (Input.GetMouseButtonDown(0))
+        {
+            CheckMouseClick();
         }
     }
 
-    // Trigger event when the player exits the collider range
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))  // Make sure the player has the tag "Player"
-        {
-            isInRange = false;
-        }
-    }
-
-    // Function that handles the interaction (can be customized)
     void Interact()
     {
         Debug.Log("Interacting with: " + gameObject.name);
+        onInteract.Invoke(); // Call UnityEvent
 
-        // Call the UnityEvent (can be assigned in the Inspector)
-        onInteract.Invoke();  // This will invoke any functions you add to the UnityEvent
+    }
 
-        // Example: Destroy the object on interaction (can be removed or replaced with your own logic)
-        // Destroy(gameObject);
+    void CheckMouseClick()
+    {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.z = 0f; // Keep in 2D space
+
+        Collider2D hitCollider = Physics2D.OverlapPoint(mousePosition);
+        if (hitCollider != null && hitCollider.gameObject == gameObject)
+        {
+            Interact();
+        }
+    }
+
+
+    // Draw interaction radius in the Scene view
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, interactionRadius);
     }
 }
+
 
 

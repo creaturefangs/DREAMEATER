@@ -4,60 +4,51 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public Animator animator; // Reference to the Animator
-    public Collider2D attackCollider; // Collider used for attacking
+    public GameObject attackPrefab; // Prefab for the attack effect (e.g., sword slash)
+    public Transform attackSpawnPoint; // Center point for spawning attack
+    public float attackRange = 1.5f; // Distance where the attack object appears
     public int attackDamage = 10; // Damage dealt to enemies
-    public float attackDuration = 0.3f; // Time the attack collider is active
-
-    private bool isAttacking = false; // Prevent multiple attacks at once
+    public float attackDuration = 0.3f; // How long the attack lasts
 
     [Header("Audio")]
-    public AudioSource audioSource; // Audio source component
-    public AudioClip attackSound; // Sound effect for attack
+    public AudioSource audioSource; // Audio source for attack sound
+    public AudioClip attackSound; // Attack sound effect
 
     void Update()
     {
-        if ( Input.GetMouseButtonDown(0)) // Attack input
+        if (Input.GetMouseButtonDown(0)) // Left mouse button click
         {
-            if (!isAttacking)
-            {
-                Attack();
-            }
+            Attack();
         }
     }
 
     void Attack()
     {
-        isAttacking = true;
-        animator.SetTrigger("Attack"); // Play attack animation
-        attackCollider.enabled = true; // Enable the attack collider
+        Vector3 attackDirection = GetMouseDirection(); // Get direction based on cursor
+        Vector3 spawnPosition = attackSpawnPoint.position + attackDirection * attackRange; // Offset attack in that direction
 
-        // Play attack sound
+        // Instantiate attack prefab
+        GameObject attackInstance = Instantiate(attackPrefab, spawnPosition, Quaternion.identity);
+
+        // Rotate attack to face cursor
+        attackInstance.transform.right = attackDirection;
+
+        // Play attack sound with random pitch
         if (audioSource != null && attackSound != null)
         {
+            audioSource.pitch = Random.Range(1.0f, 5.0f); // Random pitch between 1.0 and 5.0
             audioSource.PlayOneShot(attackSound);
         }
 
-        // Disable attack collider after a short delay
-        Invoke(nameof(ResetAttack), attackDuration);
+        // Destroy attack object after duration
+        Destroy(attackInstance, attackDuration);
     }
 
-    void ResetAttack()
+    Vector3 GetMouseDirection()
     {
-        attackCollider.enabled = false; // Disable collider
-        isAttacking = false;
-    }
-
-    // Detect enemies in the attack range
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            EnemyHealth enemy = other.GetComponent<EnemyHealth>();
-            if (enemy != null)
-            {
-                enemy.TakeDamage(attackDamage);
-            }
-        }
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.z = 0f; // Ensure it's in 2D space
+        Vector3 direction = (mousePosition - attackSpawnPoint.position).normalized;
+        return direction;
     }
 }

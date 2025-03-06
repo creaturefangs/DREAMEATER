@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
-  audioSource: {fileID: 6822662403157646552}
+  audioSource: {fileID: 0}
   hitSound: {fileID: 8300000, guid: c0980814bec15fe4697668a56102fbcf, type: 3}
   deathSound: {fileID: 8300000, guid: e348164af43220c4fa9516130b2734a8, type: 3}
 --- !u!82 &6822662403157646552
@@ -208,9 +208,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7534164691523867167, guid: 7f8d2b77ff413e94fac741c48de29726, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 32df0ac131d9ec743ac6319472bd02eb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6fc6dffe763699149acb7e35f102172f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.672
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -219,7 +219,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2.61
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -254,7 +254,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

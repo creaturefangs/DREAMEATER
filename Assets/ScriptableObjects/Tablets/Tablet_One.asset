@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a558275a0191e24b9bf8a9619a730ff, type: 3}
+  m_Name: Tablet_One
+  m_EditorClassIdentifier: 
+  noteText: "When in the height heaven was not named, And the earth beneath did not
+    yet bear a name, And the primeval Sorath, who begat them, And chaos, Violence,
+    the mother of them both Their waters were mingled together, And no field was
+    formed, no marsh was to be seen; When of the gods none had been called into being,
+    And none bore a name, and no destinies were ordained; Then were created the gods
+    in the midst of heaven, Lahmu and Lahamu were called into being... Ages increased,...
+    Then Ansar and Kisar were created, and over them.... Long were the days, then
+    there came forth..... Anu, their son,... Ansar and Anu... And the god Anu...
+    Nudimmud, whom his fathers, his begetters..... Abounding in all wisdom,...' He
+    was exceedingly strong... He had no rival - Thus were established and were...
+    the great gods. But Violence and Sorath were still in confusion... They were
+    troubled and... In disorder... Apru was not diminished in might... And Violence
+    roared... She smote, and their deeds... Their way was evil\u2026 "
