@@ -1,25 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TabletsManager : MonoBehaviour
 {
     [Header("Tablet Data")]
-    public SO_Tablets tablet;
+    public SO_Tablets tablet; // ScriptableObject reference
 
     [Header("UI Elements")]
+    [SerializeField] private TMP_Text titleText;
     [SerializeField] private TMP_Text tabletText;
     [SerializeField] private GameObject tabletPanel;
-    [SerializeField] private GameObject interactionUI; // UI prompt to show when player is near
+    [SerializeField] private Image tabletIcon;
 
-    
+    [Header("Typing Settings")]
     public float typingSpeed = 0.05f; // Speed of typewriter effect
 
-    private bool _isPickedUp = false;
     private bool isTyping = false;
+    private bool awaitingInput = false;
     private Coroutine typingCoroutine;
-    private Transform player;
+    private int currentChunkIndex = 0;
+    private List<string> dialogueChunks = new List<string>();
 
     [Header("Audio")]
     private AudioSource _audio;
@@ -28,52 +32,86 @@ public class TabletsManager : MonoBehaviour
     private void Awake()
     {
         _audio = GetComponent<AudioSource>();
-        player = GameObject.FindGameObjectWithTag("Player")?.transform;
-    }
-
-    private void Update()
-    {
-        if (player == null) return;
-
     }
 
     public void ToggleUI()
     {
-        if (!_isPickedUp)
+        if (!tabletPanel.activeSelf)
         {
-            PickupNote();
+            ShowTablet();
         }
         else
         {
-            DropNote();
+            HideTablet();
         }
-        _isPickedUp = !_isPickedUp;
     }
 
-    private void PickupNote()
+    private void ShowTablet()
     {
         tabletPanel.SetActive(true);
-        StartTypewriterEffect(tablet.noteText);
+        titleText.text = tablet.titleText;
+        tabletIcon.sprite = tablet.icon; // Assign the icon from ScriptableObject
+        PrepareTextChunks();
+        currentChunkIndex = 0;
+        ShowNextChunk();
 
-        if (_audio && !_audio.isPlaying)
+        if (_audio && pickupClip)
         {
             _audio.PlayOneShot(pickupClip);
         }
     }
 
-    private void DropNote()
+    private void HideTablet()
     {
         tabletPanel.SetActive(false);
         tabletText.text = "";
+        awaitingInput = false;
 
-        if (_audio && !_audio.isPlaying)
+        if (_audio && tabletdropClip)
         {
             _audio.PlayOneShot(tabletdropClip);
         }
     }
 
+    private void PrepareTextChunks()
+    {
+        dialogueChunks.Clear();
+        string currentChunk = "";
+        int lineCount = 0;
 
-    // Typewriter effect for text display
+        foreach (string line in tablet.dialogueLines)
+        {
+            currentChunk += line + "\n";
+            lineCount++;
+
+            if (lineCount >= 3)
+            {
+                dialogueChunks.Add(currentChunk.Trim());
+                currentChunk = "";
+                lineCount = 0;
+            }
+        }
+
+        if (!string.IsNullOrEmpty(currentChunk))
+        {
+            dialogueChunks.Add(currentChunk.Trim());
+        }
+    }
+
+    private void ShowNextChunk()
+    {
+        if (currentChunkIndex < dialogueChunks.Count)
+        {
+            StartTypewriterEffect(dialogueChunks[currentChunkIndex]);
+            currentChunkIndex++;
+            awaitingInput = false;
+        }
+        else
+        {
+            HideTablet();
+        }
+    }
+
     private void StartTypewriterEffect(string message)
     {
         if (isTyping)
@@ -86,7 +124,7 @@ public class TabletsManager : MonoBehaviour
     private IEnumerator TypeText(string message)
     {
         isTyping = true;
-        tabletText.text = ""; // Clear previous text
+        tabletText.text = "";
 
         foreach (char letter in message.ToCharArray())
         {
@@ -95,6 +133,21 @@ public class TabletsManager : MonoBehaviour
         }
 
         isTyping = false;
+        awaitingInput = true;
     }
 
+    private void Update()
+    {
+        if (tabletPanel.activeSelf)
+        {
+            if (awaitingInput && Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                ShowNextChunk();
+            }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                HideTablet();
+            }
+        }
+    }
 }

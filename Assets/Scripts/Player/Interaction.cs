@@ -14,8 +14,6 @@ public class Interaction : MonoBehaviour
 
     [Header("UI Elements")]
     public GameObject interactionUI; // UI to show when near
-    public GameObject dialoguePanel; // Panel containing dialogue text
-    public TMP_Text dialogueText; // Text component for typewriter effect
     
 
     [Header("Interaction Event")]
