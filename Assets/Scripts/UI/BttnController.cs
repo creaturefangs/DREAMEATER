@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class BttnController : MonoBehaviour
 {
+    public void OnClickMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void OnClickStartGame()
     {

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7823320367329333037}
   - component: {fileID: 7885216849579758160}
   - component: {fileID: 2763334250729980852}
+  - component: {fileID: 1791316694854417887}
   - component: {fileID: 6822662403157646552}
   m_Layer: 0
   m_Name: RedEyeEnemy
@@ -148,7 +149,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0064086914, y: -0.060028076}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -159,7 +160,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.625, y: 1.875}
+  m_Size: {x: 1.7681885, y: 1.2747192}
   m_EdgeRadius: 0
 --- !u!95 &7885216849579758160
 Animator:
@@ -198,6 +199,20 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   hitSound: {fileID: 8300000, guid: c0980814bec15fe4697668a56102fbcf, type: 3}
   deathSound: {fileID: 8300000, guid: e348164af43220c4fa9516130b2734a8, type: 3}
+--- !u!114 &1791316694854417887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536794452830938375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d9a4e51b9889d42901045d843c79e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  damageAmount: 10
 --- !u!82 &6822662403157646552
 AudioSource:
   m_ObjectHideFlags: 0
@@ -210,7 +225,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -7534164691523867167, guid: 7f8d2b77ff413e94fac741c48de29726, type: 2}
   m_audioClip: {fileID: 8300000, guid: 6fc6dffe763699149acb7e35f102172f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.672
+  m_Volume: 0.787
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -11,6 +11,8 @@ public class EvilEyeController : MonoBehaviour
     private Transform player; // Reference to the player
     private HealthBarManager playerHealth; // Reference to the player's health script
 
+    private bool canDamage = true; // Prevents rapid damage
+
     private void Start()
     {
         // Find the player object by tag
@@ -41,6 +43,14 @@ public class EvilEyeController : MonoBehaviour
         if (other.CompareTag("Player") && playerHealth != null)
         {
             playerHealth.TakeDamage(damageAmount);
+            StartCoroutine(DamageCooldown()); // Start cooldown
         }
+    }
+
+    private IEnumerator DamageCooldown()
+    {
+        canDamage = false; // Disable damage
+        yield return new WaitForSeconds(2f); // Wait for 2 seconds
+        canDamage = true; // Re-enable damage
     }
 }

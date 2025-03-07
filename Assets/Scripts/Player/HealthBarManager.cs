@@ -16,6 +16,9 @@ public class HealthBarManager : MonoBehaviour
     public Animator playerAnimator; // Reference to the Animator
     public GameObject deathScreenPanel; // UI panel to show on death
 
+    private Color originalColor;
+    private bool isFlashing = false;
+
     private void Start()
     {
         currentHealth = 0f; // Start at 0 instead of maxHealth
@@ -45,15 +48,26 @@ public class HealthBarManager : MonoBehaviour
         {
             healthBarFill.fillAmount = currentHealth / maxHealth;
         }
+
+        if (playerSprite != null)
+        {
+            originalColor = playerSprite.color; // Store original color
+        }
     }
 
     private IEnumerator FlashRed()
     {
         if (playerSprite != null)
         {
-            playerSprite.color = Color.red; // Change to red
-            yield return new WaitForSeconds(0.1f); // Flash duration
-            playerSprite.color = Color.white; // Revert to original
+            isFlashing = true;
+
+            // Change color using material property
+            playerSprite.material.SetColor("_Color", Color.red);
+            yield return new WaitForSeconds(0.1f);
+
+            // Restore the original color
+            playerSprite.material.SetColor("_Color", originalColor);
+            isFlashing = false;
         }
     }
 
@@ -64,7 +78,18 @@ public class HealthBarManager : MonoBehaviour
             playerAnimator.SetTrigger("Die"); // Trigger death animation
         }
 
-        yield return new WaitForSeconds(3f); // Wait for animation to play
+        yield return new WaitForSeconds(2f); // Wait for animation to play
+
+        // Disable the player's sprite
+        if (playerSprite != null)
+        {
+            playerSprite.gameObject.SetActive(false);
+        }
+
+        // Pause the game but allow music to play
+        Time.timeScale = 0f; // Stops all movement and physics
+        AudioListener.pause = false; // Ensures global audio isn't paused
+        playerAudio.ignoreListenerPause = true; // Allows player's audio to continue
 
         // Fade in death screen UI
         if (deathScreenPanel != null)
