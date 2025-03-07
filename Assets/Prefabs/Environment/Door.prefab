@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linkedDoor: {fileID: 0}
   spawnPosition: 0
+  fadeDuration: 0.5
+  teleportSound: {fileID: 8300000, guid: 858e5f739f3c9a34993c81c6c77ebb37, type: 3}
 --- !u!212 &211852743571353375
 SpriteRenderer:
   m_ObjectHideFlags: 0
