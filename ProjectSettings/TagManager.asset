@@ -43,3 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backgrounds
+    uniqueID: 4228013289
+    locked: 0
+  - name: Characters
+    uniqueID: 743323693
+    locked: 0
+  - name: Particles
+    uniqueID: 1974780171
+    locked: 0
