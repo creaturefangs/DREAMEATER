@@ -944,6 +944,8 @@ GameObject:
   m_Component:
   - component: {fileID: 344002587}
   - component: {fileID: 344002586}
+  - component: {fileID: 344002588}
+  - component: {fileID: 344002589}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -989,8 +991,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 743323693
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f77bb032354bd254cb6e15f172fb9195, type: 3}
   m_Color: {r: 0.52950335, g: 0.642253, b: 0.6886792, a: 1}
@@ -1018,6 +1020,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &344002588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344002585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d384737611a410440aea0b913d2e0e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: e4830837adae1ea47a44f6c84a786f6e, type: 2}
+--- !u!114 &344002589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344002585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 344002588}
+          m_TargetAssemblyTypeName: SpriteOutlineHover, Assembly-CSharp
+          m_MethodName: OnMouseEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &411446997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,49 +1333,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1231791395012567398, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_HDR
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231791395012567398, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_AllowMSAA
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231791395012567398, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231791395012567398, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: orthographic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231791395012567398, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231791395012567398, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_AllowDynamicResolution
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1442321602507078286, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2971026669541049531, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275766391719353147, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5895316482655045029, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: isGlobal
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5895316482655045029, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: priority
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7716419258918232143, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1371,26 +1375,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7716419258918232143, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8179129693604153344, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8563207003574848867, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9188177958090619372, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: antialiasingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9188177958090619372, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: stopNaNPropagation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9188177958090619372, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: finalBlitToCameraTarget
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9620,18 +9604,6 @@ PrefabInstance:
     - target: {fileID: 2657805438358827434, guid: f52d7f1be4cd1f049b41343c1d531f56, type: 3}
       propertyPath: m_Name
       value: Rain Particle System
-      objectReference: {fileID: 0}
-    - target: {fileID: 3114335828851119299, guid: f52d7f1be4cd1f049b41343c1d531f56, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.6226415
-      objectReference: {fileID: 0}
-    - target: {fileID: 3114335828851119299, guid: f52d7f1be4cd1f049b41343c1d531f56, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.5825027
-      objectReference: {fileID: 0}
-    - target: {fileID: 3114335828851119299, guid: f52d7f1be4cd1f049b41343c1d531f56, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.502225
       objectReference: {fileID: 0}
     - target: {fileID: 4433274157617259092, guid: f52d7f1be4cd1f049b41343c1d531f56, type: 3}
       propertyPath: m_LocalPosition.x
