@@ -5,24 +5,66 @@ using UnityEngine.UI;
 
 public class HealthBarManager : MonoBehaviour
 {
+    [Header("HealthBar Variables")]
     public Image healthBarFill;
     public float maxHealth = 100f;
     private float currentHealth;
 
-    public AudioSource playerAudio;
-    public AudioClip damageSFX;
-
-    public SpriteRenderer playerSprite; // Reference to the player's sprite
+    [SerializeField] private SpriteRenderer playerSprite;
     public Animator playerAnimator; // Reference to the Animator
     public GameObject deathScreenPanel; // UI panel to show on death
 
+    [Header("Visual & Audio Feedback")]
+    [SerializeField] private AudioSource playerAudio;
+    [SerializeField] private AudioClip healSound;
+    [SerializeField] private AudioClip damageSFX;
+    [SerializeField] private float flashDuration = 0.2f;
+
     private Color originalColor;
     private bool isFlashing = false;
+
+
 
     private void Start()
     {
         currentHealth = 0f; // Start at 0 instead of maxHealth
         UpdateHealthBar();
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth = Mathf.Min(currentHealth - amount, maxHealth); // Prevent overhealing
+        UpdateHealthBar();
+        PlayHealEffects();
+    }
+
+    private void PlayHealEffects()
+    {
+        if (playerAudio && healSound)
+        {
+            playerAudio.PlayOneShot(healSound);
+        }
+
+        if (playerSprite)
+        {
+            StartCoroutine(FlashGreenEffect());
+        }
+    }
+
+    private IEnumerator FlashGreenEffect()
+    {
+        if (playerSprite != null)
+        {
+            isFlashing = true;
+
+            // Change color using material property
+            playerSprite.material.SetColor("_Color", Color.green);
+            yield return new WaitForSeconds(0.1f);
+
+            // Restore the original color
+            playerSprite.material.SetColor("_Color", originalColor);
+            isFlashing = false;
+        }
     }
 
     public void TakeDamage(float damage)
