@@ -15,6 +15,8 @@ public class DoorTeleport : MonoBehaviour
     private Image fadeImage;
     private AudioSource audioSource;
 
+    [SerializeField] public bool isLocked; 
+
     private void Start()
     {
         // Find or create fade UI
@@ -78,7 +80,7 @@ public class DoorTeleport : MonoBehaviour
         }
 
         // Determine spawn position
-        float yOffset = (spawnPosition == SpawnPosition.Above) ? 1f : -1f;
+        float yOffset = (spawnPosition == SpawnPosition.Above) ? 4f : -4f;
         Vector2 targetPosition = new Vector2(linkedDoor.transform.position.x, linkedDoor.transform.position.y + yOffset);
 
         // Move the player
