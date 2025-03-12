@@ -14,7 +14,7 @@ public class Interaction : MonoBehaviour
 
     [Header("UI Elements")]
     public GameObject interactionUI; // UI to show when near
-    
+    public TMP_Text interactionText;
 
     [Header("Interaction Event")]
     public UnityEvent onInteract; // Assignable Unity event
