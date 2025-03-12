@@ -50,13 +50,9 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Ensure time resumes before quitting
 
-        if (Application.isEditor)
-        {
-            UnityEditor.EditorApplication.isPlaying = false; // Stop play mode in Unity Editor
-        }
-        else
-        {
+       
+        
             Application.Quit(); // Quit the application in a build
-        }
+        
     }
 }
