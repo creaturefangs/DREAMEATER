@@ -6,6 +6,8 @@ using UnityEngine;
 public class RoomAudioController : MonoBehaviour
 {
     [Header("Audio Clips for Layered Ambience")]
+
+    public AudioSource musicSource;
     public List<AudioClip> ambienceClips = new List<AudioClip>();
 
     private List<AudioSource> audioSources = new List<AudioSource>();
@@ -14,11 +16,11 @@ public class RoomAudioController : MonoBehaviour
     {
         foreach (AudioClip clip in ambienceClips)
         {
-            AudioSource source = gameObject.AddComponent<AudioSource>();
-            source.clip = clip;
-            source.loop = true;
-            source.playOnAwake = false;
-            audioSources.Add(source);
+            
+            musicSource.clip = clip;
+            musicSource.loop = true;
+            musicSource.playOnAwake = false;
+            audioSources.Add(musicSource);
         }
     }
 
