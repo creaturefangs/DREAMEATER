@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 743323693
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -1788732514, guid: 9c4e7cb35cd9f5d4b94fe66a6b198256, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.03062439, y: -0.643064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -154,10 +154,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6359469694020657706}
+  - component: {fileID: 4600239089809417588}
+  - component: {fileID: 5628363722351421978}
   - component: {fileID: 8005416188948376480}
-  - component: {fileID: 8698135258983900956}
-  - component: {fileID: 7679209308033047174}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Interaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,6 +179,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6275342664800863573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4600239089809417588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8101160485481997980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3569b71a0f25c46b4caa4405ec06d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRadius: 3
+  interactionMessage: Press Space to interact
+  interactionUI: {fileID: 0}
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5628363722351421978}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: StartDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5628363722351421978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8101160485481997980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e754dd0b98c494cafe8644ccc0ed0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: a22eb1e6ae93d5645947ff73ca78eb71, type: 2}
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  characterPortrait: {fileID: 0}
+  dialoguePanel: {fileID: 0}
+  typingSpeed: 0.05
+  onDialogueStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5628363722351421978}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: CloseUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &8005416188948376480
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -211,7 +277,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.078977585, y: 0.061431885}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -224,43 +290,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.0012245, y: 5.580826}
   m_EdgeRadius: 0
---- !u!114 &8698135258983900956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8101160485481997980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed84969f18862c143af2f8758bb0882c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: a22eb1e6ae93d5645947ff73ca78eb71, type: 2}
---- !u!114 &7679209308033047174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8101160485481997980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c0eae202f0bec24593985e85e4d515d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onInteraction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8698135258983900956}
-        m_TargetAssemblyTypeName: OnlyDialogueNPC, Assembly-CSharp
-        m_MethodName: Interact
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

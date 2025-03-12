@@ -65,10 +65,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ttttttttttttesssstttttt
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2ea73b048ad63174f97edba39e2a1417, type: 2}
-  m_sharedMaterial: {fileID: -4800710628897541313, guid: 2ea73b048ad63174f97edba39e2a1417, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0c1c518f8f84b354b91564bd9055e05b, type: 2}
+  m_sharedMaterial: {fileID: 5684342251295044901, guid: 0c1c518f8f84b354b91564bd9055e05b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -877,153 +877,6 @@ MonoBehaviour:
   pixelSize: 100
   ditherStrength: 0.2
   pixelSnap: 1
---- !u!1 &2412936318879894411
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8665010737786134209}
-  - component: {fileID: 1929993665688195586}
-  - component: {fileID: 7586600340881406149}
-  m_Layer: 6
-  m_Name: DialogueManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8665010737786134209
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2412936318879894411}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7716419258918232143}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1929993665688195586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2412936318879894411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e754dd0b98c494cafe8644ccc0ed0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 1117434861961671403}
-  dialogueText: {fileID: 8869296594167581736}
-  characterPortrait: {fileID: 7853222696715022387}
-  dialoguePanel: {fileID: 8760438951208462629}
-  typingSpeed: 0.05
-  npcAudio: {fileID: 0}
---- !u!82 &7586600340881406149
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2412936318879894411}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 6169380548165043066, guid: 7f8d2b77ff413e94fac741c48de29726, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.522
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1.034
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &2443288729228529482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,7 +1269,6 @@ Transform:
   m_Children:
   - {fileID: 382464108981624426}
   - {fileID: 1442321602507078286}
-  - {fileID: 8665010737786134209}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &8765551672902242766
@@ -1683,7 +1535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.037, y: 0.10541287}
   m_AnchorMax: {x: 0.24200001, y: 0.89060867}
-  m_AnchoredPosition: {x: -0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.50006104, y: 0.5}
   m_SizeDelta: {x: -1.2451935, y: 0.2854004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2383120898388726991
@@ -1949,7 +1801,6 @@ GameObject:
   - component: {fileID: 8535422231057498297}
   - component: {fileID: 983528756193937780}
   - component: {fileID: 1440178822172605391}
-  - component: {fileID: 3530260150096260238}
   - component: {fileID: 5483883231940933990}
   m_Layer: 6
   m_Name: PlayerSprite
@@ -2178,24 +2029,6 @@ MonoBehaviour:
   attackDuration: 0.3
   audioSource: {fileID: 8765551672902242766}
   attackSound: {fileID: 8300000, guid: 9033cead36d5ecd47a8d67f4378a4e85, type: 3}
---- !u!114 &3530260150096260238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3543847304304877018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc3569b71a0f25c46b4caa4405ec06d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionRadius: 3
-  interactableLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  interactionUI: {fileID: 1721805459020575626}
-  interactionText: {fileID: 4148299561824752677}
 --- !u!82 &5483883231940933990
 AudioSource:
   m_ObjectHideFlags: 0

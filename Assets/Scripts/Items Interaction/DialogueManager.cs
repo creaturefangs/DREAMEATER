@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public static DialogueManager Instance;
-    private SO_Dialogue currentDialogue;
+    [Header("Dialogue Data")]
+    public SO_Dialogue dialogue; // Reference to the Dialogue ScriptableObject
 
     [Header("UI Elements")]
     [SerializeField] private TMP_Text nameText;
@@ -17,66 +17,38 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
 
     [Header("Typing Settings")]
-    [SerializeField] private float typingSpeed = 0.05f;
+    public float typingSpeed = 1f;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource npcAudio;
+    [Header("Font Settings")]
+    private SO_Dialogue fontData; 
+    private TMP_Text textComponent;
 
-    private int currentDialogueIndex = 0;
     private bool isTyping = false;
     private Coroutine typingCoroutine;
-    private GameObject _currentDialogueNPC;
-    private bool _inDialogue = false;
-    private GameObject _currentNPC;
-    private Coroutine _currentCoroutine = null;
+    private int currentDialogueIndex = 0;
 
-    private PlayerMovement playerController;
+    [Header("Audio")]
+    [SerializeField] private AudioSource NPCaudio;
 
-    // Holds current dialogue data from OnlyDialogueNPC
-    private string[] dialogueLines;
-    private AudioClip dialogueSFX;
-    private TMP_FontAsset dialogueFont;
-    private int fontSize;
+    [Header("Events")]
+    public UnityEvent onDialogueStart;
+    public UnityEvent onDialogueEnd;
 
     private void Awake()
     {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
-    }
+        textComponent = dialogueText; // Assign textComponent properly
 
-    private void Start()
-    {
-        dialoguePanel.SetActive(false);
-        playerController = FindObjectOfType<PlayerMovement>();
-
-        if (playerController == null)
+        if (fontData && textComponent)
         {
-            Debug.LogError("PlayerMovement script not found in the scene!");
+            ApplyFont();
         }
     }
 
     private void Update()
     {
-        if (_currentDialogueNPC != null)
-        {
-            // Get only X and Y positions for 2D distance check
-            float distance = Vector2.Distance(
-                new Vector2(playerController.transform.position.x, playerController.transform.position.y),
-                new Vector2(_currentDialogueNPC.transform.position.x, _currentDialogueNPC.transform.position.y));
-
-            if (distance > 5f) // Change 5f to your desired interaction range
-            {
-                print("Outside Distance");
-                _currentDialogueNPC = null;
-                StopDialogue(_currentNPC);
-            }
-        }
-
         if (!dialoguePanel.activeSelf) return;
 
-        if (Input.GetKeyDown(KeyCode.LeftShift)) // Move to next dialogue
+        if (Input.GetKeyDown(KeyCode.LeftShift)) // Move to next dialogue chunk
         {
             ShowNextDialogue();
         }
@@ -86,97 +58,132 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(SO_Dialogue dialogue)
+    //  This function can be called from Unity Events!
+    public void StartDialogueFromEvent()
     {
-        if (dialogue == null || dialogue.dialogueLines.Length == 0)
+        StartDialogue();
+    }
+
+    public void StartDialogue()
+    {
+        if (dialogue == null || dialogue.dialogueLines == null)
         {
-            Debug.LogError("No dialogue assigned or dialogue is empty!");
+            Debug.LogError("Dialogue data is missing!");
             return;
         }
 
-        currentDialogue = dialogue;
+        Debug.Log($"Starting dialogue: {dialogue.characterName}, Lines: {dialogue.dialogueLines.Length}");
+
+        dialoguePanel.SetActive(true);
+        nameText.text = dialogue.characterName;
+        characterPortrait.sprite = dialogue.characterPortrait;
         currentDialogueIndex = 0;
         ShowNextDialogue();
+
+        onDialogueStart?.Invoke();
     }
 
-    private void StopDialogue(GameObject npc)
+    public void OnDialogueEnd()
     {
-        if (_currentCoroutine != null)
-        {
-            StopCoroutine(_currentCoroutine);
-        }
-        ResetDialogueText();
-        CloseUI();
-
-        _inDialogue = false;
-
-        if (npcAudio.clip != null)
-            npcAudio.clip = null;
-
-        if (npc != null)
-            npc.GetComponent<Collider>().enabled = true;
+        onDialogueEnd?.Invoke(); // Ensure the event is triggered safely
     }
 
-    private void ApplyFont()
+
+    public void ApplyFont()
     {
-        if (dialogueFont != null)
+        if (fontData != null)
         {
-            dialogueText.font = dialogueFont;
-            dialogueText.fontSize = fontSize;
+            dialogueText.font = fontData.font;
+            dialogueText.fontSize = fontData.fontSize;
         }
+
     }
 
-    private void ResetDialogueText()
+    public void ChangeFont(SO_Dialogue newFont)
     {
-        dialogueText.text = "";
-    }
-
-    private void ShowNextDialogue()
-    {
-        if (isTyping)
-        {
-            StopCoroutine(typingCoroutine);
-            dialogueText.text = dialogueLines[currentDialogueIndex]; // Instantly display text
-            isTyping = false;
-            return;
-        }
-
-        if (currentDialogueIndex < dialogueLines.Length)
-        {
-            typingCoroutine = StartCoroutine(TypeText(dialogueLines[currentDialogueIndex]));
-            currentDialogueIndex++;
-        }
-        else
-        {
-            CloseUI();
-        }
-    }
-
-    private IEnumerator TypeText(string message)
-    {
-        isTyping = true;
-        dialogueText.text = "";
-
-        foreach (char letter in message)
-        {
-            dialogueText.text += letter;
-
-            if (npcAudio && dialogueSFX != null)
-            {
-                npcAudio.pitch = Random.Range(0.9f, 1.2f);
-                npcAudio.PlayOneShot(dialogueSFX);
-            }
-
-            yield return new WaitForSeconds(typingSpeed);
-        }
-
-        isTyping = false;
+        fontData = newFont;
+        ApplyFont();
     }
 
     public void CloseUI()
     {
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
+
+        if (dialogue != null && currentDialogueIndex >= dialogue.dialogueLines.Length)
+        {
+            onDialogueEnd?.Invoke();
+        }
+    }
+
+    private void ShowNextDialogue()
+    {
+        //  Prevent errors if dialogue is missing
+        if (dialogue == null || dialogue.dialogueLines == null || dialogue.dialogueLines.Length == 0)
+        {
+            Debug.LogWarning("No dialogue lines found!");
+            CloseUI();
+            return;
+        }
+
+        Debug.Log($"Typing line {currentDialogueIndex + 1} of {dialogue.dialogueLines.Length}");
+
+        //  Only proceed if there are lines left
+        if (currentDialogueIndex < dialogue.dialogueLines.Length)
+        {
+            StopTypewriterEffect();
+            StartTypewriterEffect(dialogue.dialogueLines[currentDialogueIndex]);
+            currentDialogueIndex++; //  Increment AFTER displaying
+        }
+        else
+        {
+            Debug.Log("End of dialogue reached, closing UI.");
+            CloseUI();
+        }
+    }
+
+    private void StartTypewriterEffect(string message)
+    {
+        StopTypewriterEffect(); //  Ensure no overlapping typewriter effects
+        dialogueText.text = "";
+        typingCoroutine = StartCoroutine(TypeText(message));
+    }
+
+    private void StopTypewriterEffect()
+    {
+        if (isTyping && typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+        }
+        isTyping = false;
+    }
+
+    private IEnumerator TypeText(string message)
+    {
+        isTyping = true;
+        dialogueText.text = ""; // Clear text before starting
+
+        foreach (char letter in message.ToCharArray())
+        {
+            if (!isTyping) // Skip animation if interrupted
+            {
+                dialogueText.text = message;
+                break;
+            }
+
+            dialogueText.text += letter;
+
+            // Play typing sound with random pitch
+            if (NPCaudio && dialogue.dialogueSFX != null)
+            {
+                NPCaudio.pitch = Random.Range(0.9f, 1.2f);
+                NPCaudio.PlayOneShot(dialogue.dialogueSFX);
+            }
+
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        isTyping = false;
     }
 }
 
