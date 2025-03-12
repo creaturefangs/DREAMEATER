@@ -2003,11 +2003,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarFill: {fileID: 7633336595050539869}
   maxHealth: 100
-  playerAudio: {fileID: 5483883231940933990}
-  damageSFX: {fileID: 8300000, guid: 698da09c9323e3e4d83691277d17f4e1, type: 3}
   playerSprite: {fileID: 7561563364726025880}
   playerAnimator: {fileID: 2961432989448250036}
   deathScreenPanel: {fileID: 1790937975834849361}
+  playerAudio: {fileID: 5483883231940933990}
+  healSound: {fileID: 8300000, guid: 7ec0526ebe771a44bbb2beeb127f1150, type: 3}
+  damageSFX: {fileID: 8300000, guid: 698da09c9323e3e4d83691277d17f4e1, type: 3}
+  flashDuration: 0.2
 --- !u!114 &1440178822172605391
 MonoBehaviour:
   m_ObjectHideFlags: 0
