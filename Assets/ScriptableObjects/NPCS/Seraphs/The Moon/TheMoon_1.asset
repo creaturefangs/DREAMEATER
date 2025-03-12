@@ -17,8 +17,10 @@ MonoBehaviour:
   dialogueLines:
   - 'Thou art finally hither, your prophetic quest. '
   - 'Chaos has opened her doors to you. You have limited time here, use it wisely. '
-  - ' The configuration will fall soon enough. '
+  - 'The configuration will fall soon enough. '
   - 'Heed my warning, the eyes of red shall burn thee. '
   - 'Eyes of blue will only help you. Follow the stars to the place where you belong. '
   - "We shall meet again\u2026 Starlight."
-  dialogueSFX: {fileID: 0}
+  dialogueSFX: {fileID: 8300000, guid: 4dbe7bde779b1b640b7dc81488368b9e, type: 3}
+  font: {fileID: 11400000, guid: 0c1c518f8f84b354b91564bd9055e05b, type: 2}
+  fontSize: 24

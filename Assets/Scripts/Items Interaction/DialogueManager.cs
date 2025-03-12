@@ -17,14 +17,18 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
 
     [Header("Typing Settings")]
-    public float typingSpeed = 0.05f;
+    public float typingSpeed = 1f;
+
+    [Header("Font Settings")]
+    private SO_Dialogue fontData; 
+    private TMP_Text textComponent;
 
     private bool isTyping = false;
     private Coroutine typingCoroutine;
     private int currentDialogueIndex = 0;
 
     [Header("Audio")]
-    private AudioSource _audio;
+    [SerializeField] private AudioSource NPCaudio;
 
     [Header("Events")]
     public UnityEvent onDialogueStart;
@@ -32,7 +36,12 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        _audio = GetComponent<AudioSource>();
+        textComponent = dialogueText; // Assign textComponent properly
+
+        if (fontData && textComponent)
+        {
+            ApplyFont();
+        }
     }
 
     private void Update()
@@ -49,8 +58,22 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    //  This function can be called from Unity Events!
+    public void StartDialogueFromEvent()
+    {
+        StartDialogue();
+    }
+
     public void StartDialogue()
     {
+        if (dialogue == null || dialogue.dialogueLines == null)
+        {
+            Debug.LogError("Dialogue data is missing!");
+            return;
+        }
+
+        Debug.Log($"Starting dialogue: {dialogue.characterName}, Lines: {dialogue.dialogueLines.Length}");
+
         dialoguePanel.SetActive(true);
         nameText.text = dialogue.characterName;
         characterPortrait.sprite = dialogue.characterPortrait;
@@ -60,12 +83,34 @@ public class DialogueManager : MonoBehaviour
         onDialogueStart?.Invoke();
     }
 
+    public void OnDialogueEnd()
+    {
+        onDialogueEnd?.Invoke(); // Ensure the event is triggered safely
+    }
+
+
+    public void ApplyFont()
+    {
+        if (fontData != null)
+        {
+            dialogueText.font = fontData.font;
+            dialogueText.fontSize = fontData.fontSize;
+        }
+
+    }
+
+    public void ChangeFont(SO_Dialogue newFont)
+    {
+        fontData = newFont;
+        ApplyFont();
+    }
+
     public void CloseUI()
     {
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
 
-        if (currentDialogueIndex >= dialogue.dialogueLines.Length)
+        if (dialogue != null && currentDialogueIndex >= dialogue.dialogueLines.Length)
         {
             onDialogueEnd?.Invoke();
         }
@@ -73,40 +118,66 @@ public class DialogueManager : MonoBehaviour
 
     private void ShowNextDialogue()
     {
+        //  Prevent errors if dialogue is missing
+        if (dialogue == null || dialogue.dialogueLines == null || dialogue.dialogueLines.Length == 0)
+        {
+            Debug.LogWarning("No dialogue lines found!");
+            CloseUI();
+            return;
+        }
+
+        Debug.Log($"Typing line {currentDialogueIndex + 1} of {dialogue.dialogueLines.Length}");
+
+        //  Only proceed if there are lines left
         if (currentDialogueIndex < dialogue.dialogueLines.Length)
         {
+            StopTypewriterEffect();
             StartTypewriterEffect(dialogue.dialogueLines[currentDialogueIndex]);
-            currentDialogueIndex++;
+            currentDialogueIndex++; //  Increment AFTER displaying
         }
         else
         {
+            Debug.Log("End of dialogue reached, closing UI.");
             CloseUI();
         }
     }
 
     private void StartTypewriterEffect(string message)
     {
-        if (isTyping)
+        StopTypewriterEffect(); //  Ensure no overlapping typewriter effects
+        dialogueText.text = "";
+        typingCoroutine = StartCoroutine(TypeText(message));
+    }
+
+    private void StopTypewriterEffect()
+    {
+        if (isTyping && typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
         }
-        typingCoroutine = StartCoroutine(TypeText(message));
+        isTyping = false;
     }
 
     private IEnumerator TypeText(string message)
     {
         isTyping = true;
-        dialogueText.text = "";
+        dialogueText.text = ""; // Clear text before starting
 
         foreach (char letter in message.ToCharArray())
         {
+            if (!isTyping) // Skip animation if interrupted
+            {
+                dialogueText.text = message;
+                break;
+            }
+
             dialogueText.text += letter;
 
             // Play typing sound with random pitch
-            if (_audio && dialogue.dialogueSFX != null)
+            if (NPCaudio && dialogue.dialogueSFX != null)
             {
-                _audio.pitch = Random.Range(0.9f, 1.2f);
-                _audio.PlayOneShot(dialogue.dialogueSFX);
+                NPCaudio.pitch = Random.Range(0.9f, 1.2f);
+                NPCaudio.PlayOneShot(dialogue.dialogueSFX);
             }
 
             yield return new WaitForSeconds(typingSpeed);
