@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,7 +15,7 @@ public class RoomAudioController : MonoBehaviour
     {
         foreach (AudioClip clip in ambienceClips)
         {
-            
+
             musicSource.clip = clip;
             musicSource.loop = true;
             musicSource.playOnAwake = false;
