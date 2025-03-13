@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -99,25 +100,92 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public void StartScrollDialogue(SO_Scrolls scroll)
+    {
+        if (scroll == null) return;
+
+        dialoguePanel.SetActive(true);
+        nameText.text = scroll.title;
+        characterPortrait.sprite = scroll.image;
+        currentDialogueIndex = 0;
+
+        onDialogueStart?.Invoke();
+
+        ShowNextScroll(scroll);
+    }
+
+    private void ShowNextScroll(SO_Scrolls scroll)
+    {
+        if (currentDialogueIndex < scroll.contents.Length)
+        {
+            StartTypewriterEffect(scroll.contents[currentDialogueIndex]);
+            currentDialogueIndex++;
+        }
+        else
+        {
+            CloseUI();
+        }
+    }
+
+    public void StartTabletDialogue(SO_Tablets tablet)
+    {
+        if (tablet == null) return;
+
+        dialoguePanel.SetActive(true);
+        nameText.text = tablet.title;
+        characterPortrait.sprite = tablet.image;
+        currentDialogueIndex = 0;
+
+        onDialogueStart?.Invoke();
+
+        ShowNextTablet(tablet);
+    }
+
+    private void ShowNextTablet(SO_Tablets tablet)
+    {
+        if (currentDialogueIndex < tablet.contents.Length)
+        {
+            StartTypewriterEffect(tablet.contents[currentDialogueIndex]);
+            currentDialogueIndex++;
+        }
+        else
+        {
+            CloseUI();
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
     private void StartTypewriterEffect(string message)
     {
         if (isTyping)
         {
             StopCoroutine(typingCoroutine);
+            isTyping = false; // Mark as not typing
         }
+
+        dialogueText.text = ""; // Clear text before starting
         typingCoroutine = StartCoroutine(TypeText(message));
     }
 
     private IEnumerator TypeText(string message)
     {
+        dialogueText.text = ""; // Clear previous text
         isTyping = true;
-        dialogueText.text = "";
 
         foreach (char letter in message.ToCharArray())
         {
             dialogueText.text += letter;
+            Debug.Log($"Typing: {dialogueText.text}"); // Debug to check unexpected changes
 
-            // Play typing sound with random pitch
             if (_audio && currentDialogue.dialogueSFX != null)
             {
                 _audio.pitch = Random.Range(0.9f, 1.2f);
@@ -128,6 +196,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         isTyping = false;
+        typingCoroutine = null;
     }
 }
 

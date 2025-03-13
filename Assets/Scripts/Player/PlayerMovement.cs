@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 movement; // Store the player's movement
     private float footstepTimer = 0f;
-    private float footstepInterval = 0.3f; // Adjust this for pacing of footsteps
+    private float footstepInterval = 0.6f; // Adjust this for pacing of footsteps
 
     private void Start()
     {

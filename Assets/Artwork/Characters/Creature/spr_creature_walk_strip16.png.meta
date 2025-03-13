@@ -3,7 +3,7 @@ guid: b8c22d5f34d00ef43bab314b379a743b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -67,7 +67,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -77,9 +77,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -89,9 +90,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -101,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -110,13 +113,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 37
-        height: 55
+        x: 1
+        y: 9
+        width: 30
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -131,13 +135,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 0
-        width: 37
-        height: 55
+        x: 42
+        y: 10
+        width: 29
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -152,13 +157,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 0
-        width: 40
-        height: 55
+        x: 81
+        y: 9
+        width: 30
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -173,13 +179,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_3
       rect:
         serializedVersion: 2
-        x: 118
-        y: 0
-        width: 37
-        height: 55
+        x: 122
+        y: 10
+        width: 29
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -194,13 +201,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_4
       rect:
         serializedVersion: 2
-        x: 158
-        y: 0
-        width: 39
-        height: 55
+        x: 166
+        y: 9
+        width: 26
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -215,13 +223,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_5
       rect:
         serializedVersion: 2
-        x: 199
-        y: 0
-        width: 38
-        height: 55
+        x: 206
+        y: 7
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -236,13 +245,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_6
       rect:
         serializedVersion: 2
-        x: 241
-        y: 0
-        width: 35
-        height: 55
+        x: 246
+        y: 9
+        width: 26
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -257,13 +267,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_7
       rect:
         serializedVersion: 2
-        x: 283
-        y: 0
-        width: 35
-        height: 55
+        x: 286
+        y: 8
+        width: 26
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -278,13 +289,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_8
       rect:
         serializedVersion: 2
-        x: 324
-        y: 0
-        width: 38
-        height: 55
+        x: 329
+        y: 9
+        width: 30
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -299,13 +311,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_9
       rect:
         serializedVersion: 2
-        x: 366
-        y: 0
-        width: 37
-        height: 55
+        x: 369
+        y: 10
+        width: 29
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -320,13 +333,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_10
       rect:
         serializedVersion: 2
-        x: 407
-        y: 0
-        width: 36
-        height: 55
+        x: 409
+        y: 9
+        width: 30
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -341,13 +355,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_11
       rect:
         serializedVersion: 2
-        x: 447
-        y: 0
-        width: 35
-        height: 55
+        x: 449
+        y: 10
+        width: 29
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -362,13 +377,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_12
       rect:
         serializedVersion: 2
-        x: 485
-        y: 0
-        width: 31
-        height: 55
+        x: 486
+        y: 8
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -383,13 +399,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_13
       rect:
         serializedVersion: 2
-        x: 521
-        y: 0
-        width: 34
-        height: 55
+        x: 526
+        y: 9
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -404,13 +421,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_14
       rect:
         serializedVersion: 2
-        x: 560
-        y: 0
-        width: 36
-        height: 55
+        x: 566
+        y: 8
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -425,13 +443,14 @@ TextureImporter:
       name: spr_creature_walk_strip16_15
       rect:
         serializedVersion: 2
-        x: 601
-        y: 0
-        width: 39
-        height: 55
+        x: 606
+        y: 9
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -443,6 +462,7 @@ TextureImporter:
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -452,23 +472,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
-      spr_creature_walk_strip16_8: -1693561541
-      spr_creature_walk_strip16_15: 323074629
+      spr_creature_walk_strip16_0: -404601010
       spr_creature_walk_strip16_1: 1105001936
       spr_creature_walk_strip16_10: 985328320
-      spr_creature_walk_strip16_5: -2090447602
-      spr_creature_walk_strip16_0: -404601010
-      spr_creature_walk_strip16_9: -1032868116
-      spr_creature_walk_strip16_2: 240304940
       spr_creature_walk_strip16_11: 95640384
       spr_creature_walk_strip16_12: -1936317959
+      spr_creature_walk_strip16_13: 2053294846
+      spr_creature_walk_strip16_14: 1542883731
+      spr_creature_walk_strip16_15: 323074629
+      spr_creature_walk_strip16_2: 240304940
+      spr_creature_walk_strip16_3: -1991810053
+      spr_creature_walk_strip16_4: -664385668
+      spr_creature_walk_strip16_5: -2090447602
       spr_creature_walk_strip16_6: -747808200
       spr_creature_walk_strip16_7: -1659045844
-      spr_creature_walk_strip16_14: 1542883731
-      spr_creature_walk_strip16_4: -664385668
-      spr_creature_walk_strip16_3: -1991810053
-      spr_creature_walk_strip16_13: 2053294846
+      spr_creature_walk_strip16_8: -1693561541
+      spr_creature_walk_strip16_9: -1032868116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

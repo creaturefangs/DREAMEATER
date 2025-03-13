@@ -9,7 +9,7 @@ public class SO_Tablets : ScriptableObject
 {
     public string titleText;
     
-    public string[] dialogueLines;
+    public string[] contents;
 
     public Sprite icon;
 }
