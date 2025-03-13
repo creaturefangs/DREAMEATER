@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
@@ -50,9 +46,9 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Ensure time resumes before quitting
 
-       
-        
-            Application.Quit(); // Quit the application in a build
-        
+
+
+        Application.Quit(); // Quit the application in a build
+
     }
 }

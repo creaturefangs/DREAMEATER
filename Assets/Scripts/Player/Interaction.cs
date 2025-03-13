@@ -1,58 +1,54 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Interaction : MonoBehaviour
 {
     [Header("Interaction Settings")]
-    public float interactionRadius = 3f; // How close the player must be
     public string interactionMessage = "Press Space to interact";
-    private bool isInRange = false; // Track if the player is nearby
-    private Transform player; // Reference to the player
 
     [Header("UI Elements")]
-    public GameObject interactionUI; // UI to show when near
+    public GameObject interactionUI; // UI prompt
     public TMP_Text interactionText;
 
-    [Header("Interaction Event")]
-    public UnityEvent onInteract; // Assignable Unity event
-
-    void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player")?.transform; // Find player by tag
-    }
+    private InteractableObject interactableObject;
 
     void Update()
     {
-        if (player == null) return;
-
-        // Check if player is within range
-        isInRange = Vector2.Distance(transform.position, player.position) <= interactionRadius;
-
-        // Show UI prompt if in range
+        // Toggle UI based on interaction availability
         if (interactionUI != null)
         {
-            interactionUI.SetActive(isInRange);
+            interactionUI.SetActive(interactableObject != null);
+            if (interactionText != null && interactableObject != null)
+            {
+                interactionText.text = interactionMessage;
+            }
         }
 
-        // Interact when pressing Spacebar in range
-        if (isInRange && Input.GetKeyDown(KeyCode.Space))
+        // Press Space to interact
+        if (interactableObject != null && Input.GetKeyDown(KeyCode.Space))
         {
             Interact();
         }
 
-        // Check for mouse click interaction
+        // Click to interact
         if (Input.GetMouseButtonDown(0))
         {
             CheckMouseClick();
         }
     }
 
+    public void SetInteractable(InteractableObject obj)
+    {
+        interactableObject = obj;
+    }
+
     void Interact()
     {
-        Debug.Log("Interacting with: " + gameObject.name);
-        onInteract.Invoke(); // Call UnityEvent
-
+        if (interactableObject != null)
+        {
+            Debug.Log("Interacting with: " + interactableObject.gameObject.name);
+            interactableObject.onInteract.Invoke();
+        }
     }
 
     void CheckMouseClick()
@@ -61,18 +57,15 @@ public class Interaction : MonoBehaviour
         mousePosition.z = 0f; // Keep in 2D space
 
         Collider2D hitCollider = Physics2D.OverlapPoint(mousePosition);
-        if (hitCollider != null && hitCollider.gameObject == gameObject)
+        if (hitCollider != null)
         {
-            Interact();
+            InteractableObject clickedObject = hitCollider.GetComponent<InteractableObject>();
+            if (clickedObject != null)
+            {
+                interactableObject = clickedObject;
+                Interact();
+            }
         }
-    }
-
-
-    // Draw interaction radius in the Scene view
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, interactionRadius);
     }
 }
 

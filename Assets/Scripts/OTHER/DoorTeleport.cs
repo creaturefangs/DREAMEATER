@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,7 +14,7 @@ public class DoorTeleport : MonoBehaviour
     private Image fadeImage;
     private AudioSource audioSource;
 
-    [SerializeField] public bool isLocked; 
+    [SerializeField] public bool isLocked;
 
     private void Start()
     {

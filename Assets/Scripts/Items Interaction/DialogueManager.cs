@@ -6,8 +6,10 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager Instance;
+
     [Header("Dialogue Data")]
-    public SO_Dialogue dialogue; // Reference to the Dialogue ScriptableObject
+    private SO_Dialogue currentDialogue; // Store the current dialogue data
 
     [Header("UI Elements")]
     [SerializeField] private TMP_Text nameText;
@@ -23,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     private int currentDialogueIndex = 0;
 
     [Header("Audio")]
-    private AudioSource _audio;
+    [SerializeField] private AudioSource _audio;
 
     [Header("Events")]
     public UnityEvent onDialogueStart;
@@ -31,7 +33,16 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        _audio = GetComponent<AudioSource>();
+        // Ensure there is only one instance of DialogueManager
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
     }
 
     private void Update()
@@ -48,11 +59,14 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue()
+    public void StartDialogue(SO_Dialogue dialogue)
     {
+        if (dialoguePanel.activeSelf) return; // Prevent restarting dialogue while one is active
+
+        currentDialogue = dialogue;
         dialoguePanel.SetActive(true);
-        nameText.text = dialogue.characterName;
-        characterPortrait.sprite = dialogue.characterPortrait;
+        nameText.text = currentDialogue.characterName;
+        characterPortrait.sprite = currentDialogue.characterPortrait;
         currentDialogueIndex = 0;
         ShowNextDialogue();
 
@@ -64,7 +78,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
 
-        if (currentDialogueIndex >= dialogue.dialogueLines.Length)
+        if (currentDialogueIndex >= currentDialogue.dialogueLines.Length)
         {
             onDialogueEnd?.Invoke();
         }
@@ -72,9 +86,11 @@ public class DialogueManager : MonoBehaviour
 
     private void ShowNextDialogue()
     {
-        if (currentDialogueIndex < dialogue.dialogueLines.Length)
+        if (currentDialogue == null) return;
+
+        if (currentDialogueIndex < currentDialogue.dialogueLines.Length)
         {
-            StartTypewriterEffect(dialogue.dialogueLines[currentDialogueIndex]);
+            StartTypewriterEffect(currentDialogue.dialogueLines[currentDialogueIndex]);
             currentDialogueIndex++;
         }
         else
@@ -102,10 +118,10 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
 
             // Play typing sound with random pitch
-            if (_audio && dialogue.dialogueSFX != null)
+            if (_audio && currentDialogue.dialogueSFX != null)
             {
                 _audio.pitch = Random.Range(0.9f, 1.2f);
-                _audio.PlayOneShot(dialogue.dialogueSFX);
+                _audio.PlayOneShot(currentDialogue.dialogueSFX);
             }
 
             yield return new WaitForSeconds(typingSpeed);
