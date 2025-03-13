@@ -31,3 +31,4 @@ MonoBehaviour:
   - 'Thus were established and were... the great gods. But Violence and Sorath were
     still in confusion... They were troubled and... '
   icon: {fileID: 21300000, guid: ec51be38ac252f24ba73d7c19bf50d91, type: 3}
+  dialogueSFX: {fileID: 8300000, guid: 7bdb0eb84260bc148bf7e12e0e350cee, type: 3}

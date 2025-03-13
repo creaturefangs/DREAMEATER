@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -8,8 +6,10 @@ using UnityEngine;
 public class SO_Tablets : ScriptableObject
 {
     public string titleText;
-    
-    public string[] contents;
+
+    public string[] dialogueLines;
 
     public Sprite icon;
+
+    public AudioClip dialogueSFX;
 }

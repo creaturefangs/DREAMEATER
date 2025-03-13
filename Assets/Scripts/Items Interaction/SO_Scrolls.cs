@@ -9,6 +9,7 @@ public class SO_Scrolls : ScriptableObject
 
     public string titleText;
     public Sprite icon; // Icon for the scroll
-    public string[] contents;
+    public string[] dialogueLines;
+    public AudioClip dialogueSFX;
 
 }

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2295784823887804228}
   - component: {fileID: 5094662299159978438}
   - component: {fileID: 3279116067356703443}
+  - component: {fileID: 3922771945069265829}
+  - component: {fileID: 1848298435964412693}
   m_Layer: 0
   m_Name: spr_Scroll
   m_TagString: Untagged
@@ -134,3 +136,45 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5, y: 1.0625}
   m_EdgeRadius: 0
+--- !u!114 &3922771945069265829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561766211376588275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab5643fd07ab9542b9d8c853c0c46a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1848298435964412693}
+        m_TargetAssemblyTypeName: OnlyReadableObjects, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  interactionRadius: 3
+--- !u!114 &1848298435964412693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561766211376588275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0fb6c4512c78514ebfa419993ee568b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollData: {fileID: 11400000, guid: fa51452bc18b40a409b9ca9f5800dc9d, type: 2}
+  tabletData: {fileID: 0}

@@ -10,6 +10,9 @@ public class Interaction : MonoBehaviour
     public GameObject interactionUI; // UI prompt
     public TMP_Text interactionText;
 
+    public ScriptableObject interactionData; // Can be SO_Dialogue, SO_Scrolls, or SO_Tablets
+
+
     private InteractableObject interactableObject;
 
     void Update()
@@ -48,6 +51,11 @@ public class Interaction : MonoBehaviour
         {
             Debug.Log("Interacting with: " + interactableObject.gameObject.name);
             interactableObject.onInteract.Invoke();
+        }
+
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.StartInteraction(interactionData);
         }
     }
 
