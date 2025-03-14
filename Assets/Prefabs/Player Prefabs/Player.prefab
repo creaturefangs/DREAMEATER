@@ -2232,6 +2232,7 @@ MonoBehaviour:
   interactionMessage: '[Spacebar]'
   interactionUI: {fileID: 1721805459020575626}
   interactionText: {fileID: 4148299561824752677}
+  interactionData: {fileID: 0}
 --- !u!1 &3812285693736553171
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,7 +2455,7 @@ GameObject:
   - component: {fileID: 1442321602507078286}
   - component: {fileID: 2161767250629990052}
   - component: {fileID: 5895316482655045029}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Post-process Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4356,8 +4357,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2693857133815248659}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: StartDialogue
-        m_Mode: 1
+        m_MethodName: StartInteraction
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4398,7 +4399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2765763628554057970
 RectTransform:
   m_ObjectHideFlags: 0

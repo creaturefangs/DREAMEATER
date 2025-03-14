@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7d9ba8eb5efc5439a9b47c05544398, type: 3}
+  m_Name: Pluto_1
+  m_EditorClassIdentifier: 
+  characterName: Orcus
+  characterPortrait: {fileID: 120084385239278564, guid: 0bfcd07decc7969418ef4daa7f2e0126, type: 3}
+  dialogueLines:
+  - '*sob* '
+  - '"Are you lost too?" '
+  - '"I''m all alone."'
+  - 
+  - 
+  dialogueSFX: {fileID: 8300000, guid: 503e5cc9d7a30214da30db70a6227b92, type: 3}
