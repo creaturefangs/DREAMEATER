@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 1bd605f2f83a9c546ae991eefed9d76e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2656828799415557333
+    second: wolf spritesheet_0
+  - first:
+      213: -7213337173992056786
+    second: wolf spritesheet_1
+  - first:
+      213: 7035055707483474206
+    second: wolf spritesheet_2
+  - first:
+      213: -5128525719306829322
+    second: wolf spritesheet_3
+  - first:
+      213: 5469696119594378662
+    second: wolf spritesheet_4
+  - first:
+      213: 3389275591017387744
+    second: wolf spritesheet_5
+  - first:
+      213: 74677730747570954
+    second: wolf spritesheet_6
+  - first:
+      213: -3602695992524922414
+    second: wolf spritesheet_7
+  - first:
+      213: -5602320501685194289
+    second: wolf spritesheet_8
+  - first:
+      213: 6812003879688813535
+    second: wolf spritesheet_9
+  - first:
+      213: 1780247102297649245
+    second: wolf spritesheet_10
+  - first:
+      213: -2784219043994852747
+    second: wolf spritesheet_11
+  - first:
+      213: -2820112234601769139
+    second: wolf spritesheet_12
+  - first:
+      213: -9072175484123333616
+    second: wolf spritesheet_13
+  - first:
+      213: -3604478744879250829
+    second: wolf spritesheet_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wolf spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 745
+        width: 237
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc113277b3fed420800000000000000
+      internalID: 2656828799415557333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 744
+        width: 166
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e285513ee0415eb90800000000000000
+      internalID: -7213337173992056786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 741
+        width: 255
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1903a384e981a160800000000000000
+      internalID: 7035055707483474206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 513
+        width: 261
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f10347c701d3d8b0800000000000000
+      internalID: -5128525719306829322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 521
+        width: 326
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a561cd14a348eb40800000000000000
+      internalID: 5469696119594378662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 518
+        width: 352
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e65e706130290f20800000000000000
+      internalID: 3389275591017387744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 518
+        width: 352
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b57dd100f490100800000000000000
+      internalID: 74677730747570954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 284
+        width: 213
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d124db2517a00ec0800000000000000
+      internalID: -3602695992524922414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 290
+        width: 324
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc17a23af2f8042b0800000000000000
+      internalID: -5602320501685194289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 264
+        width: 391
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb3f61ef69198e50800000000000000
+      internalID: 6812003879688813535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 272
+        width: 391
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50bed0be45b4b810800000000000000
+      internalID: 1780247102297649245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 57
+        width: 213
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5722fc9e7877c59d0800000000000000
+      internalID: -2784219043994852747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 65
+        width: 326
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4714dd3dd2fcd8d0800000000000000
+      internalID: -2820112234601769139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 60
+        width: 328
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c32d0b678291280800000000000000
+      internalID: -9072175484123333616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 53
+        width: 326
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372c60bcda15afdc0800000000000000
+      internalID: -3604478744879250829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wolf spritesheet_0: 2656828799415557333
+      wolf spritesheet_1: -7213337173992056786
+      wolf spritesheet_10: 1780247102297649245
+      wolf spritesheet_11: -2784219043994852747
+      wolf spritesheet_12: -2820112234601769139
+      wolf spritesheet_13: -9072175484123333616
+      wolf spritesheet_14: -3604478744879250829
+      wolf spritesheet_2: 7035055707483474206
+      wolf spritesheet_3: -5128525719306829322
+      wolf spritesheet_4: 5469696119594378662
+      wolf spritesheet_5: 3389275591017387744
+      wolf spritesheet_6: 74677730747570954
+      wolf spritesheet_7: -3602695992524922414
+      wolf spritesheet_8: -5602320501685194289
+      wolf spritesheet_9: 6812003879688813535
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
