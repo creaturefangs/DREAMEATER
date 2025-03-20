@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sprlantern2_0: 8635355408202453144
+      sprlantern2_1: 6309402075661567395
+      sprlantern2_2: -3545478138695095521
+      sprlantern2_3: 6676638693519519333
+      sprlantern2_4: 7508699575050732764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

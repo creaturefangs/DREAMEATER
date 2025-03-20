@@ -1677,7 +1677,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 869539661}
+    m_TransformParent: {fileID: 1702267057}
     m_Modifications:
     - target: {fileID: 301777127129716188, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1719,11 +1719,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2763334250729980852, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 869539662}
+    - target: {fileID: 6822662403157646552, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
+      propertyPath: m_Volume
+      value: 0.567
+      objectReference: {fileID: 0}
     - target: {fileID: 7536794452830938375, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_Name
       value: Enemy_RedEye (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6822662403157646552, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4509,15 +4518,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 931551727717083340}
+  - {fileID: 1702267057}
   - {fileID: 1958969595}
   - {fileID: 918959378}
   - {fileID: 796294628}
   - {fileID: 1651364405}
-  - {fileID: 1510019859}
-  - {fileID: 260714408}
-  - {fileID: 1693631923}
-  - {fileID: 995325990}
   - {fileID: 1256385098}
   - {fileID: 646140503}
   - {fileID: 1545212518}
@@ -4537,7 +4542,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.428
+  m_Volume: 0.545
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5399,7 +5404,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 869539661}
+    m_TransformParent: {fileID: 1702267057}
     m_Modifications:
     - target: {fileID: 301777127129716188, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5441,11 +5446,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2763334250729980852, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 869539662}
+    - target: {fileID: 6822662403157646552, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
+      propertyPath: m_Volume
+      value: 0.567
+      objectReference: {fileID: 0}
     - target: {fileID: 7536794452830938375, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_Name
       value: Enemy_RedEye (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6822662403157646552, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11935,13 +11949,13 @@ MonoBehaviour:
   rightSpawn: {fileID: 1694144620}
   spawnDelay: 0.5
   audioSource: {fileID: 869539662}
-  patrolSFX: {fileID: 0}
-  footstepSFX: {fileID: 0}
-  detectionSFX: {fileID: 0}
+  patrolSFX: {fileID: 8300000, guid: 2cfbda1eff417ec4d82e72dadd6d30fe, type: 3}
+  footstepSFX: {fileID: 8300000, guid: dd9651909f66d844c8ac08a43bef0417, type: 3}
+  detectionSFX: {fileID: 8300000, guid: 2cff54214627b224db66c8f525aff1b2, type: 3}
   player: {fileID: 472548438}
   detectionRange: 4
   cameraShake: {fileID: 472548437}
-  chaseSpeed: 3.5
+  chaseSpeed: 4
 --- !u!61 &1256385100
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13305,7 +13319,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 869539661}
+    m_TransformParent: {fileID: 1702267057}
     m_Modifications:
     - target: {fileID: 301777127129716188, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13346,6 +13360,14 @@ PrefabInstance:
     - target: {fileID: 301777127129716188, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2763334250729980852, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 869539662}
+    - target: {fileID: 6822662403157646552, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
+      propertyPath: m_Volume
+      value: 0.567
       objectReference: {fileID: 0}
     - target: {fileID: 7536794452830938375, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_Name
@@ -13949,7 +13971,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 869539661}
+    m_TransformParent: {fileID: 1702267057}
     m_Modifications:
     - target: {fileID: 301777127129716188, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13991,11 +14013,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2763334250729980852, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 869539662}
+    - target: {fileID: 6822662403157646552, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
+      propertyPath: m_Volume
+      value: 0.567
+      objectReference: {fileID: 0}
     - target: {fileID: 7536794452830938375, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_Name
       value: Enemy_RedEye (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6822662403157646552, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14179,6 +14210,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1702267056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1702267057}
+  m_Layer: 0
+  m_Name: REDEYES PARENT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1702267057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702267056}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 931551727717083340}
+  - {fileID: 1510019859}
+  - {fileID: 260714408}
+  - {fileID: 1693631923}
+  - {fileID: 995325990}
+  m_Father: {fileID: 869539661}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1715718748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433274157617259092, guid: f52d7f1be4cd1f049b41343c1d531f56, type: 3}
@@ -26497,7 +26564,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 869539661}
+    m_TransformParent: {fileID: 1702267057}
     m_Modifications:
     - target: {fileID: 301777127129716188, guid: f99978f7ef456e04399a1b956c637ef6, type: 3}
       propertyPath: m_LocalPosition.x

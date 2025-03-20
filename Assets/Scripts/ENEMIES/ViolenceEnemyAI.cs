@@ -15,7 +15,9 @@ public class ViolenceEnemyAI : MonoBehaviour
     public Transform leftSpawn;
     public Transform rightSpawn;
     private bool spawnLeft = true;
-    public float spawnDelay = 0.5f;
+    public float patrolFootstepDelay = 0.5f;  // Delay when patrolling
+    public float chaseFootstepDelay = 0.3f;   // Faster footsteps when chasing
+    private float currentFootstepDelay;
 
     [Header("Audio Settings")]
     public AudioSource audioSource;
@@ -31,6 +33,7 @@ public class ViolenceEnemyAI : MonoBehaviour
 
     private void Start()
     {
+        currentFootstepDelay = patrolFootstepDelay; // Start with patrol delay
         StartCoroutine(SpawnFootsteps());
         if (audioSource && patrolSFX)
             audioSource.PlayOneShot(patrolSFX);
@@ -38,6 +41,8 @@ public class ViolenceEnemyAI : MonoBehaviour
 
     private void Update()
     {
+        DetectPlayer(); // Now detects the player at all times
+
         if (isChasing)
         {
             ChasePlayer();
@@ -45,7 +50,6 @@ public class ViolenceEnemyAI : MonoBehaviour
         else
         {
             Patrol();
-            DetectPlayer();
         }
     }
 
@@ -66,11 +70,11 @@ public class ViolenceEnemyAI : MonoBehaviour
     {
         while (true) // Footsteps continue whether patrolling or chasing
         {
-            yield return new WaitForSeconds(spawnDelay);
+            yield return new WaitForSeconds(currentFootstepDelay);
 
             Transform spawnPoint = spawnLeft ? leftSpawn : rightSpawn;
             GameObject footstep = Instantiate(footstepPrefab, spawnPoint.position, Quaternion.identity);
-            Destroy(footstep, 2f); // Destroy footstep prefab after 2 seconds
+            Destroy(footstep, 1f); // Destroy footstep prefab after 2 seconds
 
             if (audioSource && footstepSFX)
                 audioSource.PlayOneShot(footstepSFX);
@@ -81,6 +85,8 @@ public class ViolenceEnemyAI : MonoBehaviour
 
     private void DetectPlayer()
     {
+        if (isChasing) return; // Don't detect again if already chasing
+
         if (Vector3.Distance(transform.position, player.position) <= detectionRange)
         {
             if (audioSource && detectionSFX)
@@ -89,7 +95,8 @@ public class ViolenceEnemyAI : MonoBehaviour
                 StartCoroutine(cameraShake.Shake(0.3f, 0.5f));
 
             isMoving = false;
-            isChasing = true; // Start chasing
+            isChasing = true;
+            currentFootstepDelay = chaseFootstepDelay; // Make footsteps faster when chasing
         }
     }
 
@@ -107,3 +114,4 @@ public class ViolenceEnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 }
+
