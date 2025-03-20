@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EvilEyeController : MonoBehaviour
@@ -11,10 +10,11 @@ public class EvilEyeController : MonoBehaviour
     private Transform player; // Reference to the player
     private HealthBarManager playerHealth; // Reference to the player's health script
 
-    private bool canDamage = true; // Prevents rapid damage
+    private bool canDamage; // Prevents rapid damage
 
     private void Start()
     {
+        canDamage = true;
         // Find the player object by tag
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null)

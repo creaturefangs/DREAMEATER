@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 public class ViolenceEnemyAI : MonoBehaviour
 {
@@ -30,13 +30,32 @@ public class ViolenceEnemyAI : MonoBehaviour
     public float detectionRange = 5f;
     public CameraShake cameraShake;
     public float chaseSpeed = 3.5f; // Speed when chasing the player
+    private HealthBarManager playerHealth; // Reference to the player's health script
+    public float damageAmount = 10f; // Damage dealt to the player on collision
+    private bool canDamage; // Prevents rapid damage
+
 
     private void Start()
     {
         currentFootstepDelay = patrolFootstepDelay; // Start with patrol delay
+
         StartCoroutine(SpawnFootsteps());
+
         if (audioSource && patrolSFX)
             audioSource.PlayOneShot(patrolSFX);
+
+        canDamage = true; // Prevents rapid damage
+        // Find the player object by tag
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+            playerHealth = playerObject.GetComponent<HealthBarManager>();
+        }
+        else
+        {
+            Debug.LogWarning("Player not found! Make sure the player has the 'Player' tag.");
+        }
     }
 
     private void Update()
@@ -51,6 +70,23 @@ public class ViolenceEnemyAI : MonoBehaviour
         {
             Patrol();
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // Check if the enemy collides with the player and can deal damage
+        if (other.CompareTag("Player") && playerHealth != null && canDamage)
+        {
+            playerHealth.TakeDamage(damageAmount);
+            StartCoroutine(DamageCooldown()); // Start cooldown
+        }
+    }
+
+    private IEnumerator DamageCooldown()
+    {
+        canDamage = false; // Disable damage
+        yield return new WaitForSeconds(2f); // Wait for 2 seconds
+        canDamage = true; // Re-enable damage
     }
 
     private void Patrol()

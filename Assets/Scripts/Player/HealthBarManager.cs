@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,8 +21,6 @@ public class HealthBarManager : MonoBehaviour
 
     private Color originalColor;
     private bool isFlashing = false;
-
-
 
     private void Start()
     {
@@ -120,13 +117,7 @@ public class HealthBarManager : MonoBehaviour
             playerAnimator.SetTrigger("Die"); // Trigger death animation
         }
 
-        yield return new WaitForSeconds(2f); // Wait for animation to play
-
-        // Disable the player's sprite
-        if (playerSprite != null)
-        {
-            playerSprite.gameObject.SetActive(false);
-        }
+        yield return new WaitForSeconds(1f); // Wait for animation to play
 
         // Pause the game but allow music to play
         Time.timeScale = 0f; // Stops all movement and physics

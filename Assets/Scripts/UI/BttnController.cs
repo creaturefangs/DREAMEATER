@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,6 +28,14 @@ public class BttnController : MonoBehaviour
     public void OnClickExitGame()
     {
         Application.Quit();
+    }
+
+    public void ReloadGameFromSave()
+    {
+
+        Time.timeScale = 1f;
+
+
     }
 
 }
