@@ -918,6 +918,7 @@ GameObject:
   - component: {fileID: 4080494056870227109}
   - component: {fileID: 9188177958090619372}
   - component: {fileID: 8563207003574848867}
+  - component: {fileID: 6468401163366807838}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1077,6 +1078,18 @@ MonoBehaviour:
   pixelSize: 100
   ditherStrength: 0.2
   pixelSnap: 1
+--- !u!114 &6468401163366807838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2379280889387684833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d40f4779ea9d74f8719dc7e825bb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2443288729228529482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,7 +2164,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -942730887
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 2
   m_Sprite: {fileID: 2053294846, guid: b8c22d5f34d00ef43bab314b379a743b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
