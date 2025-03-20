@@ -26859,13 +26859,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: SAVEPOINT_Lantern
       objectReference: {fileID: 0}
-    - target: {fileID: 654962623345961687, guid: f4d4d9a6fe8b1d542961e54a4087dd93, type: 3}
-      propertyPath: m_Size.x
-      value: 1.6068344
+    - target: {fileID: 1004285466377563595, guid: f4d4d9a6fe8b1d542961e54a4087dd93, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 654962623345961687, guid: f4d4d9a6fe8b1d542961e54a4087dd93, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.005847931
+    - target: {fileID: 1004285466377563595, guid: f4d4d9a6fe8b1d542961e54a4087dd93, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1096141587
       objectReference: {fileID: 0}
     - target: {fileID: 3544920055945895164, guid: f4d4d9a6fe8b1d542961e54a4087dd93, type: 3}
       propertyPath: m_LocalPosition.x
