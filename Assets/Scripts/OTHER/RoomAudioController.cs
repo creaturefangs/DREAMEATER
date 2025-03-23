@@ -3,80 +3,94 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Collider2D))]
 public class RoomAudioController : MonoBehaviour
 {
     [Header("Audio Sources (Assign in Inspector)")]
-    public AudioSource musicSource;  // AudioSource for music
-    public AudioSource ambienceSource;  // AudioSource for ambience
-
-    [Header("Audio Clips")]
-    public AudioClip musicClip;  // Single music clip
-    public AudioClip ambienceClip;  // Single ambience clip
+    public AudioSource musicSource;   // Main music audio source
+    public AudioSource ambienceSource; // Main ambience audio source
 
     [Header("Audio Settings")]
-    [Range(0f, 1f)] public float ambienceVolume = 1f;  // Volume slider in Inspector
-    public float fadeDuration = 1f;  // Time to fade in/out
+    [Range(0f, 1f)] public float musicVolume = 1f;
+    [Range(0f, 1f)] public float ambienceVolume = 1f;
+    public float fadeDuration = 1f;
 
-    private bool isPlaying = false;
+    [Header("Planet Music & Ambience Clips")]
+    public List<PlanetAudio> planetAudioList = new List<PlanetAudio>();
+
+    private Dictionary<string, PlanetAudio> planetAudioDict = new Dictionary<string, PlanetAudio>();
+    private Coroutine fadeCoroutineMusic;
+    private Coroutine fadeCoroutineAmbience;
+    private string currentPlanet = "";
 
     private void Start()
     {
-        ApplyVolume();
-        AssignAudioClips();
-    }
+        // Convert List to Dictionary for fast lookups
+        foreach (var planet in planetAudioList)
+        {
+            if (!planetAudioDict.ContainsKey(planet.planetTag))
+            {
+                planetAudioDict.Add(planet.planetTag, planet);
+            }
+        }
 
-    private void Update()
-    {
-        ApplyVolume();
+        musicSource.volume = 0f;
+        ambienceSource.volume = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !isPlaying)
+        if (planetAudioDict.ContainsKey(other.tag))
         {
-            isPlaying = true;
-            StartCoroutine(FadeInAudio());
+            if (currentPlanet != other.tag)
+            {
+                currentPlanet = other.tag;
+                PlanetAudio newPlanetAudio = planetAudioDict[other.tag];
+
+                // Stop all previous sounds and fade in new ones
+                ChangeAudio(musicSource, newPlanetAudio.musicClip, musicVolume, ref fadeCoroutineMusic);
+                ChangeAudio(ambienceSource, newPlanetAudio.ambienceClip, ambienceVolume, ref fadeCoroutineAmbience);
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && isPlaying)
+        if (other.tag == currentPlanet)
         {
-            isPlaying = false;
-            StartCoroutine(FadeOutAudio());
+            currentPlanet = "";
+            StartCoroutine(FadeOutAudio(musicSource, fadeDuration));
+            StartCoroutine(FadeOutAudio(ambienceSource, fadeDuration));
         }
     }
 
-    private IEnumerator FadeInAudio()
+    private void ChangeAudio(AudioSource source, AudioClip newClip, float targetVolume, ref Coroutine fadeCoroutine)
     {
-        if (musicSource != null && musicClip != null)
-        {
-            musicSource.Play();
-            StartCoroutine(FadeAudioSource(musicSource, fadeDuration, ambienceVolume));
-        }
+        if (fadeCoroutine != null)
+            StopCoroutine(fadeCoroutine);
 
-        if (ambienceSource != null && ambienceClip != null)
-        {
-            ambienceSource.Play();
-            StartCoroutine(FadeAudioSource(ambienceSource, fadeDuration, ambienceVolume));
-        }
-        yield return null;
+        fadeCoroutine = StartCoroutine(FadeInAudio(source, newClip, targetVolume));
     }
 
-    private IEnumerator FadeOutAudio()
+    private IEnumerator FadeInAudio(AudioSource source, AudioClip newClip, float targetVolume)
     {
-        if (musicSource != null)
-            StartCoroutine(FadeAudioSource(musicSource, fadeDuration, 0f, stopAfterFade: true));
+        if (source.isPlaying)
+            yield return StartCoroutine(FadeOutAudio(source, fadeDuration));
 
-        if (ambienceSource != null)
-            StartCoroutine(FadeAudioSource(ambienceSource, fadeDuration, 0f, stopAfterFade: true));
+        source.clip = newClip;
+        source.Play();
 
-        yield return null;
+        float time = 0f;
+        while (time < fadeDuration)
+        {
+            time += Time.deltaTime;
+            source.volume = Mathf.Lerp(0f, targetVolume, time / fadeDuration);
+            yield return null;
+        }
+
+        source.volume = targetVolume;
     }
 
-    private IEnumerator FadeAudioSource(AudioSource source, float duration, float targetVolume, bool stopAfterFade = false)
+    private IEnumerator FadeOutAudio(AudioSource source, float duration)
     {
         float startVolume = source.volume;
         float time = 0f;
@@ -84,27 +98,20 @@ public class RoomAudioController : MonoBehaviour
         while (time < duration)
         {
             time += Time.deltaTime;
-            source.volume = Mathf.Lerp(startVolume, targetVolume, time / duration);
+            source.volume = Mathf.Lerp(startVolume, 0f, time / duration);
             yield return null;
         }
 
-        source.volume = targetVolume;
-        if (stopAfterFade)
-            source.Stop();
-    }
-
-    private void ApplyVolume()
-    {
-        if (musicSource != null) musicSource.volume = ambienceVolume;
-        if (ambienceSource != null) ambienceSource.volume = ambienceVolume;
-    }
-
-    private void AssignAudioClips()
-    {
-        if (musicSource != null && musicClip != null)
-            musicSource.clip = musicClip;
-
-        if (ambienceSource != null && ambienceClip != null)
-            ambienceSource.clip = ambienceClip;
+        source.volume = 0f;
+        source.Stop();
     }
 }
+
+[System.Serializable]
+public class PlanetAudio
+{
+    public string planetTag;      // The tag for the planet trigger collider
+    public AudioClip musicClip;   // Music for that planet
+    public AudioClip ambienceClip; // Ambience for that planet
+}
+

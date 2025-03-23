@@ -499,10 +499,9 @@ GameObject:
   m_Component:
   - component: {fileID: 57868920}
   - component: {fileID: 57868922}
-  - component: {fileID: 57868921}
   m_Layer: 0
   m_Name: M_Mars
-  m_TagString: Untagged
+  m_TagString: M_Mars
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -522,24 +521,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &57868921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57868919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &57868922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1423,10 +1404,9 @@ GameObject:
   m_Component:
   - component: {fileID: 171604651}
   - component: {fileID: 171604653}
-  - component: {fileID: 171604652}
   m_Layer: 0
   m_Name: M_Hallway (1)
-  m_TagString: Untagged
+  m_TagString: M_Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1446,24 +1426,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &171604652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171604650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &171604653
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1981,7 +1943,6 @@ GameObject:
   m_Component:
   - component: {fileID: 218362462}
   - component: {fileID: 218362464}
-  - component: {fileID: 218362463}
   m_Layer: 0
   m_Name: M_Moon
   m_TagString: Untagged
@@ -2004,24 +1965,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &218362463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218362461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 1248577681}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &218362464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2165,10 +2108,9 @@ GameObject:
   m_Component:
   - component: {fileID: 238738401}
   - component: {fileID: 238738403}
-  - component: {fileID: 238738402}
   m_Layer: 0
   m_Name: M_Venus
-  m_TagString: Untagged
+  m_TagString: M_Venus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2188,24 +2130,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &238738402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238738400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &238738403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2424,11 +2348,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 261310135}
-  - component: {fileID: 261310138}
   - component: {fileID: 261310137}
   m_Layer: 0
   m_Name: M_Neptune
-  m_TagString: Untagged
+  m_TagString: M_Neptune
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2448,25 +2371,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &261310137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261310134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 1248577681}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 8300000, guid: 68a2c5a5dbd789e47902336f28bd7f45, type: 3}
-  ambienceVolume: 0.423
-  fadeDuration: 1
---- !u!61 &261310138
+--- !u!61 &261310137
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2500,7 +2405,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.15167236, y: -6.6817436}
+  m_Offset: {x: 0.09152603, y: 0.8694649}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2510,7 +2415,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 39.069244, y: 34.838974}
+  m_Size: {x: 52.61866, y: 26.900856}
   m_EdgeRadius: 0
 --- !u!1 &280552113
 GameObject:
@@ -3227,10 +3132,9 @@ GameObject:
   m_Component:
   - component: {fileID: 410487702}
   - component: {fileID: 410487704}
-  - component: {fileID: 410487703}
   m_Layer: 0
   m_Name: M_Uranus
-  m_TagString: Untagged
+  m_TagString: M_Uranus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3250,24 +3154,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &410487703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410487701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &410487704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3493,7 +3379,6 @@ GameObject:
   m_Component:
   - component: {fileID: 446889165}
   - component: {fileID: 446889167}
-  - component: {fileID: 446889166}
   m_Layer: 0
   m_Name: M_Sun
   m_TagString: Untagged
@@ -3516,24 +3401,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &446889166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446889164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &446889167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3780,10 +3647,6 @@ PrefabInstance:
     - target: {fileID: 2971026669541049531, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2971026669541049531, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7716419258918232143, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4596,8 +4459,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -66954007
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0.12941177, a: 1}
@@ -5221,10 +5084,9 @@ GameObject:
   m_Component:
   - component: {fileID: 727075332}
   - component: {fileID: 727075334}
-  - component: {fileID: 727075333}
   m_Layer: 0
   m_Name: M_Earth
-  m_TagString: Untagged
+  m_TagString: M_Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5244,24 +5106,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &727075333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 727075331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &727075334
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8310,7 +8154,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1089386155}
   - component: {fileID: 1089386157}
-  - component: {fileID: 1089386156}
   m_Layer: 0
   m_Name: M_Hallway
   m_TagString: Untagged
@@ -8333,24 +8176,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1089386156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089386154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &1089386157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8815,10 +8640,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1162998756}
   - component: {fileID: 1162998758}
-  - component: {fileID: 1162998757}
   m_Layer: 0
   m_Name: M_Saturn
-  m_TagString: Untagged
+  m_TagString: M_Saturn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8838,24 +8662,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1162998757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1162998755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &1162998758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13776,7 +13582,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1175170272}
   - component: {fileID: 1175170274}
-  - component: {fileID: 1175170273}
   m_Layer: 0
   m_Name: M_Moon (1)
   m_TagString: Untagged
@@ -13799,24 +13604,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1175170273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175170271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &1175170274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13873,10 +13660,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1185993743}
   - component: {fileID: 1185993745}
-  - component: {fileID: 1185993744}
   m_Layer: 0
   m_Name: M_Mercury
-  m_TagString: Untagged
+  m_TagString: M_Mercury
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13896,24 +13682,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1185993744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185993742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &1185993745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13970,10 +13738,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1191196603}
   - component: {fileID: 1191196605}
-  - component: {fileID: 1191196604}
   m_Layer: 0
   m_Name: M_Jupiter
-  m_TagString: Untagged
+  m_TagString: M_Jupiter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13993,24 +13760,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1191196604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191196602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 0}
-  musicClip: {fileID: 0}
-  ambienceClip: {fileID: 0}
-  ambienceVolume: 1
-  fadeDuration: 1
 --- !u!61 &1191196605
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19990,7 +19739,7 @@ Transform:
   m_GameObject: {fileID: 1314551566}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -318.4426, y: 73.0279, z: -5.7635493}
+  m_LocalPosition: {x: -318.4426, y: 72.64, z: -5.7635493}
   m_LocalScale: {x: 8.556523, y: 25.216158, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20148,10 +19897,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1329531646}
   - component: {fileID: 1329531648}
-  - component: {fileID: 1329531647}
   m_Layer: 0
   m_Name: M_Pluto
-  m_TagString: Untagged
+  m_TagString: M_Pluto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20171,24 +19919,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1911084902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1329531647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329531645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 1911084903}
-  ambienceSource: {fileID: 1248577681}
-  musicClip: {fileID: 8300000, guid: afa5272aa492b5244a39d76ee8b69fc1, type: 3}
-  ambienceClip: {fileID: 8300000, guid: 43ed0f5934214cf4faf59c2e546ca4dd, type: 3}
-  ambienceVolume: 0.403
-  fadeDuration: 1
 --- !u!61 &1329531648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22559,8 +22289,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -66954007
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0.12941177, a: 1}
@@ -33534,6 +33264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1911084902}
+  - component: {fileID: 1911084904}
   - component: {fileID: 1911084903}
   m_Layer: 0
   m_Name: MUSIC
@@ -33669,6 +33400,45 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1911084904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911084901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 1911084903}
+  ambienceSource: {fileID: 1248577681}
+  musicVolume: 1
+  ambienceVolume: 1
+  fadeDuration: 1
+  planetAudioList:
+  - planetTag: M_Hallway
+    musicClip: {fileID: 8300000, guid: fff7713b58007924894c7fd98b266696, type: 3}
+    ambienceClip: {fileID: 0}
+  - planetTag: M_Pluto
+    musicClip: {fileID: 8300000, guid: afa5272aa492b5244a39d76ee8b69fc1, type: 3}
+    ambienceClip: {fileID: 8300000, guid: 43ed0f5934214cf4faf59c2e546ca4dd, type: 3}
+  - planetTag: M_Neptune
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 8300000, guid: 02ae78ee2e494af4ba52d22dfbd183ce, type: 3}
+  - planetTag: M_Uranus
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 8300000, guid: 72bc5cd2433a51c42b357ddcfc7f6f70, type: 3}
+  - planetTag: M_Jupiter
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 8300000, guid: 1c4aee5598e29ee41b690d71673fab8d, type: 3}
+  - planetTag: M_Saturn
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 0}
+  - planetTag: 
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 0}
 --- !u!1 &1920138399
 GameObject:
   m_ObjectHideFlags: 0

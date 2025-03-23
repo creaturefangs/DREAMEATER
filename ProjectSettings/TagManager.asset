@@ -6,6 +6,18 @@ TagManager:
   tags:
   - Enemy
   - Tablet
+  - M_Pluto
+  - M_Neptune
+  - M_Uranus
+  - M_Jupiter
+  - M_Saturn
+  - M_Mars
+  - M_Earth
+  - M_Mercury
+  - M_Venus
+  - M_Moon
+  - M_Sun
+  - M_Hallway
   layers:
   - Default
   - TransparentFX
