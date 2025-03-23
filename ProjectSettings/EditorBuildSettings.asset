@@ -18,7 +18,16 @@ EditorBuildSettings:
     path: Assets/Scenes/GAMEROOM.unity
     guid: fa8b3f54f08b43441b7697a3c91db90a
   - enabled: 1
+    path: Assets/Scenes/The Hallways/The Rains.unity
+    guid: 6c4d014b08d80754f89a712b48e121c0
+  - enabled: 1
     path: Assets/Scenes/The Hallways/The Waters.unity
     guid: 8d29864cb0daae340ac10c607c0ed9a6
+  - enabled: 1
+    path: Assets/Scenes/The Hallways/The Gardens.unity
+    guid: e7f34b1d281cdb9459624a0b5413ee38
+  - enabled: 1
+    path: Assets/Scenes/The Hallways/The Temple of Night.unity
+    guid: 9a136c1a0c532ba4d811ffb7bc647527
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

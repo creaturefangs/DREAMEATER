@@ -33,8 +33,12 @@ public class RoomAudioController : MonoBehaviour
             }
         }
 
-        musicSource.volume = 0f;
-        ambienceSource.volume = 0f;
+        // If no planet is assigned at start, fade out music and ambience
+        if (string.IsNullOrEmpty(currentPlanet))
+        {
+            musicSource.volume = 0f;
+            ambienceSource.volume = 0f;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -46,9 +50,16 @@ public class RoomAudioController : MonoBehaviour
                 currentPlanet = other.tag;
                 PlanetAudio newPlanetAudio = planetAudioDict[other.tag];
 
-                // Stop all previous sounds and fade in new ones
-                ChangeAudio(musicSource, newPlanetAudio.musicClip, musicVolume, ref fadeCoroutineMusic);
-                ChangeAudio(ambienceSource, newPlanetAudio.ambienceClip, ambienceVolume, ref fadeCoroutineAmbience);
+                // Immediately assign and start music if not playing
+                if (!musicSource.isPlaying || musicSource.clip != newPlanetAudio.musicClip)
+                {
+                    ChangeAudio(musicSource, newPlanetAudio.musicClip, musicVolume, ref fadeCoroutineMusic);
+                }
+
+                if (!ambienceSource.isPlaying || ambienceSource.clip != newPlanetAudio.ambienceClip)
+                {
+                    ChangeAudio(ambienceSource, newPlanetAudio.ambienceClip, ambienceVolume, ref fadeCoroutineAmbience);
+                }
             }
         }
     }
