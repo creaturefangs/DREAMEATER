@@ -1,14 +1,14 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObject/Scroll", order = 4)]
+[CreateAssetMenu(menuName = "ScriptableObject/Item", order = 4)]
 
-public class SO_Items : MonoBehaviour
+public class SO_Items : ScriptableObject
 {
 
     // Dialogue Text and description
 
     public string itemText;
-    public Sprite itemIcon; 
+    public Sprite itemIcon;
     public string[] itemLines;
     public AudioClip iteminteractSFX;
 

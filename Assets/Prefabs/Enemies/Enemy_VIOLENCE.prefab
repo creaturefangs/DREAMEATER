@@ -172,5 +172,5 @@ MonoBehaviour:
   player: {fileID: 0}
   detectionRange: 4
   cameraShake: {fileID: 0}
-  chaseSpeed: 4
+  chaseSpeed: 4.5
   damageAmount: 50

@@ -6,7 +6,7 @@ public class InteractableObject : MonoBehaviour
     public UnityEvent onInteract;
 
     public float interactionRadius = 3f; // Interaction range
-    private Transform player; // Reference to player
+    private Transform player;
 
     void Start()
     {
@@ -22,14 +22,23 @@ public class InteractableObject : MonoBehaviour
         bool isInRange = distance <= interactionRadius;
 
         // Notify player script if it's nearby
-        if (isInRange)
+        Interaction playerInteraction = player.GetComponent<Interaction>();
+        if (playerInteraction != null)
         {
-            Interaction playerInteraction = player.GetComponent<Interaction>();
-            if (playerInteraction != null)
+            if (isInRange)
             {
                 playerInteraction.SetInteractable(this);
             }
+            else if (playerInteraction != null && playerInteraction.interactableObject == this)
+            {
+                playerInteraction.SetInteractable(null); // Reset when out of range
+            }
         }
+    }
+
+    public bool IsPlayerInRange(Transform playerTransform)
+    {
+        return Vector2.Distance(transform.position, playerTransform.position) <= interactionRadius;
     }
 
     // Draw interaction radius in Scene view

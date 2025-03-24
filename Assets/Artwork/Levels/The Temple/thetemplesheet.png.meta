@@ -1,0 +1,2249 @@
+fileFormatVersion: 2
+guid: 14fcc6bcbbba99243a1b57271216cda6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8601905296685758161
+    second: thetemplesheet_0
+  - first:
+      213: 1597097830277985402
+    second: thetemplesheet_1
+  - first:
+      213: 930750240548405403
+    second: thetemplesheet_2
+  - first:
+      213: 4658599515693899432
+    second: thetemplesheet_3
+  - first:
+      213: -578450854381379226
+    second: thetemplesheet_4
+  - first:
+      213: 5021539779245793238
+    second: thetemplesheet_5
+  - first:
+      213: -8732639953043784266
+    second: thetemplesheet_6
+  - first:
+      213: 7955033063892691555
+    second: thetemplesheet_7
+  - first:
+      213: 3064763869271610679
+    second: thetemplesheet_8
+  - first:
+      213: -7609555697126104735
+    second: thetemplesheet_9
+  - first:
+      213: -2145645057325820516
+    second: thetemplesheet_10
+  - first:
+      213: -48233460376059746
+    second: thetemplesheet_11
+  - first:
+      213: -5043912719363991063
+    second: thetemplesheet_12
+  - first:
+      213: -7967462545795671976
+    second: thetemplesheet_13
+  - first:
+      213: -7670805780106594597
+    second: thetemplesheet_14
+  - first:
+      213: -3550555396774077420
+    second: thetemplesheet_15
+  - first:
+      213: -7997000015870810143
+    second: thetemplesheet_16
+  - first:
+      213: 1845591257639762820
+    second: thetemplesheet_17
+  - first:
+      213: 850488881915763784
+    second: thetemplesheet_18
+  - first:
+      213: 1753581281017973164
+    second: thetemplesheet_19
+  - first:
+      213: 1681449206631486451
+    second: thetemplesheet_20
+  - first:
+      213: -3584167416738510239
+    second: thetemplesheet_21
+  - first:
+      213: -6552566961252539944
+    second: thetemplesheet_22
+  - first:
+      213: -4395144209642556068
+    second: thetemplesheet_23
+  - first:
+      213: 385843417774091779
+    second: thetemplesheet_24
+  - first:
+      213: -2649764913848238973
+    second: thetemplesheet_25
+  - first:
+      213: -4415526529761681748
+    second: thetemplesheet_26
+  - first:
+      213: -5197676671510130013
+    second: thetemplesheet_27
+  - first:
+      213: -1529756565028661698
+    second: thetemplesheet_28
+  - first:
+      213: -5753114960382938109
+    second: thetemplesheet_29
+  - first:
+      213: -4169809960627905987
+    second: thetemplesheet_30
+  - first:
+      213: -2040126685631200543
+    second: thetemplesheet_31
+  - first:
+      213: -3609012270484806894
+    second: thetemplesheet_32
+  - first:
+      213: 809458285222280448
+    second: thetemplesheet_33
+  - first:
+      213: -4249041338452300887
+    second: thetemplesheet_34
+  - first:
+      213: -6901010723122751339
+    second: thetemplesheet_35
+  - first:
+      213: 5890373403023984680
+    second: thetemplesheet_36
+  - first:
+      213: -8166826053298597930
+    second: thetemplesheet_37
+  - first:
+      213: 3804620711573763482
+    second: thetemplesheet_38
+  - first:
+      213: 2139108744912313797
+    second: thetemplesheet_39
+  - first:
+      213: -6973049683249965133
+    second: thetemplesheet_40
+  - first:
+      213: -1678327737391222315
+    second: thetemplesheet_41
+  - first:
+      213: 4966483676982427929
+    second: thetemplesheet_42
+  - first:
+      213: 2471053403841394649
+    second: thetemplesheet_43
+  - first:
+      213: -4083933705554669386
+    second: thetemplesheet_44
+  - first:
+      213: 5751650641240136647
+    second: thetemplesheet_45
+  - first:
+      213: 157919264675236670
+    second: thetemplesheet_46
+  - first:
+      213: 552892687668724003
+    second: thetemplesheet_47
+  - first:
+      213: 1467949551360467001
+    second: thetemplesheet_48
+  - first:
+      213: -2292429937640315213
+    second: thetemplesheet_49
+  - first:
+      213: 8855673577615259942
+    second: thetemplesheet_50
+  - first:
+      213: -786831089209772710
+    second: thetemplesheet_51
+  - first:
+      213: -650924633769917428
+    second: thetemplesheet_52
+  - first:
+      213: -5090319149809034594
+    second: thetemplesheet_53
+  - first:
+      213: -4629455116475192452
+    second: thetemplesheet_54
+  - first:
+      213: -4315765717262942783
+    second: thetemplesheet_55
+  - first:
+      213: 6437582105194008311
+    second: thetemplesheet_56
+  - first:
+      213: 2752100823749840837
+    second: thetemplesheet_57
+  - first:
+      213: -5765279880967000209
+    second: thetemplesheet_58
+  - first:
+      213: 8887131246735376136
+    second: thetemplesheet_59
+  - first:
+      213: 5730933041838033469
+    second: thetemplesheet_60
+  - first:
+      213: -1968144497578548649
+    second: thetemplesheet_61
+  - first:
+      213: -3308436967686192520
+    second: thetemplesheet_62
+  - first:
+      213: -4841181423473498068
+    second: thetemplesheet_63
+  - first:
+      213: -1084047980842188589
+    second: thetemplesheet_64
+  - first:
+      213: 2164076583545502606
+    second: thetemplesheet_65
+  - first:
+      213: -245867389982506897
+    second: thetemplesheet_66
+  - first:
+      213: -7317761801784575416
+    second: thetemplesheet_67
+  - first:
+      213: -145118550968336650
+    second: thetemplesheet_68
+  - first:
+      213: 2637749406283020183
+    second: thetemplesheet_69
+  - first:
+      213: 7146296061445290318
+    second: thetemplesheet_70
+  - first:
+      213: -641900647734101485
+    second: thetemplesheet_71
+  - first:
+      213: -498851447709365360
+    second: thetemplesheet_72
+  - first:
+      213: -6761031051884783104
+    second: thetemplesheet_73
+  - first:
+      213: 6753924425895396987
+    second: thetemplesheet_74
+  - first:
+      213: 4692049091445246221
+    second: thetemplesheet_75
+  - first:
+      213: 6101112506486070190
+    second: thetemplesheet_76
+  - first:
+      213: -5368361891977865603
+    second: thetemplesheet_77
+  - first:
+      213: 2418207525950192623
+    second: thetemplesheet_78
+  - first:
+      213: 7547092761652345810
+    second: thetemplesheet_79
+  - first:
+      213: 909393881857285095
+    second: thetemplesheet_80
+  - first:
+      213: -491675428528788477
+    second: thetemplesheet_81
+  - first:
+      213: -6321236462089040957
+    second: thetemplesheet_82
+  - first:
+      213: -7931147561334966314
+    second: thetemplesheet_83
+  - first:
+      213: 2296675140615905703
+    second: thetemplesheet_84
+  - first:
+      213: -1283820674684253466
+    second: thetemplesheet_85
+  - first:
+      213: -1064976832725189018
+    second: thetemplesheet_86
+  - first:
+      213: 2593816472279948369
+    second: thetemplesheet_87
+  - first:
+      213: -7778295020981360452
+    second: thetemplesheet_88
+  - first:
+      213: 8752481247512978736
+    second: thetemplesheet_89
+  - first:
+      213: 8871092208306370628
+    second: thetemplesheet_90
+  - first:
+      213: 7635035380411635082
+    second: thetemplesheet_91
+  - first:
+      213: 2278774412446742891
+    second: thetemplesheet_92
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: thetemplesheet_0
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1778
+        width: 294
+        height: 409
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f298e7f15b4ef9880800000000000000
+      internalID: -8601905296685758161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_1
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2159
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74344dc3080a2610800000000000000
+      internalID: 1597097830277985402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_2
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 2158
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b904f769960baec00800000000000000
+      internalID: 930750240548405403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_3
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 2016
+        width: 136
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aeddb3c39ba6a040800000000000000
+      internalID: 4658599515693899432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 2159
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661a390430ee8f7f0800000000000000
+      internalID: -578450854381379226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1778
+        width: 203
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df507fe2d710b540800000000000000
+      internalID: 5021539779245793238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 2158
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36aafcd8c64f56e60800000000000000
+      internalID: 7955033063892691555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 2023
+        width: 90
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735d264508a388a20800000000000000
+      internalID: 3064763869271610679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 2158
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161af3e196d656690800000000000000
+      internalID: -7609555697126104735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 2166
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95950040332932e0800000000000000
+      internalID: -2145645057325820516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 2159
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e904fff5ce3a45ff0800000000000000
+      internalID: -48233460376059746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_12
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1775
+        width: 220
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e91c340b1c600ab0800000000000000
+      internalID: -5043912719363991063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_13
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1957
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8589e9c2703ed6190800000000000000
+      internalID: -7967462545795671976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 2156
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6bbbfd8c2db8590800000000000000
+      internalID: -7670805780106594597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2131
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c5fe3ada4e9bec0800000000000000
+      internalID: -3550555396774077420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_16
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 2137
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e72a310bd2f40190800000000000000
+      internalID: -7997000015870810143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1928
+        width: 75
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b3f20787bdc9910800000000000000
+      internalID: 1845591257639762820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1989
+        width: 89
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c120cc12b8dcb00800000000000000
+      internalID: 850488881915763784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 2142
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9c9db52e8f55810800000000000000
+      internalID: 1753581281017973164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_20
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 2130
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3d12d0525b55710800000000000000
+      internalID: 1681449206631486451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 2123
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a85c569ba724ec0800000000000000
+      internalID: -3584167416738510239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_22
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 2098
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1e493d01b9015a0800000000000000
+      internalID: -6552566961252539944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 2107
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55f3a7b0af4103c0800000000000000
+      internalID: -4395144209642556068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2100
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ee85f4b8aca5500800000000000000
+      internalID: 385843417774091779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 2064
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c38c399d42a3bd0800000000000000
+      internalID: -2649764913848238973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 2054
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caedd310406e8b2c0800000000000000
+      internalID: -4415526529761681748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_27
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1782
+        width: 163
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2dd411b942ed7b0800000000000000
+      internalID: -5197676671510130013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_28
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1775
+        width: 91
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3615a4528635cae0800000000000000
+      internalID: -1529756565028661698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 1953
+        width: 76
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304b362cc64d820b0800000000000000
+      internalID: -5753114960382938109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_32
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1777
+        width: 105
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2132abb16763aedc0800000000000000
+      internalID: -3609012270484806894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_33
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1777
+        width: 94
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00dbb2f8506cb3b00800000000000000
+      internalID: 809458285222280448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1764
+        width: 135
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aba9914a6f5805c0800000000000000
+      internalID: -4249041338452300887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_36
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1777
+        width: 89
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82847a9c66fceb150800000000000000
+      internalID: 5890373403023984680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_37
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 1907
+        width: 88
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df4bb669fa99ae80800000000000000
+      internalID: -8166826053298597930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_38
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1777
+        width: 72
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95b272216abcc430800000000000000
+      internalID: 3804620711573763482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_39
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1778
+        width: 25
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd1e6ce114afad10800000000000000
+      internalID: 2139108744912313797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_40
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 1778
+        width: 32
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b75cb40240ca3f90800000000000000
+      internalID: -6973049683249965133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_42
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1780
+        width: 21
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9114055379e7ce440800000000000000
+      internalID: 4966483676982427929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_43
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1337
+        width: 55
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d77cf48af1fa4220800000000000000
+      internalID: 2471053403841394649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_44
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1331
+        width: 722
+        height: 438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b05b22bee3f257c0800000000000000
+      internalID: -4083933705554669386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_45
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1754
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb144fd8c7f1df40800000000000000
+      internalID: 5751650641240136647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_46
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1337
+        width: 69
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b882a0cba013200800000000000000
+      internalID: 157919264675236670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_47
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1480
+        width: 227
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321c76758f44ca700800000000000000
+      internalID: 552892687668724003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_48
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1528
+        width: 49
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930e805e6543f5410800000000000000
+      internalID: 1467949551360467001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_49
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1583
+        width: 74
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b66a761e17af20e0800000000000000
+      internalID: -2292429937640315213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_52
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 913
+        width: 847
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04c79c8e7377f6f0800000000000000
+      internalID: -650924633769917428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_57
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1175
+        width: 54
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf4ba13e1d613620800000000000000
+      internalID: 2752100823749840837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_58
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 1185
+        width: 90
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f61487e7c9dffa0800000000000000
+      internalID: -5765279880967000209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_59
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1185
+        width: 46
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fbfe968ce655b70800000000000000
+      internalID: 8887131246735376136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_60
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1183
+        width: 78
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a0e4edc3d588f40800000000000000
+      internalID: 5730933041838033469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_61
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1185
+        width: 44
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752e033d10fbfa4e0800000000000000
+      internalID: -1968144497578548649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_62
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1063
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8724b435b121612d0800000000000000
+      internalID: -3308436967686192520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_63
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1063
+        width: 76
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2864a0252ba0dcb0800000000000000
+      internalID: -4841181423473498068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_64
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1009
+        width: 122
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d00c6eda10b4f0f0800000000000000
+      internalID: -1084047980842188589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_65
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1023
+        width: 114
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b78fcdf28580e10800000000000000
+      internalID: 2164076583545502606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_66
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 1013
+        width: 122
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f608d3659e0869cf0800000000000000
+      internalID: -245867389982506897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_67
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 915
+        width: 170
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a35b59966127a90800000000000000
+      internalID: -7317761801784575416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_68
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 917
+        width: 108
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe763f527f6cfdf0800000000000000
+      internalID: -145118550968336650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_69
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 915
+        width: 52
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7973fff0c1b2b9420800000000000000
+      internalID: 2637749406283020183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_70
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 915
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49383ab76ebc2360800000000000000
+      internalID: 7146296061445290318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_71
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 915
+        width: 42
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a37b603c28717f0800000000000000
+      internalID: -641900647734101485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_72
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 915
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b08975049b319f0800000000000000
+      internalID: -498851447709365360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_73
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 915
+        width: 40
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a950d641efb22a0800000000000000
+      internalID: -6761031051884783104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_74
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 915
+        width: 50
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7644554b72cabd50800000000000000
+      internalID: 6753924425895396987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_75
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 658
+        width: 158
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09c9440ac18d1140800000000000000
+      internalID: 4692049091445246221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_76
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 657
+        width: 114
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab9bc3ef718ba450800000000000000
+      internalID: 6101112506486070190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_77
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 761
+        width: 45
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d765ae25d4fbf75b0800000000000000
+      internalID: -5368361891977865603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_78
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 761
+        width: 92
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febff61cee23f8120800000000000000
+      internalID: 2418207525950192623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_79
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 448
+        width: 93
+        height: 453
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbb53961e8acb860800000000000000
+      internalID: 7547092761652345810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_80
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 534
+        width: 80
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb5409dae0de9c00800000000000000
+      internalID: 909393881857285095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_81
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 458
+        width: 121
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ce0c18dc73d29f0800000000000000
+      internalID: -491675428528788477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_82
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 416
+        width: 65
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb8fe7dde47648a0800000000000000
+      internalID: -6321236462089040957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_83
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 461
+        width: 99
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d77c616057eee190800000000000000
+      internalID: -7931147561334966314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_84
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 406
+        width: 74
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1a1e04fdd6fdf10800000000000000
+      internalID: 2296675140615905703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_85
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 465
+        width: 95
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea842af5e3fe2ee0800000000000000
+      internalID: -1283820674684253466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_87
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 468
+        width: 176
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c9dc2c6561ff320800000000000000
+      internalID: 2593816472279948369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_89
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 372
+        width: 88
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035674d625f077970800000000000000
+      internalID: 8752481247512978736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_90
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 386
+        width: 88
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44836d5cc537c1b70800000000000000
+      internalID: 8871092208306370628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_91
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 69
+        width: 205
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8599f0f93815f960800000000000000
+      internalID: 7635035380411635082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thetemplesheet_92
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 98
+        width: 194
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6933213145df9f10800000000000000
+      internalID: 2278774412446742891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f6555f33d9b943740b3fe19c59dd265f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      thetemplesheet_0: -8601905296685758161
+      thetemplesheet_1: 1597097830277985402
+      thetemplesheet_10: -2145645057325820516
+      thetemplesheet_11: -48233460376059746
+      thetemplesheet_12: -5043912719363991063
+      thetemplesheet_13: -7967462545795671976
+      thetemplesheet_14: -7670805780106594597
+      thetemplesheet_15: -3550555396774077420
+      thetemplesheet_16: -7997000015870810143
+      thetemplesheet_17: 1845591257639762820
+      thetemplesheet_18: 850488881915763784
+      thetemplesheet_19: 1753581281017973164
+      thetemplesheet_2: 930750240548405403
+      thetemplesheet_20: 1681449206631486451
+      thetemplesheet_21: -3584167416738510239
+      thetemplesheet_22: -6552566961252539944
+      thetemplesheet_23: -4395144209642556068
+      thetemplesheet_24: 385843417774091779
+      thetemplesheet_25: -2649764913848238973
+      thetemplesheet_26: -4415526529761681748
+      thetemplesheet_27: -5197676671510130013
+      thetemplesheet_28: -1529756565028661698
+      thetemplesheet_29: -5753114960382938109
+      thetemplesheet_3: 4658599515693899432
+      thetemplesheet_30: -4169809960627905987
+      thetemplesheet_31: -2040126685631200543
+      thetemplesheet_32: -3609012270484806894
+      thetemplesheet_33: 809458285222280448
+      thetemplesheet_34: -4249041338452300887
+      thetemplesheet_35: -6901010723122751339
+      thetemplesheet_36: 5890373403023984680
+      thetemplesheet_37: -8166826053298597930
+      thetemplesheet_38: 3804620711573763482
+      thetemplesheet_39: 2139108744912313797
+      thetemplesheet_4: -578450854381379226
+      thetemplesheet_40: -6973049683249965133
+      thetemplesheet_41: -1678327737391222315
+      thetemplesheet_42: 4966483676982427929
+      thetemplesheet_43: 2471053403841394649
+      thetemplesheet_44: -4083933705554669386
+      thetemplesheet_45: 5751650641240136647
+      thetemplesheet_46: 157919264675236670
+      thetemplesheet_47: 552892687668724003
+      thetemplesheet_48: 1467949551360467001
+      thetemplesheet_49: -2292429937640315213
+      thetemplesheet_5: 5021539779245793238
+      thetemplesheet_50: 8855673577615259942
+      thetemplesheet_51: -786831089209772710
+      thetemplesheet_52: -650924633769917428
+      thetemplesheet_53: -5090319149809034594
+      thetemplesheet_54: -4629455116475192452
+      thetemplesheet_55: -4315765717262942783
+      thetemplesheet_56: 6437582105194008311
+      thetemplesheet_57: 2752100823749840837
+      thetemplesheet_58: -5765279880967000209
+      thetemplesheet_59: 8887131246735376136
+      thetemplesheet_6: -8732639953043784266
+      thetemplesheet_60: 5730933041838033469
+      thetemplesheet_61: -1968144497578548649
+      thetemplesheet_62: -3308436967686192520
+      thetemplesheet_63: -4841181423473498068
+      thetemplesheet_64: -1084047980842188589
+      thetemplesheet_65: 2164076583545502606
+      thetemplesheet_66: -245867389982506897
+      thetemplesheet_67: -7317761801784575416
+      thetemplesheet_68: -145118550968336650
+      thetemplesheet_69: 2637749406283020183
+      thetemplesheet_7: 7955033063892691555
+      thetemplesheet_70: 7146296061445290318
+      thetemplesheet_71: -641900647734101485
+      thetemplesheet_72: -498851447709365360
+      thetemplesheet_73: -6761031051884783104
+      thetemplesheet_74: 6753924425895396987
+      thetemplesheet_75: 4692049091445246221
+      thetemplesheet_76: 6101112506486070190
+      thetemplesheet_77: -5368361891977865603
+      thetemplesheet_78: 2418207525950192623
+      thetemplesheet_79: 7547092761652345810
+      thetemplesheet_8: 3064763869271610679
+      thetemplesheet_80: 909393881857285095
+      thetemplesheet_81: -491675428528788477
+      thetemplesheet_82: -6321236462089040957
+      thetemplesheet_83: -7931147561334966314
+      thetemplesheet_84: 2296675140615905703
+      thetemplesheet_85: -1283820674684253466
+      thetemplesheet_86: -1064976832725189018
+      thetemplesheet_87: 2593816472279948369
+      thetemplesheet_88: -7778295020981360452
+      thetemplesheet_89: 8752481247512978736
+      thetemplesheet_9: -7609555697126104735
+      thetemplesheet_90: 8871092208306370628
+      thetemplesheet_91: 7635035380411635082
+      thetemplesheet_92: 2278774412446742891
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

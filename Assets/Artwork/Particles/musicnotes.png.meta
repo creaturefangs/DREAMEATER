@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: f6ffee4ee56b0464d9154dce709ab629
+guid: 6a015d456df936f4fb695486fc2e41f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1061549794814402868
-    second: space__r1437994661_0
+      213: -1203332162443041406
+    second: musicnotes_0
+  - first:
+      213: -6302856141895075735
+    second: musicnotes_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: space__r1437994661_0
+      name: musicnotes_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 640
-        height: 360
+        y: 125
+        width: 276
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cced2b0061e9441f0800000000000000
-      internalID: -1061549794814402868
+      spriteID: 285a7c616c7ec4fe0800000000000000
+      internalID: -1203332162443041406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: musicnotes_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 0
+        width: 198
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96874ff9bb1c788a0800000000000000
+      internalID: -6302856141895075735
       vertices: []
       indices: 
       edges: []
@@ -134,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      space__r1437994661_0: -1061549794814402868
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

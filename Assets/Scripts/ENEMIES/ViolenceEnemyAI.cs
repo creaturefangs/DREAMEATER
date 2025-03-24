@@ -108,12 +108,22 @@ public class ViolenceEnemyAI : MonoBehaviour
         {
             yield return new WaitForSeconds(currentFootstepDelay);
 
+            if (footstepPrefab == null || leftSpawn == null || rightSpawn == null)
+            {
+                Debug.LogWarning("Footstep prefab or spawn points not assigned!");
+                continue; // Skip this iteration if missing references
+            }
+
             Transform spawnPoint = spawnLeft ? leftSpawn : rightSpawn;
             GameObject footstep = Instantiate(footstepPrefab, spawnPoint.position, Quaternion.identity);
-            Destroy(footstep, 1f); // Destroy footstep prefab after 2 seconds
+            Debug.Log("Footstep spawned at: " + spawnPoint.position); // Debugging check
+
+            Destroy(footstep, 2f); // Destroy footstep prefab after 2 seconds
 
             if (audioSource && footstepSFX)
+            {
                 audioSource.PlayOneShot(footstepSFX);
+            }
 
             spawnLeft = !spawnLeft;
         }

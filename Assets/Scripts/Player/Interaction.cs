@@ -12,16 +12,17 @@ public class Interaction : MonoBehaviour
 
     public ScriptableObject interactionData; // Can be SO_Dialogue, SO_Scrolls, or SO_Tablets
 
+    public InteractableObject interactableObject;
 
-    private InteractableObject interactableObject;
-
-    void Update()
+    private void Update()
     {
-        // Toggle UI based on interaction availability
+        // Toggle UI based on interaction availability and range
         if (interactionUI != null)
         {
-            interactionUI.SetActive(interactableObject != null);
-            if (interactionText != null && interactableObject != null)
+            bool showUI = interactableObject != null && interactableObject.IsPlayerInRange(transform);
+            interactionUI.SetActive(showUI);
+
+            if (interactionText != null && showUI)
             {
                 interactionText.text = interactionMessage;
             }
@@ -33,7 +34,7 @@ public class Interaction : MonoBehaviour
             Interact();
         }
 
-        // Click to interact
+        // Click to interact (only if within range)
         if (Input.GetMouseButtonDown(0))
         {
             CheckMouseClick();
@@ -45,7 +46,7 @@ public class Interaction : MonoBehaviour
         interactableObject = obj;
     }
 
-    void Interact()
+    private void Interact()
     {
         if (interactableObject != null)
         {
@@ -59,7 +60,7 @@ public class Interaction : MonoBehaviour
         }
     }
 
-    void CheckMouseClick()
+    private void CheckMouseClick()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0f; // Keep in 2D space
@@ -68,7 +69,7 @@ public class Interaction : MonoBehaviour
         if (hitCollider != null)
         {
             InteractableObject clickedObject = hitCollider.GetComponent<InteractableObject>();
-            if (clickedObject != null)
+            if (clickedObject != null && clickedObject.IsPlayerInRange(transform))
             {
                 interactableObject = clickedObject;
                 Interact();
