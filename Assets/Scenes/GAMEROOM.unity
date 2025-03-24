@@ -3743,11 +3743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7716419258918232143, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 395
+      value: 76.2
       objectReference: {fileID: 0}
     - target: {fileID: 7716419258918232143, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -44
+      value: 74.7
       objectReference: {fileID: 0}
     - target: {fileID: 7716419258918232143, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6214,8 +6214,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -66954007
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -20022,7 +20022,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -2.6888504, y: -3.6761627}
+  m_Offset: {x: -2.148903, y: -2.5962677}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -20032,7 +20032,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 10.119492, y: 5.0226746}
+  m_Size: {x: 8.499649, y: 1.3030396}
   m_EdgeRadius: 0
 --- !u!95 &1273157724
 Animator:
@@ -37089,9 +37089,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 869539661}
     m_Modifications:
+    - target: {fileID: 1453732962903366989, guid: 4a14d2523fa1cd54babdb81a67c9f5b6, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533604612030552405, guid: 4a14d2523fa1cd54babdb81a67c9f5b6, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1958048641049769144, guid: 4a14d2523fa1cd54babdb81a67c9f5b6, type: 3}
       propertyPath: m_Name
       value: Enemy_VIOLENCE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958048641049769144, guid: 4a14d2523fa1cd54babdb81a67c9f5b6, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958048641049769144, guid: 4a14d2523fa1cd54babdb81a67c9f5b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6077562428796904294, guid: 4a14d2523fa1cd54babdb81a67c9f5b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37137,10 +37153,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1813442383}
-    - target: {fileID: 8765691191844952563, guid: 4a14d2523fa1cd54babdb81a67c9f5b6, type: 3}
-      propertyPath: chaseSpeed
-      value: 4.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8765691191844952563, guid: 4a14d2523fa1cd54babdb81a67c9f5b6, type: 3}
       propertyPath: audioSource
       value: 
