@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      6 by 6 orthogonal maze_0: -7283800479430197414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
