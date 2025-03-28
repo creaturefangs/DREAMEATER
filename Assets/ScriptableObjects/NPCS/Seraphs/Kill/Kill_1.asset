@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7d9ba8eb5efc5439a9b47c05544398, type: 3}
+  m_Name: Kill_1
+  m_EditorClassIdentifier: 
+  characterName: Kill
+  characterPortrait: {fileID: 0}
+  dialogueLines:
+  - Once, the sickness lived in me. You know this?
+  - Not like the stories, all horror and gnashing teeth. No, it was quiet. Slow.
+    A creeping thing.
+  - Nothing changed. No one cared. Not for me.
+  - You sicken, you fade, you die. That is all.
+  - Violence is the same. A cancer in the bone.
+  - "Fight fire with fire too long, and all that\u2019s left is ash."
+  dialogueSFX: {fileID: 8300000, guid: 163f16d94701318488f38f6da3a61d48, type: 3}
+  dialogueFont: {fileID: 11400000, guid: 28849b96d61a205479d03b284178280d, type: 2}

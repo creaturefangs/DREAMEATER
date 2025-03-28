@@ -95,6 +95,7 @@ public class DialogueManager : MonoBehaviour
         currentDialogue = dialogue;
         dialoguePanel.SetActive(true);
         nameText.text = currentDialogue.characterName;
+        dialogueText.font = currentDialogue.dialogueFont;
         characterPortrait.sprite = currentDialogue.characterPortrait;
         currentDialogueIndex = 0;
 
