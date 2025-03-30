@@ -6,31 +6,35 @@ public class HealthBarManager : MonoBehaviour
 {
     [Header("HealthBar Variables")]
     public Image healthBarFill;
+    public CanvasGroup healthBarCanvasGroup;
     public float maxHealth = 100f;
     private float currentHealth;
 
     [SerializeField] private SpriteRenderer playerSprite;
-    public Animator playerAnimator; // Reference to the Animator
-    public GameObject deathScreenPanel; // UI panel to show on death
+    public Animator playerAnimator;
+    public GameObject deathScreenPanel;
 
     [Header("Visual & Audio Feedback")]
     [SerializeField] private AudioSource playerAudio;
     [SerializeField] private AudioClip healSound;
     [SerializeField] private AudioClip damageSFX;
     [SerializeField] private float flashDuration = 0.2f;
+    [SerializeField] private float uiFadeDelay = 3f; // Time before fading out
 
     private Color originalColor;
     private bool isFlashing = false;
+    private Coroutine fadeCoroutine;
 
     private void Start()
     {
-        currentHealth = 0f; // Start at 0 instead of maxHealth
+        currentHealth = 0f;
+        healthBarCanvasGroup.alpha = 0f; // Start hidden
         UpdateHealthBar();
     }
 
     public void Heal(int amount)
     {
-        currentHealth = Mathf.Min(currentHealth - amount, maxHealth); // Prevent overhealing
+        currentHealth = Mathf.Min(currentHealth - amount, maxHealth);
         UpdateHealthBar();
         PlayHealEffects();
     }
@@ -66,15 +70,13 @@ public class HealthBarManager : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currentHealth += damage; // Increase health instead of subtracting
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // Prevent overflow
+        currentHealth += damage;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         UpdateHealthBar();
         playerAudio.PlayOneShot(damageSFX);
 
-        // Flash red effect
         StartCoroutine(FlashRed());
 
-        // Check for death condition
         if (currentHealth >= maxHealth)
         {
             StartCoroutine(HandleDeath());
@@ -90,8 +92,36 @@ public class HealthBarManager : MonoBehaviour
 
         if (playerSprite != null)
         {
-            originalColor = playerSprite.color; // Store original color
+            originalColor = playerSprite.color;
         }
+
+        ShowHealthBar();
+    }
+
+    private void ShowHealthBar()
+    {
+        if (fadeCoroutine != null)
+        {
+            StopCoroutine(fadeCoroutine);
+        }
+        healthBarCanvasGroup.alpha = 1f;
+        fadeCoroutine = StartCoroutine(HideHealthBarAfterDelay());
+    }
+
+    private IEnumerator HideHealthBarAfterDelay()
+    {
+        yield return new WaitForSeconds(uiFadeDelay);
+        float fadeDuration = 1f;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            healthBarCanvasGroup.alpha = Mathf.Lerp(1, 0, elapsedTime / fadeDuration);
+            yield return null;
+        }
+
+        healthBarCanvasGroup.alpha = 0f;
     }
 
     private IEnumerator FlashRed()
@@ -99,12 +129,8 @@ public class HealthBarManager : MonoBehaviour
         if (playerSprite != null)
         {
             isFlashing = true;
-
-            // Change color using material property
             playerSprite.material.SetColor("_Color", Color.red);
             yield return new WaitForSeconds(0.1f);
-
-            // Restore the original color
             playerSprite.material.SetColor("_Color", originalColor);
             isFlashing = false;
         }
@@ -114,17 +140,15 @@ public class HealthBarManager : MonoBehaviour
     {
         if (playerAnimator != null)
         {
-            playerAnimator.SetTrigger("Die"); // Trigger death animation
+            playerAnimator.SetTrigger("Die");
         }
 
-        yield return new WaitForSeconds(1f); // Wait for animation to play
+        yield return new WaitForSeconds(1f);
 
-        // Pause the game but allow music to play
-        Time.timeScale = 0f; // Stops all movement and physics
-        AudioListener.pause = false; // Ensures global audio isn't paused
-        playerAudio.ignoreListenerPause = true; // Allows player's audio to continue
+        Time.timeScale = 0f;
+        AudioListener.pause = false;
+        playerAudio.ignoreListenerPause = true;
 
-        // Fade in death screen UI
         if (deathScreenPanel != null)
         {
             CanvasGroup canvasGroup = deathScreenPanel.GetComponent<CanvasGroup>();
@@ -153,5 +177,6 @@ public class HealthBarManager : MonoBehaviour
 
         canvasGroup.alpha = 1;
     }
+
 }
 

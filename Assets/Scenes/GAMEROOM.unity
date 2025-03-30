@@ -4000,6 +4000,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 983528756193937780, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
+      propertyPath: healthBarCanvasGroup
+      value: 
+      objectReference: {fileID: 1713934034}
+    - target: {fileID: 1764908042569807859, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 1911084903}
     - target: {fileID: 2693857133815248659, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: _audio
       value: 
@@ -4007,6 +4015,10 @@ PrefabInstance:
     - target: {fileID: 2971026669541049531, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4852542576089086269, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7716419258918232143, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4047,6 +4059,15 @@ PrefabInstance:
     - target: {fileID: 7716419258918232143, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188177958090619372, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188177958090619372, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[0].assemblyQualifiedName
+      value: UnderwaterPostProcessing, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6131,7 +6152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7657589972481720649, guid: 37cb355b0ebcf224cbfd8d5e25f47908, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7657589972481720649, guid: 37cb355b0ebcf224cbfd8d5e25f47908, type: 3}
       propertyPath: m_SortingOrder
@@ -21988,7 +22009,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.875, y: 3.5}
+    oldSize: {x: 13.75, y: 7}
     newSize: {x: 6.875, y: 3.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -23282,7 +23303,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.289
+  m_Volume: 0.235
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -23402,6 +23423,11 @@ Transform:
   - {fileID: 995325990}
   m_Father: {fileID: 869539661}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!225 &1713934034 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 5963649309206695673, guid: 6b7a325b0cdf0604cafeb9df80870f6e, type: 3}
+  m_PrefabInstance: {fileID: 472548435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1715718748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433274157617259092, guid: f52d7f1be4cd1f049b41343c1d531f56, type: 3}

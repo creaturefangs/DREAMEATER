@@ -4,8 +4,9 @@ public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     private bool isPaused = false;
-    public AudioSource backgroundMusic; // Assign this in the Inspector
+    public AudioSource backgroundMusic;
 
+    public static bool GameIsPaused { get; private set; } = false; // Global reference for other scripts
 
     void Update()
     {
@@ -21,34 +22,32 @@ public class PauseManager : MonoBehaviour
     public void PauseGame()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f; // Pause game time
+        Time.timeScale = 0f;
         isPaused = true;
+        GameIsPaused = true; // Set global pause state
 
         if (backgroundMusic != null)
         {
-            backgroundMusic.Pause(); // Pause background music
+            backgroundMusic.Pause();
         }
     }
 
     public void ResumeGame()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f; // Resume game time
+        Time.timeScale = 1f;
         isPaused = false;
+        GameIsPaused = false; // Reset global pause state
 
         if (backgroundMusic != null)
         {
-            backgroundMusic.UnPause(); // Resume background music
+            backgroundMusic.UnPause();
         }
     }
 
     public void QuitGame()
     {
         Time.timeScale = 1f; // Ensure time resumes before quitting
-
-
-
-        Application.Quit(); // Quit the application in a build
-
+        Application.Quit();
     }
 }
