@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: b0281655298ada546bb9d149457d406d
+guid: 1b3af4e289b004b448f10f1f8a59026c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5185933377154640398
-    second: mazetileset_0
-  - first:
-      213: 1649077462454733484
-    second: mazetileset_1
-  - first:
-      213: -3256589519888422810
-    second: mazetileset_2
+      213: -5708208780546930529
+    second: thegardentile_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mazetileset_0
+      name: thegardentile_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 319
-        width: 285
-        height: 53
+        x: 0
+        y: 0
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f51bd9d11dd708b0800000000000000
-      internalID: -5185933377154640398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mazetileset_1
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 53
-        width: 47
-        height: 261
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: caa87b40733b2e610800000000000000
-      internalID: 1649077462454733484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mazetileset_2
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 9
-        width: 51
-        height: 293
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6686ac7f5154ec2d0800000000000000
-      internalID: -3256589519888422810
+      spriteID: f980cb38b5e58c0b0800000000000000
+      internalID: -5708208780546930529
       vertices: []
       indices: 
       edges: []
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mazetileset_0: -5185933377154640398
-      mazetileset_1: 1649077462454733484
-      mazetileset_2: -3256589519888422810
+      thegardentile_0: -5708208780546930529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
