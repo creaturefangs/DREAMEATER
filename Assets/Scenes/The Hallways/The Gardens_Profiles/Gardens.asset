@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3095462679154916915
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c811b393bf43a499d7e4fc004cc0c0, type: 3}
+  m_Name: OilspillEffect
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  distortionStrength:
+    overrideState: 1
+    value: 0.162
+  distortionSpeed:
+    overrideState: 1
+    value: 0.18
+  distortionTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: 3ea9bab6015118d4ea4823d5e8cebb80, type: 3}
+    defaultState: 1
+  distortionTiling:
+    overrideState: 1
+    value: {x: 1.4, y: 1}
+  distortionOpacity:
+    overrideState: 1
+    value: 0.03
+  tintColor:
+    overrideState: 1
+    value: {r: 1, g: 1, b: 1, a: 1}
+  hueShiftSpeed:
+    overrideState: 1
+    value: 0.14
+  effectOpacity:
+    overrideState: 1
+    value: 1
+  enableChromaticAberration:
+    overrideState: 1
+    value: 1
 --- !u!114 &-904651633395597681
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -18,10 +62,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0
+    value: 10.59
   threshold:
     overrideState: 1
-    value: 1
+    value: 0.87
   softKnee:
     overrideState: 1
     value: 0.5
@@ -32,20 +76,20 @@ MonoBehaviour:
     overrideState: 1
     value: 7
   anamorphicRatio:
-    overrideState: 0
+    overrideState: 1
     value: 0
   color:
-    overrideState: 0
+    overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
   fastMode:
-    overrideState: 0
+    overrideState: 1
     value: 0
   dirtTexture:
-    overrideState: 0
+    overrideState: 1
     value: {fileID: 0}
     defaultState: 1
   dirtIntensity:
-    overrideState: 0
+    overrideState: 1
     value: 0
 --- !u!114 &11400000
 MonoBehaviour:
@@ -61,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
   - {fileID: -904651633395597681}
-  - {fileID: 6065199279385864897}
+  - {fileID: -3095462679154916915}
 --- !u!114 &6065199279385864897
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -79,18 +123,18 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   distortionTex:
-    overrideState: 0
-    value: {fileID: 0}
+    overrideState: 1
+    value: {fileID: 2800000, guid: 3fb366f362462de44a42714c5605c4d2, type: 3}
     defaultState: 1
   distortionStrength:
-    overrideState: 0
-    value: 0.15
+    overrideState: 1
+    value: 0.28
   hueShiftSpeed:
-    overrideState: 0
+    overrideState: 1
     value: 1
   overlayStrength:
-    overrideState: 0
+    overrideState: 1
     value: 1
   scrollSpeed:
-    overrideState: 0
-    value: {x: 0.05, y: 0.05}
+    overrideState: 1
+    value: {x: 0.2, y: 0.2}

@@ -1,64 +1,120 @@
-Shader "Hidden/PostProcessing/MysticalOilspill"
+Shader "Hidden/MysticalOilSpill"
 {
     Properties
     {
-        _MainTex ("MainTex", 2D) = "white" {}
-        _DistortionTex ("Distortion Map", 2D) = "gray" {}
-        _DistortionStrength ("Distortion Strength", Range(0, 1)) = 0.2
-        _HueShiftSpeed ("Hue Shift Speed", Range(0, 5)) = 1.0
-        _OverlayStrength ("Overlay Strength", Range(0, 2)) = 1.0
-        _ScrollSpeed ("Distortion Scroll Speed", Vector) = (0.1, 0.1, 0, 0)
+        _MainTex("Main Texture", 2D) = "white" {}
+        _DistortionTex("Distortion Texture", 2D) = "white" {}
+        _TintColor("Tint Color", Color) = (1,1,1,1)
+        _HueShiftSpeed("Hue Shift Speed", Float) = 1
+        _DistortionStrength("Distortion Strength", Float) = 0.1
+        _DistortionSpeed("Distortion Speed", Float) = 1
+        _DistortionTiling("Distortion Tiling", Vector) = (1,1,0,0)
+        _DistortionOpacity("Distortion Opacity", Float) = 1
+        _EffectOpacity("Effect Opacity", Float) = 1
+        _EnableChromaticAberration("Enable Chromatic Aberration", Float) = 1
+        _TimeX("Time", Float) = 0
     }
 
     SubShader
     {
-        Cull Off ZWrite Off ZTest Always
-
+        Tags { "RenderType" = "Opaque" }
         Pass
         {
+            ZTest Always Cull Off ZWrite Off
+
             CGPROGRAM
-            #pragma vertex vert_img
+            #pragma vertex vert
             #pragma fragment frag
+
             #include "UnityCG.cginc"
 
             sampler2D _MainTex;
             sampler2D _DistortionTex;
 
-            float _DistortionStrength;
-            float _HueShiftSpeed;
-            float _OverlayStrength;
-            float4 _ScrollSpeed;
+            float4 _MainTex_TexelSize;
 
-            float _TimeY;
+            float4 _TintColor;
+            float _HueShiftSpeed;
+            float _DistortionStrength;
+            float _DistortionSpeed;
+            float2 _DistortionTiling;
+            float _DistortionOpacity;
+            float _EffectOpacity;
+            float _EnableChromaticAberration;
+            float _TimeX;
+
+            struct appdata
+            {
+                float4 vertex : POSITION;
+                float2 uv : TEXCOORD0;
+            };
+
+            struct v2f
+            {
+                float2 uv : TEXCOORD0;
+                float4 vertex : SV_POSITION;
+            };
+
+            v2f vert(appdata v)
+            {
+                v2f o;
+                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.uv = v.uv;
+                return o;
+            }
 
             float3 HueShift(float3 color, float shift)
             {
-                float angle = shift * 6.2831; // 2 * PI
+                float angle = shift * 6.2831853; // 2 * PI
                 float s = sin(angle), c = cos(angle);
-                float3x3 hueRot = float3x3(
-                    0.299 + 0.701 * c + 0.168 * s, 0.587 - 0.587 * c + 0.330 * s, 0.114 - 0.114 * c - 0.497 * s,
-                    0.299 - 0.299 * c - 0.328 * s, 0.587 + 0.413 * c + 0.035 * s, 0.114 - 0.114 * c + 0.292 * s,
-                    0.299 - 0.3   * c + 1.25  * s, 0.587 - 0.588 * c - 1.05  * s, 0.114 + 0.886 * c - 0.203 * s
+                float3 weights = (float3(2.0 * c, -sqrt(3.0) * s - c, sqrt(3.0) * s - c) + 1.0) / 3.0;
+                return float3(
+                    dot(color, weights.xyz),
+                    dot(color, weights.zxy),
+                    dot(color, weights.yzx)
                 );
-                return saturate(mul(color, hueRot));
             }
 
-            fixed4 frag(v2f_img i) : SV_Target
+            fixed4 frag(v2f i) : SV_Target
             {
-                float2 scrollUV = i.uv + _TimeY * _ScrollSpeed.xy;
-                float2 distortion = (tex2D(_DistortionTex, scrollUV).rg - 0.5) * _DistortionStrength;
+                // Scroll distortion texture
+                float2 distortionUV = i.uv * _DistortionTiling;
+                distortionUV += float2(_TimeX * _DistortionSpeed, _TimeX * _DistortionSpeed);
+                float3 distortion = tex2D(_DistortionTex, distortionUV).rgb;
 
-                float2 uv = i.uv + distortion;
-                float3 baseColor = tex2D(_MainTex, uv).rgb;
+                // Apply distortion with opacity
+                float2 offset = (distortion.rg - 0.5) * 2 * _DistortionStrength * _DistortionOpacity;
+                float2 uvDistorted = i.uv + offset;
 
-                float hueShift = frac(_TimeY * _HueShiftSpeed);
-                float3 iridescentColor = HueShift(baseColor, hueShift);
+                float4 color = tex2D(_MainTex, uvDistorted);
 
-                float3 finalColor = lerp(baseColor, iridescentColor, _OverlayStrength);
-                return float4(finalColor, 1.0);
+                // Hue shift
+                color.rgb = HueShift(color.rgb, _TimeX * _HueShiftSpeed);
+
+                // Tint
+                color.rgb *= _TintColor.rgb;
+
+                // Optional chromatic aberration
+                if (_EnableChromaticAberration > 0.5)
+                {
+                    float2 offsetR = offset * 0.5;
+                    float2 offsetG = offset * 0.25;
+                    float2 offsetB = offset * -0.25;
+
+                    float r = tex2D(_MainTex, i.uv + offsetR).r;
+                    float g = tex2D(_MainTex, i.uv + offsetG).g;
+                    float b = tex2D(_MainTex, i.uv + offsetB).b;
+
+                    color.rgb = float3(r, g, b);
+                }
+
+                // Final blend with original based on EffectOpacity
+                float4 original = tex2D(_MainTex, i.uv);
+                color = lerp(original, color, _EffectOpacity);
+
+                return color;
             }
             ENDCG
         }
     }
-    Fallback Off
 }
