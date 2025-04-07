@@ -1,12 +1,13 @@
 using UnityEngine;
+using System.Collections;
 
-public class LevelManager : MonoBehaviour
+public class LevelController : MonoBehaviour
 {
-    public static LevelManager Instance;
+    public static LevelController Instance;
 
     public bool puzzleCompleted = false;
 
-    [SerializeField] private LockableDoorTeleport puzzleDoor;
+    [SerializeField] private DoorTeleport puzzleDoor;
 
     private void Awake()
     {
@@ -31,3 +32,5 @@ public class LevelManager : MonoBehaviour
         }
     }
 }
+
+

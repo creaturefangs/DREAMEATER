@@ -54,15 +54,14 @@ public class LockableDoorTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(gameObject.name + " triggered by " + other.name); // Debugging collision
-
         if (other.CompareTag("Player") && linkedDoor != null && !isTeleporting)
         {
             if (isLocked)
             {
-                Debug.Log("Door is locked!");
-                yield break;
+                Debug.Log("Door is locked. Puzzle must be completed first.");
+                return; // Exit early if locked
             }
+
             StartCoroutine(TeleportPlayer(other.transform));
         }
     }
