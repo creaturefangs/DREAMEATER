@@ -10318,7 +10318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6403c28050a3c6247bf5f44e8ef984c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctSequence: 020000000300000001000000
+  correctSequence: 02000000030000000100000000000000
 --- !u!1 &2066331377
 GameObject:
   m_ObjectHideFlags: 0
