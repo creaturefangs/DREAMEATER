@@ -1,0 +1,4121 @@
+fileFormatVersion: 2
+guid: 74059c78dc2bc5c488ea6dd005c39cb6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5333625248806894816
+    second: the gardens2_0
+  - first:
+      213: 613894939105357265
+    second: the gardens2_1
+  - first:
+      213: 5823594478017684500
+    second: the gardens2_2
+  - first:
+      213: -6044943549551636485
+    second: the gardens2_3
+  - first:
+      213: 462989674628983706
+    second: the gardens2_4
+  - first:
+      213: 8749072220320563571
+    second: the gardens2_5
+  - first:
+      213: 5433055962481207942
+    second: the gardens2_6
+  - first:
+      213: -4835605394026537994
+    second: the gardens2_7
+  - first:
+      213: -2679160214932931589
+    second: the gardens2_8
+  - first:
+      213: -8057584652300625372
+    second: the gardens2_9
+  - first:
+      213: -3028269858568024330
+    second: the gardens2_10
+  - first:
+      213: -4139230277285475761
+    second: the gardens2_11
+  - first:
+      213: 7155675773775276046
+    second: the gardens2_12
+  - first:
+      213: 4173632374738815629
+    second: the gardens2_13
+  - first:
+      213: -2418027204987492049
+    second: the gardens2_14
+  - first:
+      213: -9010691242719631664
+    second: the gardens2_15
+  - first:
+      213: 8829005471015897896
+    second: the gardens2_16
+  - first:
+      213: 7325209678665389434
+    second: the gardens2_17
+  - first:
+      213: -8261113604310054254
+    second: the gardens2_18
+  - first:
+      213: 9168895770870238891
+    second: the gardens2_19
+  - first:
+      213: -1826753016554911664
+    second: the gardens2_20
+  - first:
+      213: -6468157478029013170
+    second: the gardens2_21
+  - first:
+      213: -224624181149680872
+    second: the gardens2_22
+  - first:
+      213: 1525994612744890588
+    second: the gardens2_23
+  - first:
+      213: 2389750471946116316
+    second: the gardens2_24
+  - first:
+      213: -2166835087560517663
+    second: the gardens2_25
+  - first:
+      213: 8231649426870869687
+    second: the gardens2_26
+  - first:
+      213: 8090087341176256330
+    second: the gardens2_27
+  - first:
+      213: -6953773473578714580
+    second: the gardens2_28
+  - first:
+      213: -4111097119778120703
+    second: the gardens2_29
+  - first:
+      213: -8569038410354265155
+    second: the gardens2_30
+  - first:
+      213: -1952562076751242045
+    second: the gardens2_31
+  - first:
+      213: -5867155881446153124
+    second: the gardens2_32
+  - first:
+      213: 3621058079137564063
+    second: the gardens2_33
+  - first:
+      213: -1243007304431862955
+    second: the gardens2_34
+  - first:
+      213: -4349533477227136788
+    second: the gardens2_35
+  - first:
+      213: 5772602368412793211
+    second: the gardens2_36
+  - first:
+      213: 910877303277757504
+    second: the gardens2_37
+  - first:
+      213: 8162977445343554794
+    second: the gardens2_38
+  - first:
+      213: -7417482869743561634
+    second: the gardens2_39
+  - first:
+      213: 2238772814269836023
+    second: the gardens2_40
+  - first:
+      213: 2068222420629806385
+    second: the gardens2_41
+  - first:
+      213: 1191334407942901416
+    second: the gardens2_42
+  - first:
+      213: 41126542054565792
+    second: the gardens2_43
+  - first:
+      213: -4049106317653633294
+    second: the gardens2_44
+  - first:
+      213: 237255526922051263
+    second: the gardens2_45
+  - first:
+      213: -324502473561720740
+    second: the gardens2_46
+  - first:
+      213: -6575020551181989683
+    second: the gardens2_47
+  - first:
+      213: 262891997972273529
+    second: the gardens2_48
+  - first:
+      213: 2739411272517466455
+    second: the gardens2_49
+  - first:
+      213: 4454760968310994466
+    second: the gardens2_50
+  - first:
+      213: 2357479668684859731
+    second: the gardens2_51
+  - first:
+      213: 2682851645887976970
+    second: the gardens2_52
+  - first:
+      213: -881807210719887461
+    second: the gardens2_53
+  - first:
+      213: -784742370462320022
+    second: the gardens2_54
+  - first:
+      213: -8945220961804833906
+    second: the gardens2_55
+  - first:
+      213: 8613772064615815102
+    second: the gardens2_56
+  - first:
+      213: -7714056952538663659
+    second: the gardens2_57
+  - first:
+      213: -6638003008211804435
+    second: the gardens2_58
+  - first:
+      213: -4089904179344998843
+    second: the gardens2_59
+  - first:
+      213: -9083815612464288282
+    second: the gardens2_60
+  - first:
+      213: 6319545109137592588
+    second: the gardens2_61
+  - first:
+      213: -1030720854186306950
+    second: the gardens2_62
+  - first:
+      213: -4691868091518619299
+    second: the gardens2_63
+  - first:
+      213: 4156994386249619727
+    second: the gardens2_64
+  - first:
+      213: -4486685215162168577
+    second: the gardens2_65
+  - first:
+      213: 5382679624806359102
+    second: the gardens2_66
+  - first:
+      213: 5581587749815434262
+    second: the gardens2_67
+  - first:
+      213: 7127373870015824479
+    second: the gardens2_68
+  - first:
+      213: -1411919052529417967
+    second: the gardens2_69
+  - first:
+      213: -1740322153328635750
+    second: the gardens2_70
+  - first:
+      213: -1482980723677583913
+    second: the gardens2_71
+  - first:
+      213: -4233435129726745550
+    second: the gardens2_72
+  - first:
+      213: 7326818301027773580
+    second: the gardens2_73
+  - first:
+      213: -1513483069980171168
+    second: the gardens2_74
+  - first:
+      213: 7250616490200786353
+    second: the gardens2_75
+  - first:
+      213: 2319344494340938931
+    second: the gardens2_76
+  - first:
+      213: 1046353659537410967
+    second: the gardens2_77
+  - first:
+      213: 6516795828062499621
+    second: the gardens2_78
+  - first:
+      213: -1374205740721171941
+    second: the gardens2_79
+  - first:
+      213: -1614671921173402654
+    second: the gardens2_80
+  - first:
+      213: 4927364757760267534
+    second: the gardens2_81
+  - first:
+      213: 4075290396201650591
+    second: the gardens2_82
+  - first:
+      213: 2173700770211675836
+    second: the gardens2_83
+  - first:
+      213: -4110598608429877858
+    second: the gardens2_84
+  - first:
+      213: -4841208518818237253
+    second: the gardens2_85
+  - first:
+      213: 1907710173739751765
+    second: the gardens2_86
+  - first:
+      213: 2986149756811858325
+    second: the gardens2_87
+  - first:
+      213: 5599532978484715443
+    second: the gardens2_88
+  - first:
+      213: 8137442750495086762
+    second: the gardens2_89
+  - first:
+      213: 3379706711239877658
+    second: the gardens2_90
+  - first:
+      213: 4388102242963577227
+    second: the gardens2_91
+  - first:
+      213: -5754128089652076947
+    second: the gardens2_92
+  - first:
+      213: 7141480313274320645
+    second: the gardens2_93
+  - first:
+      213: -3591177381141586829
+    second: the gardens2_94
+  - first:
+      213: 2519971033054599173
+    second: the gardens2_95
+  - first:
+      213: -1152655646208924885
+    second: the gardens2_96
+  - first:
+      213: 1274054885979052408
+    second: the gardens2_97
+  - first:
+      213: -847045062006060579
+    second: the gardens2_98
+  - first:
+      213: 465342705632532227
+    second: the gardens2_99
+  - first:
+      213: 555383820534760698
+    second: the gardens2_100
+  - first:
+      213: 853720485547790847
+    second: the gardens2_101
+  - first:
+      213: 8268677346041973487
+    second: the gardens2_102
+  - first:
+      213: -114913828530927084
+    second: the gardens2_103
+  - first:
+      213: 138853458815861923
+    second: the gardens2_104
+  - first:
+      213: 5746205282102379058
+    second: the gardens2_105
+  - first:
+      213: -116216847270267667
+    second: the gardens2_106
+  - first:
+      213: 5660986462914781229
+    second: the gardens2_107
+  - first:
+      213: 2367689730933804199
+    second: the gardens2_108
+  - first:
+      213: 3205665488230028781
+    second: the gardens2_109
+  - first:
+      213: 3066771602482501426
+    second: the gardens2_110
+  - first:
+      213: -3166454343349353219
+    second: the gardens2_111
+  - first:
+      213: -7421122067906349785
+    second: the gardens2_112
+  - first:
+      213: -508438646433362952
+    second: the gardens2_113
+  - first:
+      213: 5441437555978598052
+    second: the gardens2_114
+  - first:
+      213: -5167201089805423637
+    second: the gardens2_115
+  - first:
+      213: 1807320446026424305
+    second: the gardens2_116
+  - first:
+      213: -473263883828661568
+    second: the gardens2_117
+  - first:
+      213: 4450757356561752743
+    second: the gardens2_118
+  - first:
+      213: 2345843320226906434
+    second: the gardens2_119
+  - first:
+      213: 2241479010908588628
+    second: the gardens2_120
+  - first:
+      213: -3704088205394525079
+    second: the gardens2_121
+  - first:
+      213: 6302349782256062222
+    second: the gardens2_122
+  - first:
+      213: -1458902645338007641
+    second: the gardens2_123
+  - first:
+      213: 540378747036763276
+    second: the gardens2_124
+  - first:
+      213: 951590373011195153
+    second: the gardens2_125
+  - first:
+      213: -5365011186325699832
+    second: the gardens2_126
+  - first:
+      213: -3864119442780992590
+    second: the gardens2_127
+  - first:
+      213: -2981441461348809013
+    second: the gardens2_128
+  - first:
+      213: -2469341138593190212
+    second: the gardens2_129
+  - first:
+      213: -7533404148131062905
+    second: the gardens2_130
+  - first:
+      213: 1416769285630050009
+    second: the gardens2_131
+  - first:
+      213: 7251219924469048857
+    second: the gardens2_132
+  - first:
+      213: -5990580476837493240
+    second: the gardens2_133
+  - first:
+      213: -7096583326062369723
+    second: the gardens2_134
+  - first:
+      213: 6630292044372440911
+    second: the gardens2_135
+  - first:
+      213: 3740721338759222357
+    second: the gardens2_136
+  - first:
+      213: -3216152471378616225
+    second: the gardens2_137
+  - first:
+      213: 1455816496342537024
+    second: the gardens2_138
+  - first:
+      213: -4148542029263689779
+    second: the gardens2_139
+  - first:
+      213: -7094802839008469418
+    second: the gardens2_140
+  - first:
+      213: 7806995635498629998
+    second: the gardens2_141
+  - first:
+      213: -5028221954649774495
+    second: the gardens2_142
+  - first:
+      213: 1679406583985125748
+    second: the gardens2_143
+  - first:
+      213: 920686234692026993
+    second: the gardens2_144
+  - first:
+      213: -261597113902226219
+    second: the gardens2_145
+  - first:
+      213: 3569780124708344980
+    second: the gardens2_146
+  - first:
+      213: 314726837650238516
+    second: the gardens2_147
+  - first:
+      213: 1263536249265411019
+    second: the gardens2_148
+  - first:
+      213: -7524279019670506786
+    second: the gardens2_149
+  - first:
+      213: 9120355676452455509
+    second: the gardens2_150
+  - first:
+      213: -1460177198165067545
+    second: the gardens2_151
+  - first:
+      213: -2466842769496332934
+    second: the gardens2_152
+  - first:
+      213: -8359089651428059601
+    second: the gardens2_153
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: the gardens2_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2153
+        width: 129
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0238fcf48182bf5b0800000000000000
+      internalID: -5333625248806894816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 2155
+        width: 122
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dde8cec13ef48800800000000000000
+      internalID: 613894939105357265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_2
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 2152
+        width: 147
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414ab22b25091d050800000000000000
+      internalID: 5823594478017684500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_3
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 2283
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff8fa18edb0c1ca0800000000000000
+      internalID: -6044943549551636485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_4
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 2217
+        width: 85
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b2fe2f7aedc6600800000000000000
+      internalID: 462989674628983706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_5
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 2290
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371027e64d2fa6970800000000000000
+      internalID: 8749072220320563571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_6
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 2290
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68aa280cc97166b40800000000000000
+      internalID: 5433055962481207942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_7
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 2155
+        width: 189
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbd517a38a74ecb0800000000000000
+      internalID: -4835605394026537994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_8
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 2217
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb3094baf5b1dad0800000000000000
+      internalID: -2679160214932931589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_9
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 2172
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a5bfb1375bd2090800000000000000
+      internalID: -8057584652300625372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_10
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 2227
+        width: 76
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fec70cab9c69f5d0800000000000000
+      internalID: -3028269858568024330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_11
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 2166
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a8bde4eff7e86c0800000000000000
+      internalID: -4139230277285475761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_12
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 2171
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e086ebf24311e4360800000000000000
+      internalID: 7155675773775276046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_13
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 2159
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a806f2888bbe930800000000000000
+      internalID: 4173632374738815629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_14
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 2098
+        width: 51
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f296d7d7111717ed0800000000000000
+      internalID: -2418027204987492049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_15
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 2154
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d629f03e0893f280800000000000000
+      internalID: -9010691242719631664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_16
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 2164
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b02e3a2bde68a70800000000000000
+      internalID: 8829005471015897896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2091
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a759a12646f58a560800000000000000
+      internalID: 7325209678665389434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_18
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 2123
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ac3f532f0aa5d80800000000000000
+      internalID: -8261113604310054254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2087
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae4d4def167e3f70800000000000000
+      internalID: 9168895770870238891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_20
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 2114
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0580fdb5fc116a6e0800000000000000
+      internalID: -1826753016554911664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_21
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2077
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f4bc22b0d7c36a0800000000000000
+      internalID: -6468157478029013170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_22
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2010
+        width: 150
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b3c925f79f1ecf0800000000000000
+      internalID: -224624181149680872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_23
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 2028
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8a1d5e30c6d2510800000000000000
+      internalID: 1525994612744890588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_24
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 2008
+        width: 71
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc9b2e84691a2120800000000000000
+      internalID: 2389750471946116316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_25
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 2067
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e75a1fd7fadde1e0800000000000000
+      internalID: -2166835087560517663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_26
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 2064
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be9f246a81bc3270800000000000000
+      internalID: 8231649426870869687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_27
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 2117
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47f1bcd293c54070800000000000000
+      internalID: 8090087341176256330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_28
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 2042
+        width: 70
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a7ec25edb3f7f90800000000000000
+      internalID: -6953773473578714580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_29
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 2051
+        width: 41
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c5e7a73f272f6c0800000000000000
+      internalID: -4111097119778120703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_30
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 2051
+        width: 55
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3f72c67f8a41980800000000000000
+      internalID: -8569038410354265155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_31
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 2051
+        width: 61
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ccd755e22b17e4e0800000000000000
+      internalID: -1952562076751242045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_32
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 2051
+        width: 37
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54ee84bfcca39ea0800000000000000
+      internalID: -5867155881446153124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_33
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 2051
+        width: 29
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f958d064325904230800000000000000
+      internalID: 3621058079137564063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_34
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 2051
+        width: 100
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b7f1e3173ffbee0800000000000000
+      internalID: -1243007304431862955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_35
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 2119
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8f437e85a53a3c0800000000000000
+      internalID: -4349533477227136788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_36
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1913
+        width: 124
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79b2def4476c1050800000000000000
+      internalID: 5772602368412793211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_37
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2082
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04426dfc41614ac00800000000000000
+      internalID: 910877303277757504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_38
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2041
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec6a3bbcb8b84170800000000000000
+      internalID: 8162977445343554794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_39
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2027
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54d36521aecf0990800000000000000
+      internalID: -7417482869743561634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_40
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2034
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7faea575308b11f10800000000000000
+      internalID: 2238772814269836023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_41
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2041
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d532a655dc3bc10800000000000000
+      internalID: 2068222420629806385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_42
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1911
+        width: 96
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae03220558788010800000000000000
+      internalID: 1191334407942901416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_43
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1934
+        width: 133
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7a0024f5c129000800000000000000
+      internalID: 41126542054565792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_44
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1939
+        width: 63
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f61776d14faec7c0800000000000000
+      internalID: -4049106317653633294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_45
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 2002
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbedf2b05a6ea4300800000000000000
+      internalID: 237255526922051263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_46
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 2014
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c583e9638b22f7bf0800000000000000
+      internalID: -324502473561720740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_47
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1983
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc887e705a5d0c4a0800000000000000
+      internalID: -6575020551181989683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_48
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1934
+        width: 104
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9791e6911eaf5a300800000000000000
+      internalID: 262891997972273529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_49
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1934
+        width: 53
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759ba10d908540620800000000000000
+      internalID: 2739411272517466455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_50
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1896
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226b3739f7d72dd30800000000000000
+      internalID: 4454760968310994466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_51
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1967
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359aa29a44377b020800000000000000
+      internalID: 2357479668684859731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_52
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1954
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06993a8b576b3520800000000000000
+      internalID: 2682851645887976970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_53
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1911
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9fb9ac830133c3f0800000000000000
+      internalID: -881807210719887461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_54
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1921
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a3568c8f80c15f0800000000000000
+      internalID: -784742370462320022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_55
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1902
+        width: 54
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8bae36dde03cd380800000000000000
+      internalID: -8945220961804833906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_56
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1806
+        width: 157
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7db971e044a8770800000000000000
+      internalID: 8613772064615815102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_57
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1826
+        width: 147
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515fcce821a22f490800000000000000
+      internalID: -7714056952538663659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_58
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1912
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee9f850f6311e3a0800000000000000
+      internalID: -6638003008211804435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_59
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1936
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e71c071ddbd37c0800000000000000
+      internalID: -4089904179344998843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_60
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1931
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed2bed14ddcfe180800000000000000
+      internalID: -9083815612464288282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_61
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1911
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01143c5bc883b750800000000000000
+      internalID: 6319545109137592588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_62
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1913
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7253a718d422b1f0800000000000000
+      internalID: -1030720854186306950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_63
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1911
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51fa0054d223eeb0800000000000000
+      internalID: -4691868091518619299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_64
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1896
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0993bd9e5c90b930800000000000000
+      internalID: 4156994386249619727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_65
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1865
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa034b71971cb1c0800000000000000
+      internalID: -4486685215162168577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_66
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1835
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30e050a99e13ba40800000000000000
+      internalID: 5382679624806359102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_67
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1841
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cbb666c78c57d40800000000000000
+      internalID: 5581587749815434262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_68
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1830
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52c1b7b5c489e260800000000000000
+      internalID: 7127373870015824479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_69
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1828
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111c0663a1bd76ce0800000000000000
+      internalID: -1411919052529417967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_70
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1830
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a909a10e83229d7e0800000000000000
+      internalID: -1740322153328635750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_71
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1768
+        width: 77
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5227493e46b6be0800000000000000
+      internalID: -1482980723677583913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_72
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1833
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2344af0ed21df35c0800000000000000
+      internalID: -4233435129726745550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_73
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1834
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c6796fc661ea560800000000000000
+      internalID: 7326818301027773580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_74
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1652
+        width: 151
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064a348aa270ffae0800000000000000
+      internalID: -1513483069980171168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_75
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1707
+        width: 127
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5e10d484d5f9460800000000000000
+      internalID: 7250616490200786353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_76
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 1807
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc13f87787ff2020800000000000000
+      internalID: 2319344494340938931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_77
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1840
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b482a0c15658e00800000000000000
+      internalID: 1046353659537410967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_78
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1656
+        width: 133
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523b965374f407a50800000000000000
+      internalID: 6516795828062499621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_79
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1820
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b121300e827ddece0800000000000000
+      internalID: -1374205740721171941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_80
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1755
+        width: 31
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb69ad41788799e0800000000000000
+      internalID: -1614671921173402654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_81
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1659
+        width: 119
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0554111424816440800000000000000
+      internalID: 4927364757760267534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_82
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1659
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99092606075e8830800000000000000
+      internalID: 4075290396201650591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_83
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1656
+        width: 120
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbeb57075598a2e10800000000000000
+      internalID: 2173700770211675836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_84
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1788
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e957252385834f6c0800000000000000
+      internalID: -4110598608429877858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_85
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1656
+        width: 136
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb47e30808290dcb0800000000000000
+      internalID: -4841208518818237253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_86
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 1755
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5591828ab4c897a10800000000000000
+      internalID: 1907710173739751765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_87
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1659
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591d3ece16fe07920800000000000000
+      internalID: 2986149756811858325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_88
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1661
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf9aaa839985bd40800000000000000
+      internalID: 5599532978484715443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_89
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1642
+        width: 53
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa8565b41110ee070800000000000000
+      internalID: 8137442750495086762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_90
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1606
+        width: 164
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14e470f85127ee20800000000000000
+      internalID: 3379706711239877658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_91
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 1540
+        width: 144
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8950f5adbba5ec30800000000000000
+      internalID: 4388102242963577227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_92
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1474
+        width: 86
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ed0383dfa3520b0800000000000000
+      internalID: -5754128089652076947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_93
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1474
+        width: 50
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507492bf182ab1360800000000000000
+      internalID: 7141480313274320645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_94
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1473
+        width: 52
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c53afd233992ec0800000000000000
+      internalID: -3591177381141586829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_95
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1443
+        width: 141
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5085e7d9d4cb8f220800000000000000
+      internalID: 2519971033054599173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_96
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1556
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b236e5bfbc1f000f0800000000000000
+      internalID: -1152655646208924885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_97
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1555
+        width: 77
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879d1272b2a5ea110800000000000000
+      internalID: 1274054885979052408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_98
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1557
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd941620101be34f0800000000000000
+      internalID: -847045062006060579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_99
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1470
+        width: 100
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307db0ca9ba357600800000000000000
+      internalID: 465342705632532227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_100
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1457
+        width: 126
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af449f864ae15b700800000000000000
+      internalID: 555383820534760698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_101
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1191
+        width: 332
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1dc86224609db00800000000000000
+      internalID: 853720485547790847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_102
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1473
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feac625ac3e30c270800000000000000
+      internalID: 8268677346041973487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_103
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1453
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a42a65b7eb76ef0800000000000000
+      internalID: -114913828530927084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_104
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 1453
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4cd803c7e4de100800000000000000
+      internalID: 138853458815861923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_105
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1218
+        width: 148
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2328f26624f9ebf40800000000000000
+      internalID: 5746205282102379058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_106
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1392
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de43a85a46d136ef0800000000000000
+      internalID: -116216847270267667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_107
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1254
+        width: 129
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20a450e13ddf8e40800000000000000
+      internalID: 5660986462914781229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_108
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1255
+        width: 190
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac46a60449bbd020800000000000000
+      internalID: 2367689730933804199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_109
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1201
+        width: 114
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de51ea6f6cfcc7c20800000000000000
+      internalID: 3205665488230028781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_110
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1219
+        width: 87
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2379935268c5f8a20800000000000000
+      internalID: 3066771602482501426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_111
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1180
+        width: 144
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df44b232d8e7e04d0800000000000000
+      internalID: -3166454343349353219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_112
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1240
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72531ab4cc0e20990800000000000000
+      internalID: -7421122067906349785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_113
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1036
+        width: 66
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb4241beb9a1f8f0800000000000000
+      internalID: -508438646433362952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_114
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1165
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6f29f80aed38b40800000000000000
+      internalID: 5441437555978598052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_115
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1191
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebe22f5cf96a48b0800000000000000
+      internalID: -5167201089805423637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_116
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1157
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff94bcbe54e41910800000000000000
+      internalID: 1807320446026424305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_117
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1017
+        width: 188
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2fe5f4101ae69f0800000000000000
+      internalID: -473263883828661568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_118
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1187
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2e1531c3444cd30800000000000000
+      internalID: 4450757356561752743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_119
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1149
+        width: 85
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24109d8221c1e8020800000000000000
+      internalID: 2345843320226906434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_120
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1051
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a43b8d8455b1f10800000000000000
+      internalID: 2241479010908588628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_121
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1053
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964cebcf66f689cc0800000000000000
+      internalID: -3704088205394525079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_122
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1098
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f02a55cb1767750800000000000000
+      internalID: 6302349782256062222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_123
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 951
+        width: 177
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a710ce06cfe0cbe0800000000000000
+      internalID: -1458902645338007641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_124
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 1030
+        width: 117
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c840c4d7b9fcf7700800000000000000
+      internalID: 540378747036763276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_125
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1028
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115830b076ab43d00800000000000000
+      internalID: 951590373011195153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_126
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1081
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8034f0740c6ab85b0800000000000000
+      internalID: -5365011186325699832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_127
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 861
+        width: 151
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbcb5bf6d3ef5ac0800000000000000
+      internalID: -3864119442780992590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_128
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 700
+        width: 200
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6cea989cacf96d0800000000000000
+      internalID: -2981441461348809013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_129
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 865
+        width: 132
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbee4ec41532bbdd0800000000000000
+      internalID: -2469341138593190212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_130
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 849
+        width: 176
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b913947d8f37790800000000000000
+      internalID: -7533404148131062905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_131
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 768
+        width: 196
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9deb9aea82069a310800000000000000
+      internalID: 1416769285630050009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_132
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 783
+        width: 201
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916663a4a1281a460800000000000000
+      internalID: 7251219924469048857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_133
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 793
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80606b7bbce2ddca0800000000000000
+      internalID: -5990580476837493240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_134
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 826
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544a713701fd38d90800000000000000
+      internalID: -7096583326062369723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_135
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 701
+        width: 108
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47faed4c77830c50800000000000000
+      internalID: 6630292044372440911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_136
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 698
+        width: 160
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55497780d36b9e330800000000000000
+      internalID: 3740721338759222357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_137
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 705
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50abfffd5eed53d0800000000000000
+      internalID: -3216152471378616225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_138
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 702
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04396a2e369143410800000000000000
+      internalID: 1455816496342537024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_139
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 700
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7a5f9110b6d66c0800000000000000
+      internalID: -4148542029263689779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_140
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 741
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e977568623a8d90800000000000000
+      internalID: -7094802839008469418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_141
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 604
+        width: 161
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6bbbe0da25085c60800000000000000
+      internalID: 7806995635498629998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_142
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 522
+        width: 160
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166a74dd5ca283ab0800000000000000
+      internalID: -5028221954649774495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_143
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 737
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479b2e7e3637e4710800000000000000
+      internalID: 1679406583985125748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_144
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 381
+        width: 293
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1720960a04fe6cc00800000000000000
+      internalID: 920686234692026993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_145
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 552
+        width: 86
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d427979fce9e5cf0800000000000000
+      internalID: -261597113902226219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_146
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 290
+        width: 178
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4949d732c186a8130800000000000000
+      internalID: 3569780124708344980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_147
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 286
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43cac6f24622e5400800000000000000
+      internalID: 314726837650238516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_148
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 38
+        width: 194
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc35b42368bf88110800000000000000
+      internalID: 1263536249265411019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_149
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 33
+        width: 263
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed27d91d814649790800000000000000
+      internalID: -7524279019670506786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_150
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 21
+        width: 264
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5548a208a23029e70800000000000000
+      internalID: 9120355676452455509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_151
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 21
+        width: 314
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8fe3a13986cbbe0800000000000000
+      internalID: -1460177198165067545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_152
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 9
+        width: 137
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a752e6f229304cdd0800000000000000
+      internalID: -2466842769496332934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the gardens2_153
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 28
+        width: 180
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f269cf8104c8efb80800000000000000
+      internalID: -8359089651428059601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      the gardens2_0: -5333625248806894816
+      the gardens2_1: 613894939105357265
+      the gardens2_10: -3028269858568024330
+      the gardens2_100: 555383820534760698
+      the gardens2_101: 853720485547790847
+      the gardens2_102: 8268677346041973487
+      the gardens2_103: -114913828530927084
+      the gardens2_104: 138853458815861923
+      the gardens2_105: 5746205282102379058
+      the gardens2_106: -116216847270267667
+      the gardens2_107: 5660986462914781229
+      the gardens2_108: 2367689730933804199
+      the gardens2_109: 3205665488230028781
+      the gardens2_11: -4139230277285475761
+      the gardens2_110: 3066771602482501426
+      the gardens2_111: -3166454343349353219
+      the gardens2_112: -7421122067906349785
+      the gardens2_113: -508438646433362952
+      the gardens2_114: 5441437555978598052
+      the gardens2_115: -5167201089805423637
+      the gardens2_116: 1807320446026424305
+      the gardens2_117: -473263883828661568
+      the gardens2_118: 4450757356561752743
+      the gardens2_119: 2345843320226906434
+      the gardens2_12: 7155675773775276046
+      the gardens2_120: 2241479010908588628
+      the gardens2_121: -3704088205394525079
+      the gardens2_122: 6302349782256062222
+      the gardens2_123: -1458902645338007641
+      the gardens2_124: 540378747036763276
+      the gardens2_125: 951590373011195153
+      the gardens2_126: -5365011186325699832
+      the gardens2_127: -3864119442780992590
+      the gardens2_128: -2981441461348809013
+      the gardens2_129: -2469341138593190212
+      the gardens2_13: 4173632374738815629
+      the gardens2_130: -7533404148131062905
+      the gardens2_131: 1416769285630050009
+      the gardens2_132: 7251219924469048857
+      the gardens2_133: -5990580476837493240
+      the gardens2_134: -7096583326062369723
+      the gardens2_135: 6630292044372440911
+      the gardens2_136: 3740721338759222357
+      the gardens2_137: -3216152471378616225
+      the gardens2_138: 1455816496342537024
+      the gardens2_139: -4148542029263689779
+      the gardens2_14: -2418027204987492049
+      the gardens2_140: -7094802839008469418
+      the gardens2_141: 7806995635498629998
+      the gardens2_142: -5028221954649774495
+      the gardens2_143: 1679406583985125748
+      the gardens2_144: 920686234692026993
+      the gardens2_145: -261597113902226219
+      the gardens2_146: 3569780124708344980
+      the gardens2_147: 314726837650238516
+      the gardens2_148: 1263536249265411019
+      the gardens2_149: -7524279019670506786
+      the gardens2_15: -9010691242719631664
+      the gardens2_150: 9120355676452455509
+      the gardens2_151: -1460177198165067545
+      the gardens2_152: -2466842769496332934
+      the gardens2_153: -8359089651428059601
+      the gardens2_16: 8829005471015897896
+      the gardens2_17: 7325209678665389434
+      the gardens2_18: -8261113604310054254
+      the gardens2_19: 9168895770870238891
+      the gardens2_2: 5823594478017684500
+      the gardens2_20: -1826753016554911664
+      the gardens2_21: -6468157478029013170
+      the gardens2_22: -224624181149680872
+      the gardens2_23: 1525994612744890588
+      the gardens2_24: 2389750471946116316
+      the gardens2_25: -2166835087560517663
+      the gardens2_26: 8231649426870869687
+      the gardens2_27: 8090087341176256330
+      the gardens2_28: -6953773473578714580
+      the gardens2_29: -4111097119778120703
+      the gardens2_3: -6044943549551636485
+      the gardens2_30: -8569038410354265155
+      the gardens2_31: -1952562076751242045
+      the gardens2_32: -5867155881446153124
+      the gardens2_33: 3621058079137564063
+      the gardens2_34: -1243007304431862955
+      the gardens2_35: -4349533477227136788
+      the gardens2_36: 5772602368412793211
+      the gardens2_37: 910877303277757504
+      the gardens2_38: 8162977445343554794
+      the gardens2_39: -7417482869743561634
+      the gardens2_4: 462989674628983706
+      the gardens2_40: 2238772814269836023
+      the gardens2_41: 2068222420629806385
+      the gardens2_42: 1191334407942901416
+      the gardens2_43: 41126542054565792
+      the gardens2_44: -4049106317653633294
+      the gardens2_45: 237255526922051263
+      the gardens2_46: -324502473561720740
+      the gardens2_47: -6575020551181989683
+      the gardens2_48: 262891997972273529
+      the gardens2_49: 2739411272517466455
+      the gardens2_5: 8749072220320563571
+      the gardens2_50: 4454760968310994466
+      the gardens2_51: 2357479668684859731
+      the gardens2_52: 2682851645887976970
+      the gardens2_53: -881807210719887461
+      the gardens2_54: -784742370462320022
+      the gardens2_55: -8945220961804833906
+      the gardens2_56: 8613772064615815102
+      the gardens2_57: -7714056952538663659
+      the gardens2_58: -6638003008211804435
+      the gardens2_59: -4089904179344998843
+      the gardens2_6: 5433055962481207942
+      the gardens2_60: -9083815612464288282
+      the gardens2_61: 6319545109137592588
+      the gardens2_62: -1030720854186306950
+      the gardens2_63: -4691868091518619299
+      the gardens2_64: 4156994386249619727
+      the gardens2_65: -4486685215162168577
+      the gardens2_66: 5382679624806359102
+      the gardens2_67: 5581587749815434262
+      the gardens2_68: 7127373870015824479
+      the gardens2_69: -1411919052529417967
+      the gardens2_7: -4835605394026537994
+      the gardens2_70: -1740322153328635750
+      the gardens2_71: -1482980723677583913
+      the gardens2_72: -4233435129726745550
+      the gardens2_73: 7326818301027773580
+      the gardens2_74: -1513483069980171168
+      the gardens2_75: 7250616490200786353
+      the gardens2_76: 2319344494340938931
+      the gardens2_77: 1046353659537410967
+      the gardens2_78: 6516795828062499621
+      the gardens2_79: -1374205740721171941
+      the gardens2_8: -2679160214932931589
+      the gardens2_80: -1614671921173402654
+      the gardens2_81: 4927364757760267534
+      the gardens2_82: 4075290396201650591
+      the gardens2_83: 2173700770211675836
+      the gardens2_84: -4110598608429877858
+      the gardens2_85: -4841208518818237253
+      the gardens2_86: 1907710173739751765
+      the gardens2_87: 2986149756811858325
+      the gardens2_88: 5599532978484715443
+      the gardens2_89: 8137442750495086762
+      the gardens2_9: -8057584652300625372
+      the gardens2_90: 3379706711239877658
+      the gardens2_91: 4388102242963577227
+      the gardens2_92: -5754128089652076947
+      the gardens2_93: 7141480313274320645
+      the gardens2_94: -3591177381141586829
+      the gardens2_95: 2519971033054599173
+      the gardens2_96: -1152655646208924885
+      the gardens2_97: 1274054885979052408
+      the gardens2_98: -847045062006060579
+      the gardens2_99: 465342705632532227
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
