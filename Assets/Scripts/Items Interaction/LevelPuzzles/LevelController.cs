@@ -6,8 +6,10 @@ public class LevelController : MonoBehaviour
     public static LevelController Instance;
 
     public bool puzzleCompleted = false;
+    public AudioSource doorAudio;
+    public AudioClip doorUnlocked;
 
-    [SerializeField] private DoorTeleport puzzleDoor;
+    [SerializeField] private LockableDoorTeleport puzzleDoor;
 
     private void Awake()
     {
@@ -18,7 +20,7 @@ public class LevelController : MonoBehaviour
         else
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional
+            DontDestroyOnLoad(gameObject); 
         }
     }
 
@@ -29,6 +31,9 @@ public class LevelController : MonoBehaviour
         {
             puzzleDoor.isLocked = false;
             Debug.Log("Puzzle completed! Door is now unlocked.");
+
+            doorAudio.PlayOneShot(doorUnlocked);
+
         }
     }
 }

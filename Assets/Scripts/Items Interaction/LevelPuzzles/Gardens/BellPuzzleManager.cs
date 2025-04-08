@@ -3,29 +3,31 @@ using UnityEngine;
 
 public class BellPuzzleManager : MonoBehaviour
 {
-    public List<int> correctSequence = new List<int> { 2, 3, 1 }; // IDs of bells in correct order
+    public List<int> correctSequence = new List<int> { 2, 3, 1 };
     private List<int> currentSequence = new List<int>();
 
-    public void RingBell(int bellID)
+    // Returns true if the bell press was part of the correct sequence
+    public bool RingBell(int bellID)
     {
         currentSequence.Add(bellID);
 
-        // Check if sequence is correct so far
         for (int i = 0; i < currentSequence.Count; i++)
         {
             if (currentSequence[i] != correctSequence[i])
             {
                 Debug.Log("Incorrect sequence. Resetting.");
                 currentSequence.Clear();
-                return;
+                return false; // wrong bell
             }
         }
 
-        // Puzzle complete!
+        // Puzzle completed
         if (currentSequence.Count == correctSequence.Count)
         {
             Debug.Log("Correct sequence! Puzzle complete.");
             LevelController.Instance?.CompletePuzzle();
         }
+
+        return true; // correct bell so far
     }
 }

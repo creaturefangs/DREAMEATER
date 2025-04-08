@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class LockableDoorTeleport : MonoBehaviour
 {
-    public DoorTeleport linkedDoor; // The door to teleport to
+    public LockableDoorTeleport linkedDoor; // The door to teleport to
     public enum SpawnPosition { Above, Below } // Dropdown selection
     public SpawnPosition spawnPosition = SpawnPosition.Above;
 
