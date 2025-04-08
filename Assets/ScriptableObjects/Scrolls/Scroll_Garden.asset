@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1402af63f11148a46bef0794e6ad4474, type: 3}
+  m_Name: Scroll_Garden
+  m_EditorClassIdentifier: 
+  titleText: Scroll
+  icon: {fileID: -132841836, guid: b48249f8ac0c08e43936c9a7ced181e3, type: 3}
+  dialogueLines:
+  - stars falling from the sky
+  - the planets aligned
+  - a gift used for destruction
+  - given to us by the gods
+  - the only thing that can heal
+  - this dying earth
+  - 'is the unity of earth wind '
+  - fire and ocean
+  - the shadow of the moon
+  - an eclipse will awaken
+  - 'the chosen '
+  - given a choice
+  - 'Sacred '
+  - Sacrifice
+  - Sinister
+  - Sorath
+  dialogueSFX: {fileID: 8300000, guid: 62100ecad0828e442b18328d3810f68d, type: 3}

@@ -29,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Hallways/The Temple of Night.unity
     guid: 9a136c1a0c532ba4d811ffb7bc647527
+  - enabled: 1
+    path: Assets/Scenes/The Hallways/EndScene.unity
+    guid: ad662da413c23d149b43f39a683fdcf4
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
