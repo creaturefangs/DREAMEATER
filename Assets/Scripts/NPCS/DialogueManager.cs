@@ -33,6 +33,9 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent onDialogueStart;
     public UnityEvent onDialogueEnd;
 
+    public GameObject wolfBossController; // assign in inspector or dynamically
+   
+
     private void Awake()
     {
         // Ensure there is only one instance of DialogueManager
@@ -52,14 +55,24 @@ public class DialogueManager : MonoBehaviour
     {
         if (!dialoguePanel.activeSelf) return;
 
-        if (Input.GetKeyDown(KeyCode.LeftShift)) // Move to next dialogue chunk
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            ShowNextDialogue();
+            if (isTyping)
+            {
+                // Instantly complete current line instead of advancing
+                StopCoroutine(typingCoroutine);
+                CompleteTypingCurrentLine();
+            }
+            else
+            {
+                ShowNext(); // Smart handler that knows which type we're in
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.Space)) // Exit UI
+        else if (Input.GetKeyDown(KeyCode.Space))
         {
             CloseUI();
         }
+
     }
 
     public void StartInteraction(object data)
@@ -109,6 +122,14 @@ public class DialogueManager : MonoBehaviour
         {
             CloseUI();
             return;
+        }
+
+        dialogueText.text = "";
+
+        // Update character sprite if available
+        if (currentDialogue.dialogueSprites != null && currentDialogueIndex < currentDialogue.dialogueSprites.Length)
+        {
+            characterPortrait.sprite = currentDialogue.dialogueSprites[currentDialogueIndex];
         }
 
         StartTypewriterEffect(currentDialogue.dialogueLines[currentDialogueIndex]);
@@ -192,10 +213,22 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             //Debug.Log($"Typing: {dialogueText.text}"); // Debugging
 
-            if (_audio && currentDialogue != null && currentDialogue.dialogueSFX != null)
+            if (_audio)
             {
-                _audio.pitch = Random.Range(0.9f, 1.2f);
-                _audio.PlayOneShot(currentDialogue.dialogueSFX);
+                AudioClip clipToPlay = null;
+
+                if (currentDialogue != null && currentDialogue.dialogueSFX != null)
+                    clipToPlay = currentDialogue.dialogueSFX;
+                else if (currentScrolls != null && currentScrolls.dialogueSFX != null)
+                    clipToPlay = currentScrolls.dialogueSFX;
+                else if (currentTablets != null && currentTablets.dialogueSFX != null)
+                    clipToPlay = currentTablets.dialogueSFX;
+
+                if (clipToPlay != null)
+                {
+                    _audio.pitch = Random.Range(0.9f, 1.2f);
+                    _audio.PlayOneShot(clipToPlay);
+                }
             }
 
             yield return new WaitForSeconds(typingSpeed);
@@ -204,9 +237,39 @@ public class DialogueManager : MonoBehaviour
         isTyping = false;
     }
 
+    private void CompleteTypingCurrentLine()
+    {
+        isTyping = false;
+
+        if (currentDialogue != null)
+        {
+            dialogueText.text = currentDialogue.dialogueLines[currentDialogueIndex];
+        }
+        else if (currentScrolls != null)
+        {
+            dialogueText.text = currentScrolls.dialogueLines[currentDialogueIndex];
+        }
+        else if (currentTablets != null)
+        {
+            dialogueText.text = currentTablets.dialogueLines[currentDialogueIndex];
+        }
+    }
+
+    private void ShowNext()
+    {
+        if (currentDialogue != null)
+            ShowNextDialogue();
+        else if (currentScrolls != null)
+            ShowNextScroll();
+        else if (currentTablets != null)
+            ShowNextTablet();
+    }
+
     // Close UI
     public void CloseUI()
     {
+        bool triggersBattle = currentDialogue != null && currentDialogue.triggersBossBattle;
+
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
         currentDialogue = null;
@@ -215,6 +278,11 @@ public class DialogueManager : MonoBehaviour
         currentDialogueIndex = 0;
 
         onDialogueEnd?.Invoke();
+
+        if (triggersBattle && wolfBossController != null)
+        {
+            wolfBossController.GetComponent<WolfBoss>().StartBattle();
+        }
     }
 }
 

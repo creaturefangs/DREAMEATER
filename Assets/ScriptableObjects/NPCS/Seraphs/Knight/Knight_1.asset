@@ -17,4 +17,5 @@ MonoBehaviour:
   dialogueLines:
   - '"Ahhhh."'
   - '"You shouldn''t have come here."'
-  dialogueSFX: {fileID: 0}
+  dialogueSFX: {fileID: 8300000, guid: 1ec688eab2d6f5c43823accdef8cfdf3, type: 3}
+  dialogueFont: {fileID: 0}

@@ -3,7 +3,21 @@ using System.Collections;
 
 public class CameraShake : MonoBehaviour
 {
-    public IEnumerator Shake(float duration, float magnitude)
+    public static CameraShake Instance;
+    private Vector3 originalPosition;
+
+    private void Awake()
+    {
+        Instance = this;
+        originalPosition = transform.localPosition;
+    }
+
+    public void Shake(float duration, float magnitude)
+    {
+        StartCoroutine(ShakeCoroutine(duration, magnitude));
+    }
+
+    public IEnumerator ShakeCoroutine(float duration, float magnitude)
     {
         Vector3 originalPosition = transform.localPosition;
         float elapsed = 0f;

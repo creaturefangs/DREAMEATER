@@ -8,7 +8,10 @@ public class SO_Dialogue : ScriptableObject
 {
     public string characterName;
     public Sprite characterPortrait; // Icon for the scroll
+    public Sprite[] dialogueSprites;
     public string[] dialogueLines;
     public AudioClip dialogueSFX;
     public TMP_FontAsset dialogueFont; // Font asset for TextMeshPro
+
+    public bool triggersBossBattle;
 }

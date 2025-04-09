@@ -138,7 +138,7 @@ public class ViolenceEnemyAI : MonoBehaviour
             if (audioSource && detectionSFX)
                 audioSource.PlayOneShot(detectionSFX);
             if (cameraShake)
-                StartCoroutine(cameraShake.Shake(0.3f, 0.5f));
+                CameraShake.Instance.Shake(0.2f, 0.2f);
 
             isMoving = false;
             isChasing = true;

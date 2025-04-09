@@ -1,7 +1,43 @@
 fileFormatVersion: 2
-guid: 8014d951064bb8545aa66022725c5638
+guid: 60c2f32573285a34ca63b4350765e2a2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2656828799415557333
+    second: wolf spritesheet_0
+  - first:
+      213: -7213337173992056786
+    second: wolf spritesheet_1
+  - first:
+      213: 7035055707483474206
+    second: wolf spritesheet_2
+  - first:
+      213: -5128525719306829322
+    second: wolf spritesheet_3
+  - first:
+      213: 5469696119594378662
+    second: wolf spritesheet_4
+  - first:
+      213: 3389275591017387744
+    second: wolf spritesheet_5
+  - first:
+      213: 74677730747570954
+    second: wolf spritesheet_6
+  - first:
+      213: -3602695992524922414
+    second: wolf spritesheet_7
+  - first:
+      213: -5602320501685194289
+    second: wolf spritesheet_8
+  - first:
+      213: 6812003879688813535
+    second: wolf spritesheet_9
+  - first:
+      213: 1780247102297649245
+    second: wolf spritesheet_10
+  - first:
+      213: -2784219043994852747
+    second: wolf spritesheet_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,73 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wolf spritesheet 1_0
-      rect:
-        serializedVersion: 2
-        x: 234
-        y: 746
-        width: 235
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5790b19e03beab8408545e98d50e3d3b
-      internalID: -961103052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolf spritesheet 1_1
-      rect:
-        serializedVersion: 2
-        x: 506
-        y: 745
-        width: 164
-        height: 187
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9adce29d37eb12247be0455721d4b3d1
-      internalID: -920038569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolf spritesheet 1_2
-      rect:
-        serializedVersion: 2
-        x: 694
-        y: 742
-        width: 253
-        height: 194
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c47bfeb56f6336141b99bff06d21ccf5
-      internalID: 318128929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolf spritesheet 1_3
+      name: wolf spritesheet_0
       rect:
         serializedVersion: 2
         x: 43
@@ -176,38 +146,38 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 18778b4c4da13ed48b60ee82bc6690d9
-      internalID: 1694294866
+      spriteID: 5dc113277b3fed420800000000000000
+      internalID: 2656828799415557333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf spritesheet 1_4
+      name: wolf spritesheet_1
       rect:
         serializedVersion: 2
         x: 340
-        y: 524
+        y: 521
         width: 326
-        height: 189
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2381a1fb9da27d94f8fc6a6e81d4c081
-      internalID: -1917460544
+      spriteID: e285513ee0415eb90800000000000000
+      internalID: -7213337173992056786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf spritesheet 1_5
+      name: wolf spritesheet_2
       rect:
         serializedVersion: 2
         x: 683
@@ -220,16 +190,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 689329ef88a365e45ba93c8799229057
-      internalID: 1052283366
+      spriteID: e1903a384e981a160800000000000000
+      internalID: 7035055707483474206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf spritesheet 1_6
+      name: wolf spritesheet_3
       rect:
         serializedVersion: 2
         x: 1063
@@ -242,16 +212,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 58a84b10ce1eaf348b013adf728ddea8
-      internalID: -170663270
+      spriteID: 6f10347c701d3d8b0800000000000000
+      internalID: -5128525719306829322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf spritesheet 1_7
+      name: wolf spritesheet_4
       rect:
         serializedVersion: 2
         x: 57
@@ -264,54 +234,164 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e0a8e2653c1da5f468e60101a9e2a457
-      internalID: 1483794065
+      spriteID: 6a561cd14a348eb40800000000000000
+      internalID: 5469696119594378662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf spritesheet 1_8
+      name: wolf spritesheet_5
       rect:
         serializedVersion: 2
         x: 301
-        y: 292
+        y: 290
         width: 324
-        height: 190
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2242bbdcdd16f7b4b81555a4909e9b64
-      internalID: -1509539207
+      spriteID: 0e65e706130290f20800000000000000
+      internalID: 3389275591017387744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf spritesheet 1_9
+      name: wolf spritesheet_6
       rect:
         serializedVersion: 2
-        x: 627
-        y: 226
+        x: 623
+        y: 264
         width: 391
-        height: 273
+        height: 245
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4502eedd379ef0a40bc2ccd479e9fa38
-      internalID: -1955564632
+      spriteID: a0b57dd100f490100800000000000000
+      internalID: 74677730747570954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 272
+        width: 391
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d124db2517a00ec0800000000000000
+      internalID: -3602695992524922414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 57
+        width: 213
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc17a23af2f8042b0800000000000000
+      internalID: -5602320501685194289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 65
+        width: 326
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb3f61ef69198e50800000000000000
+      internalID: 6812003879688813535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 60
+        width: 328
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50bed0be45b4b810800000000000000
+      internalID: 1780247102297649245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 53
+        width: 326
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5722fc9e7877c59d0800000000000000
+      internalID: -2784219043994852747
       vertices: []
       indices: 
       edges: []
@@ -320,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -330,16 +410,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wolf spritesheet 1_0: -961103052
-      wolf spritesheet 1_1: -920038569
-      wolf spritesheet 1_2: 318128929
-      wolf spritesheet 1_3: 1694294866
-      wolf spritesheet 1_4: -1917460544
-      wolf spritesheet 1_5: 1052283366
-      wolf spritesheet 1_6: -170663270
-      wolf spritesheet 1_7: 1483794065
-      wolf spritesheet 1_8: -1509539207
-      wolf spritesheet 1_9: -1955564632
+      wolf spritesheet_0: 2656828799415557333
+      wolf spritesheet_1: -7213337173992056786
+      wolf spritesheet_10: 1780247102297649245
+      wolf spritesheet_11: -2784219043994852747
+      wolf spritesheet_2: 7035055707483474206
+      wolf spritesheet_3: -5128525719306829322
+      wolf spritesheet_4: 5469696119594378662
+      wolf spritesheet_5: 3389275591017387744
+      wolf spritesheet_6: 74677730747570954
+      wolf spritesheet_7: -3602695992524922414
+      wolf spritesheet_8: -5602320501685194289
+      wolf spritesheet_9: 6812003879688813535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

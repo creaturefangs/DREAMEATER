@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7d9ba8eb5efc5439a9b47c05544398, type: 3}
+  m_Name: RedWolf_1
+  m_EditorClassIdentifier: 
+  characterName: The Wolf
+  characterPortrait: {fileID: 0}
+  dialogueSprites:
+  - {fileID: 6812003879688813535, guid: 60c2f32573285a34ca63b4350765e2a2, type: 3}
+  - {fileID: 1780247102297649245, guid: 60c2f32573285a34ca63b4350765e2a2, type: 3}
+  - {fileID: -7213337173992056786, guid: 60c2f32573285a34ca63b4350765e2a2, type: 3}
+  - {fileID: 0}
+  dialogueLines:
+  - ' Sharp of the tooth,'
+  - and merciless of fang
+  - ...
+  - You shouldn't be here.
+  dialogueSFX: {fileID: 8300000, guid: 891833c88d5ad814ab818a355d614a2c, type: 3}
+  dialogueFont: {fileID: 11400000, guid: a045d2bd92c7b994baab298d8ddc54bc, type: 2}
+  triggersBossBattle: 1
