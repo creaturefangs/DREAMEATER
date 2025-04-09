@@ -31710,8 +31710,8 @@ MonoBehaviour:
   battleStartSFX: {fileID: 8300000, guid: ceba3e8212149364ca5dbc24d6c0ebd6, type: 3}
   minionsToSpawn: 1
   battleStartDelay: 3
-  phaseTwoDialogue: {fileID: 11400000, guid: 4e95c29874009c547bcd55d71b4804c1, type: 2}
-  phaseThreeDialogue: {fileID: 0}
+  phaseTwoDialogue: {fileID: 11400000, guid: 4834624f58f960243b6b98dff11116ba, type: 2}
+  phaseThreeDialogue: {fileID: 11400000, guid: 046898eaf10cbb94abbbd6603ee3bad0, type: 2}
   phaseTwoThreshold: 100
 --- !u!82 &1273157730
 AudioSource:
@@ -37376,7 +37376,7 @@ Transform:
   m_GameObject: {fileID: 1376784915}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0054450543, y: 0.087, z: 0}
+  m_LocalPosition: {x: -0.0054450543, y: 0.123, z: 0}
   m_LocalScale: {x: 0.4047681, y: 0.48596022, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

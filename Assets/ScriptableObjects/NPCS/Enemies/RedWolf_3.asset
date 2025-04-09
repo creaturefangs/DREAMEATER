@@ -27,4 +27,4 @@ MonoBehaviour:
   - VIOLENCE.
   dialogueSFX: {fileID: 8300000, guid: 891833c88d5ad814ab818a355d614a2c, type: 3}
   dialogueFont: {fileID: 11400000, guid: a045d2bd92c7b994baab298d8ddc54bc, type: 2}
-  triggersBossBattle: 1
+  triggersBossBattle: 0
