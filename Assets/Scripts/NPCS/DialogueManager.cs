@@ -301,18 +301,24 @@ public class DialogueManager : MonoBehaviour
         currentTablets = null;
         currentDialogueIndex = 0;
 
-        // Set the event to null to prevent re-triggering during CloseUI
         UnityEvent tempEvent = onDialogueEnd;
         onDialogueEnd = null;  // Clear the event temporarily
-
         tempEvent?.Invoke();  // Now safely invoke
-
-        // Restore the event
         onDialogueEnd = tempEvent;
 
+        // Check if the dialogue has finished, and if the boss fight should start
         if (triggersBattle && wolfBossController != null)
         {
-            wolfBossController.GetComponent<WolfBoss>().StartBattle();
+            // Check if the WolfBoss script is available and trigger the battle
+            WolfBoss wolfBoss = wolfBossController.GetComponent<WolfBoss>();
+            if (wolfBoss != null)
+            {
+                // Close the dialogue and start the boss battle
+                wolfBoss.StartBattle();
+            }
+
+            // Assuming the InteractableObject is not needed here anymore
+            // if you still need to disable it, you can do so inside the WolfBoss script
         }
     }
 }

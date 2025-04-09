@@ -30,6 +30,20 @@ public class WolfBoss : MonoBehaviour
     // Delay before the boss starts
     public float battleStartDelay = 3f; // Delay before starting the battle
 
+   
+    [Header("Boss Dialogue")]
+    public SO_Dialogue phaseTwoDialogue;
+    public SO_Dialogue phaseThreeDialogue;
+
+    private EnemyHealth enemyHealth;
+
+    private bool isFighting = false;
+    private bool phaseTwoTriggered = false;
+    private bool phaseThreeTriggered = false;
+
+    public int phaseTwoThreshold = 100;
+
+
     public void StartBattle()
     {
         StartCoroutine(DelayedStartBattle()); // Wait before starting the battle
@@ -98,10 +112,6 @@ public class WolfBoss : MonoBehaviour
         // Play sound
         audioSource.PlayOneShot(howlSFX);
 
-        // Visual FX
-        //if (howlEffectPrefab)
-        //    Instantiate(howlEffectPrefab, transform.position, Quaternion.identity);
-
         yield return new WaitForSeconds(0.3f);
 
         // Spawn minions based on the minionsToSpawn count
@@ -158,5 +168,42 @@ public class WolfBoss : MonoBehaviour
         swipe.SetActive(true);
 
         // Ensure the swipe prefab is properly reset for the next swipe
+    }
+
+    // Update the boss's health and trigger dialogue if needed
+    private void Awake()
+    {
+        enemyHealth = GetComponent<EnemyHealth>();
+        if (enemyHealth == null)
+        {
+            Debug.LogError("EnemyHealth component not found on WolfBoss!");
+        }
+    }
+
+    private void Update()
+    {
+        if (!isFighting || enemyHealth == null) return;
+
+        if (!phaseTwoTriggered && enemyHealth.health <= phaseTwoThreshold && enemyHealth.health > 1)
+        {
+            TriggerPhaseTwoDialogue();
+        }
+
+        if (!phaseThreeTriggered && enemyHealth.health == 1)
+        {
+            TriggerPhaseThreeDialogue();
+        }
+    }
+
+    private void TriggerPhaseTwoDialogue()
+    {
+        phaseTwoTriggered = true;
+        DialogueManager.Instance.StartInteraction(phaseTwoDialogue);
+    }
+
+    private void TriggerPhaseThreeDialogue()
+    {
+        phaseThreeTriggered = true;
+        DialogueManager.Instance.StartInteraction(phaseThreeDialogue);
     }
 }

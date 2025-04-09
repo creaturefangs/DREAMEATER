@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int health = 30;
+    public int health;
 
     [Header("Audio")]
     public AudioSource audioSource; // Audio source component
