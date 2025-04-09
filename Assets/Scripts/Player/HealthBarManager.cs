@@ -18,7 +18,7 @@ public class HealthBarManager : MonoBehaviour
     [SerializeField] private AudioSource playerAudio;
     [SerializeField] private AudioClip healSound;
     [SerializeField] private AudioClip damageSFX;
-    [SerializeField] private float flashDuration = 0.2f;
+    //[SerializeField] private float flashDuration = 0.2f;
     [SerializeField] private float uiFadeDelay = 3f; // Time before fading out
 
     private Color originalColor;

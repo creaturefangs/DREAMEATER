@@ -18,6 +18,7 @@ TagManager:
   - M_Moon
   - M_Sun
   - M_Hallway
+  - Breakable
   layers:
   - Default
   - TransparentFX

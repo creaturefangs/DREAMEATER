@@ -19,7 +19,7 @@ public class Interaction : MonoBehaviour
         // Toggle UI based on interaction availability and range
         if (interactionUI != null)
         {
-            bool showUI = interactableObject != null && interactableObject.IsPlayerInRange(transform);
+            bool showUI = interactableObject != null && interactableObject.IsPlayerInRange(transform) && !DialogueManager.Instance.IsDialogueActive();
             interactionUI.SetActive(showUI);
 
             if (interactionText != null && showUI)
@@ -29,13 +29,13 @@ public class Interaction : MonoBehaviour
         }
 
         // Press Space to interact
-        if (interactableObject != null && Input.GetKeyDown(KeyCode.Space))
+        if (interactableObject != null && Input.GetKeyDown(KeyCode.Space) && !DialogueManager.Instance.IsDialogueActive())
         {
             Interact();
         }
 
-        // Click to interact (only if within range)
-        if (Input.GetMouseButtonDown(0))
+        // Click to interact (only if within range and not mid-dialogue)
+        if (Input.GetMouseButtonDown(0) && !DialogueManager.Instance.IsDialogueActive())
         {
             CheckMouseClick();
         }
@@ -48,17 +48,20 @@ public class Interaction : MonoBehaviour
 
     private void Interact()
     {
+
+        Debug.Log("Interaction.Interact() called");
+
         if (interactableObject != null)
         {
-            Debug.Log("Interacting with: " + interactableObject.gameObject.name);
-            interactableObject.onInteract.Invoke();
+            interactableObject.onInteract.Invoke(); // Only fire if this doesn’t double-trigger interaction
         }
 
-        if (DialogueManager.Instance != null)
+        if (DialogueManager.Instance != null && interactionData != null && !DialogueManager.Instance.IsDialogueActive())
         {
             DialogueManager.Instance.StartInteraction(interactionData);
         }
     }
+
 
     private void CheckMouseClick()
     {

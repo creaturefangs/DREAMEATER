@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4582162895401684912}
   - component: {fileID: 3546656832626524127}
   - component: {fileID: 3394894153012942178}
-  - component: {fileID: 4297755100229346642}
+  - component: {fileID: 7214536937231556879}
+  - component: {fileID: 709928716702913386}
   m_Layer: 0
-  m_Name: moonpickupHP
+  m_Name: HealthDespawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +129,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.3710938, y: 1.4492188}
+    oldSize: {x: 0.6855469, y: 0.7246094}
     newSize: {x: 10.96875, y: 11.59375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -136,7 +137,34 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3710938, y: 1.4492188}
   m_EdgeRadius: 0
---- !u!114 &4297755100229346642
+--- !u!50 &7214536937231556879
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3326894232992965522}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &709928716702913386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,10 +173,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3326894232992965522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c1a6fe6ddc58e342b2727f190c16191, type: 3}
+  m_Script: {fileID: 11500000, guid: 0521bce20dc94a948869d79781780dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healAmount: 20
+  floatDuration: 1
+  despawnTime: 5
+  despawnSound: {fileID: 8300000, guid: 9f3c31cac6a8b6f4b84bd1f7c6972591, type: 3}
+  despawnFlashTime: 3
+  itemAudioSource: {fileID: 0}
+  spriteRenderer: {fileID: 3546656832626524127}
+  flashColor: {r: 0, g: 0, b: 0, a: 1}
+  flashDuration: 0.2
 --- !u!1 &8699082395335548109
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +301,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2.15
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -318,7 +354,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 1.68
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -753,7 +789,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 50
+    maxNumParticles: 6
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0

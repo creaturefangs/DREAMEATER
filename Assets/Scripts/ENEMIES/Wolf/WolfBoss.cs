@@ -1,38 +1,66 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 public class WolfBoss : MonoBehaviour
 {
     public Transform player;
-    
+
     public GameObject minionPrefab;
     public GameObject swipeSlashPrefab;
+    public GameObject missilePrefab; // New missile prefab
     public Transform[] summonPoints;
 
-    public float lungeSpeed = 5f;
-    public float lungeDuration = 0.3f;
-    public GameObject lungeHitboxPrefab; // Prefab with a trigger collider + damage script
-    public Transform hitboxSpawnPoint;   // An empty GameObject in front of wolf's mouth
-
-    private bool isLunging = false;
-
-
+    // Howl control variables
+    private int howlCount = 0; // Count of how many times howl has been used
+    public int maxHowls = 3; // Maximum number of howls in a row
+    public float howlDelay = 5f; // Delay after howls before the next set
     private bool isBattling;
 
     [Header("Audio")]
-    public AudioSource audioSource;
-    public AudioClip lungeSFX;
+    public AudioSource audioSource; // For the boss SFX
+    public AudioSource musicSource; // For the background music
     public AudioClip howlSFX;
     public AudioClip swipeSFX;
+    public AudioClip bossBattleMusic; // Music that plays when the battle starts
+    public AudioClip battleStartSFX; // Sound effect that plays when the battle starts
 
-    //[Header("Visual FX")]
-    //public GameObject lungeEffectPrefab;
-    //public GameObject howlEffectPrefab;
+    // New variable to control how many minions spawn
+    public int minionsToSpawn = 3; // Default to 3 minions
+
+    // Delay before the boss starts
+    public float battleStartDelay = 3f; // Delay before starting the battle
 
     public void StartBattle()
     {
+        StartCoroutine(DelayedStartBattle()); // Wait before starting the battle
+        // Play the sound effect at the start of the battle
+        if (audioSource != null && battleStartSFX != null)
+        {
+            audioSource.PlayOneShot(battleStartSFX);
+        }
+    }
+
+    private IEnumerator DelayedStartBattle()
+    {
+        yield return new WaitForSeconds(battleStartDelay); // Wait for the delay before starting
         isBattling = true;
+
+        // Play the boss battle start music and sound effect
+        PlayBossBattleMusic();
         StartCoroutine(BossLoop());
+    }
+
+    private void PlayBossBattleMusic()
+    {
+        // Stop any current background music
+        if (musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
+
+        // Start playing the boss battle music
+        musicSource.clip = bossBattleMusic;
+        musicSource.Play();
     }
 
     private IEnumerator BossLoop()
@@ -43,7 +71,7 @@ public class WolfBoss : MonoBehaviour
 
             switch (move)
             {
-                case 0: yield return LungeAttack(); break;
+                case 0: yield return MissileAttack(); break; // Updated to missile attack
                 case 1: yield return HowlSummon(); break;
                 case 2: yield return SwipeAttack(); break;
             }
@@ -51,33 +79,18 @@ public class WolfBoss : MonoBehaviour
             yield return new WaitForSeconds(1.5f);
         }
     }
-    public void StartLungeAttack()
+
+    // Missile Attack: Shoots a missile at the player's last known location
+    private IEnumerator MissileAttack()
     {
-        if (!isLunging)
-            StartCoroutine(LungeAttack());
-    }
+        // Slight delay before the missile launches
+        yield return new WaitForSeconds(0.5f);
 
-    private IEnumerator LungeAttack()
-    {
-        isLunging = true;
+        Vector3 playerLastKnownPos = player.position; // Get the last known player position
+        GameObject missile = Instantiate(missilePrefab, transform.position, Quaternion.identity);
+        missile.GetComponent<Rigidbody2D>().linearVelocity = (playerLastKnownPos - transform.position).normalized * 10f; // Adjust speed as needed
 
-        // Optional: play lunge sound or animation
-        Vector3 direction = transform.localScale.x > 0 ? Vector3.right : Vector3.left;
-
-        // Spawn hitbox
-        GameObject hitbox = Instantiate(lungeHitboxPrefab, hitboxSpawnPoint.position, Quaternion.identity);
-        hitbox.transform.localScale = new Vector3(transform.localScale.x, 1, 1); // Flip hitbox if needed
-
-        float elapsed = 0f;
-        while (elapsed < lungeDuration)
-        {
-            transform.position += direction * lungeSpeed * Time.deltaTime;
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        Destroy(hitbox);
-        isLunging = false;
+        yield return new WaitForSeconds(1f); // Missile flight time (adjust as needed)
     }
 
     private IEnumerator HowlSummon()
@@ -87,21 +100,63 @@ public class WolfBoss : MonoBehaviour
 
         // Visual FX
         //if (howlEffectPrefab)
-            //Instantiate(howlEffectPrefab, transform.position, Quaternion.identity);
+        //    Instantiate(howlEffectPrefab, transform.position, Quaternion.identity);
 
         yield return new WaitForSeconds(0.3f);
 
-        foreach (var point in summonPoints)
+        // Spawn minions based on the minionsToSpawn count
+        for (int i = 0; i < minionsToSpawn; i++)
         {
-            Instantiate(minionPrefab, point.position, Quaternion.identity);
-            yield return new WaitForSeconds(0.3f);
+            // Spawn a minion at each summon point
+            foreach (var point in summonPoints)
+            {
+                Instantiate(minionPrefab, point.position, Quaternion.identity);
+                yield return new WaitForSeconds(0.3f); // Delay between each spawn
+            }
+        }
+
+        // Howl count logic: After 3 howls, wait before the next set
+        howlCount++;
+        if (howlCount >= maxHowls)
+        {
+            howlCount = 0; // Reset howl count
+            yield return new WaitForSeconds(howlDelay); // Wait for some time before next howl series
         }
     }
 
     private IEnumerator SwipeAttack()
     {
-        // Play audio, screen shake, etc. here
-        Instantiate(swipeSlashPrefab, transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(0.5f); // wait before next action
+        // Play swipe sound
+        audioSource.PlayOneShot(swipeSFX);
+
+        // Spawn the swipe effect
+        GameObject swipe = Instantiate(swipeSlashPrefab, transform.position, Quaternion.identity);
+
+        // Disable the swipe object immediately to prevent it from interacting with the game world
+        swipe.SetActive(false);
+
+        // Move swipe from left to right
+        float swipeDuration = 1f; // Duration to move swipe (adjust as needed)
+        Vector3 startPosition = swipe.transform.position;
+        Vector3 endPosition = new Vector3(startPosition.x + 3f, startPosition.y, startPosition.z); // Adjust distance
+
+        float elapsedTime = 0f;
+
+        // Move the swipe
+        while (elapsedTime < swipeDuration)
+        {
+            swipe.transform.position = Vector3.Lerp(startPosition, endPosition, elapsedTime / swipeDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // Once swipe movement is finished, disable the swipe object
+        swipe.SetActive(false);
+
+        // Reset the swipe object for next use
+        swipe.transform.position = startPosition;
+        swipe.SetActive(true);
+
+        // Ensure the swipe prefab is properly reset for the next swipe
     }
 }

@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class HealthPickup : MonoBehaviour
 {
     [Header("Health Settings")]
     public int healAmount = 20; // Amount of health restored
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         HealthBarManager healthManager = other.GetComponent<HealthBarManager>();

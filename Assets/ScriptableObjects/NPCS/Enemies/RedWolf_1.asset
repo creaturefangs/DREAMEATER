@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7d9ba8eb5efc5439a9b47c05544398, type: 3}
   m_Name: RedWolf_1
   m_EditorClassIdentifier: 
-  characterName: The Wolf
-  characterPortrait: {fileID: 0}
+  characterName: Wolf
+  characterPortrait: {fileID: -1434940453518520256, guid: 79c97d9c7a175bc4e9d3ac503992401b, type: 3}
   dialogueSprites:
   - {fileID: 6812003879688813535, guid: 60c2f32573285a34ca63b4350765e2a2, type: 3}
   - {fileID: 1780247102297649245, guid: 60c2f32573285a34ca63b4350765e2a2, type: 3}
   - {fileID: -7213337173992056786, guid: 60c2f32573285a34ca63b4350765e2a2, type: 3}
-  - {fileID: 0}
   dialogueLines:
   - ' Sharp of the tooth,'
   - and merciless of fang

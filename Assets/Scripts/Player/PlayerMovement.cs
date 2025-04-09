@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
     public float moveSpeed = 5f; // Speed of the player
 
     public Rigidbody2D rb; // Reference to the player's Rigidbody2D component

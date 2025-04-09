@@ -16,6 +16,19 @@ public class AttackHitbox : MonoBehaviour
                 enemy.TakeDamage(damage);
             }
         }
+
+        Debug.Log("Trigger entered with: " + other.name);
+
+        if (other.CompareTag("Breakable"))
+        {
+            Debug.Log("Breakable object detected.");
+            HealthSpawner spawner = other.GetComponent<HealthSpawner>();
+            if (spawner != null)
+            {
+                Debug.Log("HealthSpawner found, calling OnHit.");
+                spawner.OnHit();
+            }
+        }
     }
 }
 

@@ -97,13 +97,10 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-
-
-
     //  Start NPC Dialogue
     public void StartDialogue(SO_Dialogue dialogue)
     {
-        if (dialoguePanel.activeSelf || dialogue == null) return; // Prevent restarting dialogue while active
+        if (dialoguePanel.activeSelf || dialogue == null) return;
 
         currentDialogue = dialogue;
         dialoguePanel.SetActive(true);
@@ -111,6 +108,16 @@ public class DialogueManager : MonoBehaviour
         dialogueText.font = currentDialogue.dialogueFont;
         characterPortrait.sprite = currentDialogue.characterPortrait;
         currentDialogueIndex = 0;
+
+        // Update wolf sprite at start of dialogue
+        if (wolfBossController != null && currentDialogue.dialogueSprites != null && currentDialogue.dialogueSprites.Length > 0)
+        {
+            SpriteRenderer wolfSpriteRenderer = wolfBossController.GetComponent<SpriteRenderer>();
+            if (wolfSpriteRenderer != null)
+            {
+                wolfSpriteRenderer.sprite = currentDialogue.dialogueSprites[0];
+            }
+        }
 
         onDialogueStart?.Invoke();
         ShowNextDialogue();
@@ -126,10 +133,21 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.text = "";
 
-        // Update character sprite if available
+        // Update UI character portrait
         if (currentDialogue.dialogueSprites != null && currentDialogueIndex < currentDialogue.dialogueSprites.Length)
         {
-            characterPortrait.sprite = currentDialogue.dialogueSprites[currentDialogueIndex];
+            characterPortrait.sprite = currentDialogue.characterPortrait; // keep UI consistent
+        }
+
+        // Update in-world wolf sprite
+        if (wolfBossController != null && currentDialogue.dialogueSprites != null &&
+            currentDialogueIndex < currentDialogue.dialogueSprites.Length)
+        {
+            SpriteRenderer wolfSpriteRenderer = wolfBossController.GetComponent<SpriteRenderer>();
+            if (wolfSpriteRenderer != null)
+            {
+                wolfSpriteRenderer.sprite = currentDialogue.dialogueSprites[currentDialogueIndex];
+            }
         }
 
         StartTypewriterEffect(currentDialogue.dialogueLines[currentDialogueIndex]);
@@ -188,6 +206,11 @@ public class DialogueManager : MonoBehaviour
 
         StartTypewriterEffect(currentTablets.dialogueLines[currentDialogueIndex]);
         currentDialogueIndex++;
+    }
+
+    public bool IsDialogueActive()
+    {
+        return dialoguePanel.activeSelf;
     }
 
     // Typing Effect
@@ -272,12 +295,20 @@ public class DialogueManager : MonoBehaviour
 
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
+
         currentDialogue = null;
         currentScrolls = null;
         currentTablets = null;
         currentDialogueIndex = 0;
 
-        onDialogueEnd?.Invoke();
+        // Set the event to null to prevent re-triggering during CloseUI
+        UnityEvent tempEvent = onDialogueEnd;
+        onDialogueEnd = null;  // Clear the event temporarily
+
+        tempEvent?.Invoke();  // Now safely invoke
+
+        // Restore the event
+        onDialogueEnd = tempEvent;
 
         if (triggersBattle && wolfBossController != null)
         {
