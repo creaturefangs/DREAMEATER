@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
@@ -27,15 +28,17 @@ public class DialogueManager : MonoBehaviour
     private int currentDialogueIndex = 0;
 
     [Header("Audio")]
-    [SerializeField] private AudioSource _audio;
+    [SerializeField] private AudioSource audio;
 
     [Header("Events")]
     public UnityEvent onDialogueStart;
     public UnityEvent onDialogueEnd;
 
     public GameObject wolfBossController; // assign in inspector or dynamically
-   
 
+    private SO_Items currentItem;
+    private int currentItemLineIndex = 0;
+    private System.Action<bool> currentItemCallback;
     private void Awake()
     {
         // Ensure there is only one instance of DialogueManager
@@ -236,7 +239,7 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             //Debug.Log($"Typing: {dialogueText.text}"); // Debugging
 
-            if (_audio)
+            if (audio)
             {
                 AudioClip clipToPlay = null;
 
@@ -249,8 +252,8 @@ public class DialogueManager : MonoBehaviour
 
                 if (clipToPlay != null)
                 {
-                    _audio.pitch = Random.Range(0.9f, 1.2f);
-                    _audio.PlayOneShot(clipToPlay);
+                    audio.pitch = Random.Range(0.9f, 1.2f);
+                    audio.PlayOneShot(clipToPlay);
                 }
             }
 
@@ -321,5 +324,63 @@ public class DialogueManager : MonoBehaviour
             // if you still need to disable it, you can do so inside the WolfBoss script
         }
     }
+
+    ///THIS IS THE START OF ITEM INTERACTION DIALOGUE FOR SO_ITEMS/
+    public void StartItemInteraction(SO_Items item, System.Action<bool> onChoiceMade)
+    {
+        dialoguePanel.SetActive(true);
+        dialogueText.text = "";
+        currentItem = item;
+        currentItemLineIndex = 0;
+        StartCoroutine(TypeItemLine(onChoiceMade));
+    }
+
+    private IEnumerator TypeItemLine(System.Action<bool> onChoiceMade)
+    {
+        isTyping = true;
+        dialogueText.text = "";
+
+        string line = currentItem.itemLines[currentItemLineIndex];
+        if (currentItem.iteminteractSFX != null)
+            audio.PlayOneShot(currentItem.iteminteractSFX);
+
+        foreach (char c in line.ToCharArray())
+        {
+            dialogueText.text += c;
+            yield return new WaitForSeconds(0.02f);
+        }
+
+        isTyping = false;
+        currentItemLineIndex++;
+
+        if (currentItemLineIndex < currentItem.itemLines.Length)
+        {
+            Invoke(nameof(ContinueItemDialogue), 0.5f); // Auto-continue after brief pause
+        }
+        else
+        {
+            ShowItemChoiceButtons(onChoiceMade); // Present pickup/leave choices
+        }
+    }
+
+    private void ContinueItemDialogue()
+    {
+        StartCoroutine(TypeItemLine(currentItemCallback));
+    }
+
+
+    private void ShowItemChoiceButtons(System.Action<bool> callback)
+    {
+        currentItemCallback = callback;
+        // Show UI Buttons here and wire them up to call AcceptItemChoice(true) or AcceptItemChoice(false)
+    }
+
+    public void AcceptItemChoice(bool pickedUp)
+    {
+        CloseUI();
+        currentItemCallback?.Invoke(pickedUp);
+        currentItem = null;
+    }
+
 }
 
