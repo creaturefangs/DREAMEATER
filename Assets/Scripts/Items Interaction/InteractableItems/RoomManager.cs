@@ -9,6 +9,7 @@ public class RoomManager : MonoBehaviour
     public NPC[] npcs; // List of all NPCs
     public Door[] roomDoors; // List of corresponding doors for each NPC's room
 
+
     private void Awake()
     {
         if (Instance == null)
@@ -49,7 +50,7 @@ public class RoomManager : MonoBehaviour
 }
 
 [System.Serializable]
-public class NPC
+public class NPC     
 {
     public string npcName;
     public int itemsGiven = 0;
@@ -61,11 +62,14 @@ public class NPC
     }
 }
 
-public class Door
+public class Door : MonoBehaviour
 {
+    public LockableDoorTeleport lockedDoor;
     public void Unlock()
     {
         Debug.Log("Door unlocked!");
-        // Logic to open the door or enable the exit
+
+        lockedDoor.isLocked = false;
+            // Logic to open the door or enable the exit
     }
 }

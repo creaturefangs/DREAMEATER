@@ -11,6 +11,7 @@ public class SO_Items : ScriptableObject
     public Sprite itemIcon;
     public string[] itemLines;
     public AudioClip iteminteractSFX;
+    public AudioClip typeSFX;
 
     //SFX and ingame-data
 

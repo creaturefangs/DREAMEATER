@@ -22,7 +22,6 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Typing Settings")]
     public float typingSpeed = 0.05f;
-
     private bool isTyping = false;
     private Coroutine typingCoroutine;
     private int currentDialogueIndex = 0;
@@ -34,11 +33,19 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent onDialogueStart;
     public UnityEvent onDialogueEnd;
 
-    public GameObject wolfBossController; // assign in inspector or dynamically
-
+    [Header("Items")]
     private SO_Items currentItem;
     private int currentItemLineIndex = 0;
     private System.Action<bool> currentItemCallback;
+
+    [Header("Item Choice Buttons")]
+    public GameObject itemChoicePanel;
+    public Button pickUpButton;
+    public Button leaveButton;
+
+    public GameObject wolfBossController; // assign in inspector or dynamically
+
+   
     private void Awake()
     {
         // Ensure there is only one instance of DialogueManager
@@ -331,12 +338,14 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
         dialogueText.text = "";
         currentItem = item;
+        nameText.text = item.itemText;
+        characterPortrait.sprite = item.itemIcon;
         currentItemLineIndex = 0;
         StartCoroutine(TypeItemLine(onChoiceMade));
     }
 
     private IEnumerator TypeItemLine(System.Action<bool> onChoiceMade)
-    {
+    {   
         isTyping = true;
         dialogueText.text = "";
 
@@ -348,7 +357,23 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text += c;
             yield return new WaitForSeconds(0.02f);
+
+            if (audio)
+            {
+                AudioClip clipToPlay = null;
+
+                if (currentItem != null && currentItem.typeSFX != null)
+                    clipToPlay = currentItem.typeSFX;
+
+                if (clipToPlay != null)
+                {
+                    audio.pitch = Random.Range(0.9f, 1.2f);
+                    audio.PlayOneShot(clipToPlay);
+                }
+            }
         }
+
+        Debug.Log("Typing item line: " + line);
 
         isTyping = false;
         currentItemLineIndex++;
@@ -372,15 +397,23 @@ public class DialogueManager : MonoBehaviour
     private void ShowItemChoiceButtons(System.Action<bool> callback)
     {
         currentItemCallback = callback;
-        // Show UI Buttons here and wire them up to call AcceptItemChoice(true) or AcceptItemChoice(false)
+
+        itemChoicePanel.SetActive(true);
+
+        pickUpButton.onClick.RemoveAllListeners();
+        leaveButton.onClick.RemoveAllListeners();
+
+        pickUpButton.onClick.AddListener(() => AcceptItemChoice(true));
+        leaveButton.onClick.AddListener(() => AcceptItemChoice(false));
     }
 
     public void AcceptItemChoice(bool pickedUp)
     {
+        itemChoicePanel.SetActive(false); // hide buttons
         CloseUI();
         currentItemCallback?.Invoke(pickedUp);
         currentItem = null;
     }
-
+     
 }
 

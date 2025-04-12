@@ -6,6 +6,7 @@ public class InteractableItems : MonoBehaviour
     public SO_Items itemData;
     public UnityEvent onItemPickedUp;
     public UnityEvent onItemLeft;
+    
 
     private bool isInteracting = false;
     private bool hasBeenCollected = false;
@@ -31,27 +32,22 @@ public class InteractableItems : MonoBehaviour
             AudioSource.PlayClipAtPoint(itemData.iteminteractSFX, transform.position);
         }
 
-        // Use DialogueManager to show item description
-        DialogueManager.Instance.StartItemInteraction(itemData, OnChoosePickUp, OnChooseLeave);
+        DialogueManager.Instance.StartItemInteraction(itemData, OnChoiceMade);
     }
 
-    private void OnChoosePickUp()
+    private void OnChoiceMade(bool pickedUp)
     {
-        if (hasBeenCollected) return;
+        if (pickedUp)
+        {
+            InventoryManager.Instance.AddItem(itemData); // or whatever your add function is
+            hasBeenCollected = true;
 
-        hasBeenCollected = true;
-        isInteracting = false;
+            if (itemData.iteminteractSFX != null)
+                AudioSource.PlayClipAtPoint(itemData.iteminteractSFX, transform.position);
 
-        InventoryManager.Instance.AddItem(itemData);
-        onItemPickedUp?.Invoke();
+            gameObject.SetActive(false); // or destroy, if needed
+        }
 
-        // Hide or destroy the object
-        gameObject.SetActive(false);
-    }
-
-    private void OnChooseLeave()
-    {
-        isInteracting = false;
-        onItemLeft?.Invoke();
+        isInteracting = false; // Reset here
     }
 }

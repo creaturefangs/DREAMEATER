@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13166ebfde3db6b43acbab071daf69f1, type: 3}
-  m_Name: Key
+  m_Name: Pluto_Key
   m_EditorClassIdentifier: 
   itemText: Key
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 1095141833252711340, guid: c06b22361f2f89047b318ba536962fef, type: 3}
   itemLines:
-  - 
-  iteminteractSFX: {fileID: 0}
+  - 'There is an old, rusted key on the floor. '
+  iteminteractSFX: {fileID: 8300000, guid: 73e85b11ce931354f845285d90fc5cc6, type: 3}
+  typeSFX: {fileID: 8300000, guid: b6eb26e3ac78a3240a122e696e2f0b5c, type: 3}
   itemSFX: {fileID: 0}
-  itemDescription: 
+  itemDescription: 'The key is dirty and rusted. It can be used to unlock doors. '
