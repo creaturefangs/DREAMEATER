@@ -2648,7 +2648,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8179129693604153344}
   - component: {fileID: 1231791395012567398}
-  - component: {fileID: 4080494056870227109}
   - component: {fileID: 9188177958090619372}
   - component: {fileID: 8563207003574848867}
   - component: {fileID: 6468401163366807838}
@@ -2722,19 +2721,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &4080494056870227109
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2379280889387684833}
-  m_Enabled: 1
 --- !u!114 &9188177958090619372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3595,6 +3586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7716419258918232143}
   - component: {fileID: 8765551672902242766}
+  - component: {fileID: 5461137242493719709}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3719,6 +3711,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &5461137242493719709
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971026669541049531}
+  m_Enabled: 1
 --- !u!1 &2986052879303212173
 GameObject:
   m_ObjectHideFlags: 0
@@ -10319,11 +10319,11 @@ MonoBehaviour:
   characterPortrait: {fileID: 1348618787351159862}
   dialoguePanel: {fileID: 8760438951208462629}
   typingSpeed: 0.08
-  audio: {fileID: 0}
+  audio: {fileID: 1932756619028580278}
   onDialogueStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2693857133815248659}
+      - m_Target: {fileID: 8703075934695299673}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: StartInteraction
         m_Mode: 4

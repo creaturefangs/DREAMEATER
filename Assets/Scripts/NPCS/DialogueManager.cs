@@ -65,22 +65,27 @@ public class DialogueManager : MonoBehaviour
     {
         if (!dialoguePanel.activeSelf) return;
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        // SPACE = advance or complete typing
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isTyping)
             {
-                // Instantly complete current line instead of advancing
                 StopCoroutine(typingCoroutine);
                 CompleteTypingCurrentLine();
             }
             else
             {
-                ShowNext(); // Smart handler that knows which type we're in
+                ShowNext();
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+
+        // ENTER = close ONLY if dialogue is completely finished
+        else if (Input.GetKeyDown(KeyCode.Return))
         {
-            CloseUI();
+            if (IsAllDialogueFinished())
+            {
+                CloseUI();
+            }
         }
 
     }
@@ -296,6 +301,23 @@ public class DialogueManager : MonoBehaviour
             ShowNextScroll();
         else if (currentTablets != null)
             ShowNextTablet();
+    }
+
+    private bool IsAllDialogueFinished()
+    {
+        if (currentDialogue != null)
+            return currentDialogueIndex >= currentDialogue.dialogueLines.Length;
+
+        if (currentScrolls != null)
+            return currentDialogueIndex >= currentScrolls.dialogueLines.Length;
+
+        if (currentTablets != null)
+            return currentDialogueIndex >= currentTablets.dialogueLines.Length;
+
+        if (currentItem != null)
+            return currentItemLineIndex >= currentItem.itemLines.Length;
+
+        return true;
     }
 
     // Close UI

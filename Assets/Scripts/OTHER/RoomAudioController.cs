@@ -6,69 +6,70 @@ using UnityEngine.UI;
 public class RoomAudioController : MonoBehaviour
 {
     [Header("Audio Sources (Assign in Inspector)")]
-    public AudioSource musicSource;   // Main music audio source
-    public AudioSource ambienceSource; // Main ambience audio source
+    public AudioSource musicSource;
+    public AudioSource ambienceSource;
 
     [Header("Audio Settings")]
     [Range(0f, 1f)] public float musicVolume = 1f;
     [Range(0f, 1f)] public float ambienceVolume = 1f;
     public float fadeDuration = 1f;
 
-    [Header("Planet Music & Ambience Clips")]
-    public List<PlanetAudio> planetAudioList = new List<PlanetAudio>();
+    [Header("Room Audio List (Matched By Trigger Name)")]
+    public List<RoomAudioEntry> roomAudioList = new List<RoomAudioEntry>();
 
-    private Dictionary<string, PlanetAudio> planetAudioDict = new Dictionary<string, PlanetAudio>();
+    private Dictionary<string, RoomAudioEntry> roomDict = new Dictionary<string, RoomAudioEntry>();
+
     private Coroutine fadeCoroutineMusic;
     private Coroutine fadeCoroutineAmbience;
-    private string currentPlanet = "";
+
+    private string currentRoom = "";
 
     private void Start()
     {
-        // Convert List to Dictionary for fast lookups
-        foreach (var planet in planetAudioList)
+        // Build lookup dictionary using room names as keys
+        foreach (var entry in roomAudioList)
         {
-            if (!planetAudioDict.ContainsKey(planet.planetTag))
-            {
-                planetAudioDict.Add(planet.planetTag, planet);
-            }
+            if (!roomDict.ContainsKey(entry.roomName))
+                roomDict.Add(entry.roomName, entry);
         }
 
-        // If no planet is assigned at start, fade out music and ambience
-        if (string.IsNullOrEmpty(currentPlanet))
-        {
-            musicSource.volume = 0f;
-            ambienceSource.volume = 0f;
-        }
+        // Initially silent
+        musicSource.volume = 0f;
+        ambienceSource.volume = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (planetAudioDict.ContainsKey(other.tag))
+        string roomName = other.gameObject.name;
+
+        if (roomDict.ContainsKey(roomName))
         {
-            if (currentPlanet != other.tag)
-            {
-                currentPlanet = other.tag;
-                PlanetAudio newPlanetAudio = planetAudioDict[other.tag];
+            if (currentRoom == roomName)
+                return;
 
-                // Immediately assign and start music if not playing
-                if (!musicSource.isPlaying || musicSource.clip != newPlanetAudio.musicClip)
-                {
-                    ChangeAudio(musicSource, newPlanetAudio.musicClip, musicVolume, ref fadeCoroutineMusic);
-                }
+            currentRoom = roomName;
+            RoomAudioEntry entry = roomDict[roomName];
 
-                if (!ambienceSource.isPlaying || ambienceSource.clip != newPlanetAudio.ambienceClip)
-                {
-                    ChangeAudio(ambienceSource, newPlanetAudio.ambienceClip, ambienceVolume, ref fadeCoroutineAmbience);
-                }
-            }
+            // Fade in music
+            if (musicSource.clip != entry.musicClip)
+                ChangeAudio(musicSource, entry.musicClip, musicVolume, ref fadeCoroutineMusic);
+
+            // Fade in ambience
+            if (ambienceSource.clip != entry.ambienceClip)
+                ChangeAudio(ambienceSource, entry.ambienceClip, ambienceVolume, ref fadeCoroutineAmbience);
+        }
+        else
+        {
+            Debug.LogWarning($"RoomAudioController: No audio entry for Trigger name: {roomName}");
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == currentPlanet)
+        if (other.gameObject.name == currentRoom)
         {
-            currentPlanet = "";
+            currentRoom = "";
+
             StartCoroutine(FadeOutAudio(musicSource, fadeDuration));
             StartCoroutine(FadeOutAudio(ambienceSource, fadeDuration));
         }
@@ -84,6 +85,7 @@ public class RoomAudioController : MonoBehaviour
 
     private IEnumerator FadeInAudio(AudioSource source, AudioClip newClip, float targetVolume)
     {
+        // Fade out current clip first
         if (source.isPlaying)
             yield return StartCoroutine(FadeOutAudio(source, fadeDuration));
 
@@ -119,10 +121,10 @@ public class RoomAudioController : MonoBehaviour
 }
 
 [System.Serializable]
-public class PlanetAudio
+public class RoomAudioEntry
 {
-    public string planetTag;      // The tag for the planet trigger collider
-    public AudioClip musicClip;   // Music for that planet
-    public AudioClip ambienceClip; // Ambience for that planet
+    public string roomName;      // Must match the trigger GameObject name
+    public AudioClip musicClip;
+    public AudioClip ambienceClip;
 }
 
