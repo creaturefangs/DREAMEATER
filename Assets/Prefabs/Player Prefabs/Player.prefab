@@ -5061,10 +5061,10 @@ MonoBehaviour:
     musicClip: {fileID: 0}
     ambienceClip: {fileID: 8300000, guid: 68a2c5a5dbd789e47902336f28bd7f45, type: 3}
   - roomName: M_Uranus
-    musicClip: {fileID: 0}
+    musicClip: {fileID: 8300000, guid: eab941975b91d89499fe97cc1b8cd481, type: 3}
     ambienceClip: {fileID: 8300000, guid: 72bc5cd2433a51c42b357ddcfc7f6f70, type: 3}
   - roomName: M_Jupiter
-    musicClip: {fileID: 0}
+    musicClip: {fileID: 8300000, guid: c734371bafdbf664cb5ce752c69ed714, type: 3}
     ambienceClip: {fileID: 8300000, guid: 02ae78ee2e494af4ba52d22dfbd183ce, type: 3}
   - roomName: M_Saturn
     musicClip: {fileID: 8300000, guid: f5b96ce17b71f2a4db7fa2fb858168c8, type: 3}
@@ -5073,13 +5073,16 @@ MonoBehaviour:
     musicClip: {fileID: 0}
     ambienceClip: {fileID: 8300000, guid: a80219605b332ec4f89c590d755eae63, type: 3}
   - roomName: M_Mars
-    musicClip: {fileID: 0}
+    musicClip: {fileID: 8300000, guid: ce8417dc370564b4284a2e8c8b834c08, type: 3}
     ambienceClip: {fileID: 8300000, guid: 77b60dd2d92324641952fdfe02c25fc6, type: 3}
   - roomName: M_Venus
-    musicClip: {fileID: 0}
+    musicClip: {fileID: 8300000, guid: 7e813b0fbb793e846a9bdabc3f3db247, type: 3}
     ambienceClip: {fileID: 0}
   - roomName: M_Moon
     musicClip: {fileID: 0}
+    ambienceClip: {fileID: 0}
+  - roomName: M_Mercury
+    musicClip: {fileID: 8300000, guid: fb38a5ad79eaac041a7d0ff9107a5167, type: 3}
     ambienceClip: {fileID: 0}
   - roomName: M_Sun
     musicClip: {fileID: 0}

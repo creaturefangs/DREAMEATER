@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a7d9ba8eb5efc5439a9b47c05544398, type: 3}
-  m_Name: Venus_01
+  m_Name: Mars_01
   m_EditorClassIdentifier: 
-  characterName: Eosphorus
-  characterPortrait: {fileID: -7872858919714600510, guid: bc23f17139679274ab0c8440dbebda12, type: 3}
+  characterName: Pyroeis
+  characterPortrait: {fileID: -1528005437228425028, guid: 99804ae125b692b4ba77fc320bb7d6fc, type: 3}
   dialogueSprites: []
   dialogueLines:
-  - Oh, dearie
-  - Do try to make yourself useful.
-  - 'Find my things. '
-  - Perfume, totem.
-  dialogueSFX: {fileID: 8300000, guid: 9fadcee8a7745364d9d2b5dff6101f80, type: 3}
+  - Silence!
+  - 'Let me rot, child. '
+  dialogueSFX: {fileID: 0}
   dialogueFont: {fileID: 0}
   triggersBossBattle: 0
