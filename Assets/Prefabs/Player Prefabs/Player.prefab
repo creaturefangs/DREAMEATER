@@ -4676,6 +4676,7 @@ GameObject:
   - component: {fileID: 5483883231940933990}
   - component: {fileID: 8488544189633805705}
   - component: {fileID: 7320340718871461469}
+  - component: {fileID: 627812764020810983}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Player
@@ -5035,6 +5036,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b24ee0075de004d8370e25808f193f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &627812764020810983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3543847304304877018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c1754fc4c526640b99509c473fd2bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 0}
+  ambienceSource: {fileID: 0}
+  musicVolume: 0.35
+  ambienceVolume: 0.6
+  fadeDuration: 0.5
+  roomAudioList:
+  - roomName: M_Pluto
+    musicClip: {fileID: 8300000, guid: afa5272aa492b5244a39d76ee8b69fc1, type: 3}
+    ambienceClip: {fileID: 8300000, guid: 43ed0f5934214cf4faf59c2e546ca4dd, type: 3}
+  - roomName: M_Neptune
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 8300000, guid: 68a2c5a5dbd789e47902336f28bd7f45, type: 3}
+  - roomName: M_Uranus
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 8300000, guid: 72bc5cd2433a51c42b357ddcfc7f6f70, type: 3}
+  - roomName: M_Jupiter
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 8300000, guid: 02ae78ee2e494af4ba52d22dfbd183ce, type: 3}
+  - roomName: M_Saturn
+    musicClip: {fileID: 8300000, guid: f5b96ce17b71f2a4db7fa2fb858168c8, type: 3}
+    ambienceClip: {fileID: 8300000, guid: 29d9183c2a090904d825069d400f22bf, type: 3}
+  - roomName: M_Earth
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 8300000, guid: a80219605b332ec4f89c590d755eae63, type: 3}
+  - roomName: M_Mars
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 8300000, guid: 77b60dd2d92324641952fdfe02c25fc6, type: 3}
+  - roomName: M_Venus
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 0}
+  - roomName: M_Moon
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 0}
+  - roomName: M_Sun
+    musicClip: {fileID: 0}
+    ambienceClip: {fileID: 0}
+  - roomName: M_IntroHallway
+    musicClip: {fileID: 8300000, guid: 4128e2cac84eaf640bc4d18ef336506c, type: 3}
+    ambienceClip: {fileID: 0}
+  - roomName: M_Hallway
+    musicClip: {fileID: 8300000, guid: e2a7eb85c0ce2654bade9585795a467b, type: 3}
+    ambienceClip: {fileID: 0}
 --- !u!1 &3750919520212716913
 GameObject:
   m_ObjectHideFlags: 0

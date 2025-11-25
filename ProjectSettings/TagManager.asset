@@ -19,6 +19,8 @@ TagManager:
   - M_Sun
   - M_Hallway
   - Breakable
+  - MusicAudio
+  - AmbienceAudio
   layers:
   - Default
   - TransparentFX

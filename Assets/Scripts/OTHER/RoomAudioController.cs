@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class RoomAudioController : MonoBehaviour
 {
-    [Header("Audio Sources (Assign in Inspector)")]
-    public AudioSource musicSource;
-    public AudioSource ambienceSource;
+    [Header("Audio Sources")]
+    [HideInInspector] public AudioSource musicSource;
+    [HideInInspector] public AudioSource ambienceSource;
 
     [Header("Audio Settings")]
     [Range(0f, 1f)] public float musicVolume = 1f;
@@ -24,9 +24,23 @@ public class RoomAudioController : MonoBehaviour
 
     private string currentRoom = "";
 
+
+    private void Awake()
+    {
+        // Try to find music source in the scene
+        GameObject musicObj = GameObject.FindGameObjectWithTag("MusicAudio");
+        if (musicObj != null)
+            musicSource = musicObj.GetComponent<AudioSource>();
+
+        // Try to find ambience source in the scene
+        GameObject ambienceObj = GameObject.FindGameObjectWithTag("AmbienceAudio");
+        if (ambienceObj != null)
+            ambienceSource = ambienceObj.GetComponent<AudioSource>();
+    }
+
     private void Start()
     {
-        // Build lookup dictionary using room names as keys
+        // Build dictionary
         foreach (var entry in roomAudioList)
         {
             if (!roomDict.ContainsKey(entry.roomName))
@@ -36,6 +50,26 @@ public class RoomAudioController : MonoBehaviour
         // Initially silent
         musicSource.volume = 0f;
         ambienceSource.volume = 0f;
+
+        // NEW: Check if the player is already inside a trigger
+        Collider2D[] hits = Physics2D.OverlapPointAll(transform.position);
+
+        foreach (var hit in hits)
+        {
+            string roomName = hit.gameObject.name;
+
+            if (roomDict.ContainsKey(roomName))
+            {
+                currentRoom = roomName;
+                RoomAudioEntry entry = roomDict[roomName];
+
+                // Start both audio tracks immediately (fade in)
+                ChangeAudio(musicSource, entry.musicClip, musicVolume, ref fadeCoroutineMusic);
+                ChangeAudio(ambienceSource, entry.ambienceClip, ambienceVolume, ref fadeCoroutineAmbience);
+
+                break;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
