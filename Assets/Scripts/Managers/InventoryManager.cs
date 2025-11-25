@@ -1,3 +1,4 @@
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -68,5 +69,16 @@ public class InventoryManager : MonoBehaviour
                 inventorySlots[i].enabled = false;
             }
         }
+    }
+
+    public SO_Items GetItemAtIndex(int index)
+    {
+        return inventory[index];
+    }
+
+    public void SetItemAtIndex(int index, SO_Items item)
+    {
+        inventory[index] = item;
+        UpdateInventoryUI();
     }
 }

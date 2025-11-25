@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SO_Items : ScriptableObject
 {
+    public string itemID;
 
     // Dialogue Text and description
 

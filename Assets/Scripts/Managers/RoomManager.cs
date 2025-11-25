@@ -9,7 +9,6 @@ public class RoomManager : MonoBehaviour
     public NPC[] npcs; // List of all NPCs
     public Door[] roomDoors; // List of corresponding doors for each NPC's room
 
-
     private void Awake()
     {
         if (Instance == null)

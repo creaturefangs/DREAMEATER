@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7d9ba8eb5efc5439a9b47c05544398, type: 3}
   m_Name: Saturn_01
   m_EditorClassIdentifier: 
-  characterName: 
-  characterPortrait: {fileID: 0}
+  characterName: Satus
+  characterPortrait: {fileID: 6020123868824150370, guid: ac2c723d1cde5eb49bf3b149942d651c, type: 3}
   dialogueSprites: []
-  dialogueLines: []
+  dialogueLines:
+  - Hello, child.
+  - What brings you here?
+  - Nobody's graced us in a very long time.
   dialogueSFX: {fileID: 0}
   dialogueFont: {fileID: 0}
   triggersBossBattle: 0

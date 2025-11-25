@@ -12,15 +12,16 @@ Material:
   m_Parent: {fileID: 2100000, guid: db886670ba2c67642a43071d35d5128a, type: 2}
   m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
-  - _ALPHATEST_ON
+  - _ALPHABLEND_ON
+  - _COLORADDSUBDIFF_ON
   - _EMISSION
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: 3000
   stringTagMap:
-    RenderType: TransparentCutout
+    RenderType: Transparent
   disabledShaderPasses:
   - GRABPASS
   m_LockedProperties: 
@@ -31,20 +32,20 @@ Material:
     m_Floats:
     - _BlendOp: 0
     - _CameraFadingEnabled: 0
-    - _ColorMode: 0
+    - _ColorMode: 1
     - _Cull: 2
     - _Cutoff: 0.104
     - _DistortionEnabled: 0
     - _DistortionStrength: 1
     - _DistortionStrengthScaled: 0.1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _FlipbookMode: 0
-    - _Mode: 1
+    - _Mode: 2
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1
     - _SoftParticlesNearFadeDistance: 0
-    - _SrcBlend: 1
-    - _ZWrite: 1
+    - _SrcBlend: 5
+    - _ZWrite: 0
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 0.7490196, g: 0.42677754, b: 0.009285436, a: 1}

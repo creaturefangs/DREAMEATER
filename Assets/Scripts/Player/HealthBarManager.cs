@@ -8,7 +8,7 @@ public class HealthBarManager : MonoBehaviour
     public Image healthBarFill;
     public CanvasGroup healthBarCanvasGroup;
     public float maxHealth = 100f;
-    private float currentHealth;
+    public float currentHealth;
 
     [SerializeField] private SpriteRenderer playerSprite;
     public Animator playerAnimator;
