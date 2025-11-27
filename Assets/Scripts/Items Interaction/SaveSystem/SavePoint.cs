@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SavePoint : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class SavePoint : MonoBehaviour
     public string savePointID = "SavePoint_01";
 
     [Header("UI")]
-    public GameObject saveMenuUI;   // Assign your save menu panel here
+    public GameObject saveMenuUI;
     public KeyCode interactKey = KeyCode.E;
 
     private bool playerInRange = false;
@@ -24,7 +25,7 @@ public class SavePoint : MonoBehaviour
         if (saveMenuUI != null)
         {
             saveMenuUI.SetActive(true);
-            Time.timeScale = 0f; // Optional: pause game
+            Time.timeScale = 0f;
         }
     }
 
@@ -37,36 +38,80 @@ public class SavePoint : MonoBehaviour
         }
     }
 
-    // -----------------------------
-    // BUTTON: Save Game
-    // -----------------------------
+    // ----------------------------------------------------------
+    // SAVE GAME BUTTON LOGIC
+    // ----------------------------------------------------------
     public void SaveGameButton()
     {
-        HealthBarManager player = FindObjectOfType<HealthBarManager>();
-        if (player == null)
+        SaveManager mgr = SaveManager.Instance;
+
+        if (mgr == null)
         {
-            Debug.LogError("SavePoint: Could not find PlayerHealth!");
+            Debug.LogError("SaveManager not found.");
             return;
         }
 
-        // Save last save point
-        SaveManager.Instance.currentSave.lastSavePointID = savePointID;
+        int slot = GetCurrentSlot();
+        SaveManager.SaveData data = mgr.LoadData(slot);
 
-        // Save inventory first
-        SaveManager.Instance.SaveInventory();
+        if (data == null)
+        {
+            Debug.LogError("This save slot is empty. Create a file in the main menu first.");
+            return;
+        }
 
-        // Save health
-        SaveManager.Instance.currentSave.health = player.currentHealth;
+        // --------------------------
+        // UPDATE PLAYER HEALTH
+        // --------------------------
+        HealthBarManager player = FindObjectOfType<HealthBarManager>();
+        if (player != null)
+            data.health = player.currentHealth;
 
-        // Write to file
-        SaveManager.Instance.SaveGame();
+        // --------------------------
+        // SAVE POINT ID
+        // --------------------------
+        data.lastSavePoint = savePointID;
 
-        Debug.Log("Game saved at: " + savePointID);
+        // --------------------------
+        // SCENE NAME
+        // --------------------------
+        data.sceneName = SceneManager.GetActiveScene().name;
+
+        // --------------------------
+        // INVENTORY
+        // --------------------------
+        string[] inventoryStrings = InventoryManager.Instance.GetInventoryAsStringArray();
+        data.inventory = inventoryStrings;
+
+        // --------------------------
+        // PLAY TIME
+        // --------------------------
+        if (GlobalLoadedData.loadedSaveData != null)
+            data.playTimeSeconds = GlobalLoadedData.loadedSaveData.playTimeSeconds;
+
+        // --------------------------
+        // SAVE TO DISK
+        // --------------------------
+        mgr.SaveDataToDisk(slot, data);
+
+        Debug.Log("Game saved at save point: " + savePointID);
     }
 
-    // -----------------------------
-    // Detect player entering trigger
-    // -----------------------------
+    // ----------------------------------------------------------
+    // GET SELECTED SLOT FROM SAVEMANAGER (private field)
+    // ----------------------------------------------------------
+    private int GetCurrentSlot()
+    {
+        var field = typeof(SaveManager).GetField(
+            "selectedSlot",
+            System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+
+        return (int)field.GetValue(SaveManager.Instance);
+    }
+
+    // ----------------------------------------------------------
+    // TRIGGER HANDLING
+    // ----------------------------------------------------------
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

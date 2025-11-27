@@ -81,4 +81,38 @@ public class InventoryManager : MonoBehaviour
         inventory[index] = item;
         UpdateInventoryUI();
     }
+
+    public string[] GetInventoryAsStringArray()
+    {
+        string[] ids = new string[inventory.Length];
+
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            ids[i] = inventory[i] != null ? inventory[i].itemID : "";
+        }
+
+        return ids;
+    }
+
+    public void LoadInventoryFromStrings(string[] ids)
+    {
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if (string.IsNullOrEmpty(ids[i]))
+            {
+                inventory[i] = null;
+            }
+            else
+            {
+                inventory[i] = ItemDatabase.Instance.GetItem(ids[i]);
+            }
+        }
+
+        UpdateInventoryUI();
+    }
+
+    public SO_Items[] GetInventoryArray()
+    {
+        return inventory;
+    }
 }

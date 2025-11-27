@@ -1,4 +1,6 @@
+using System;
 using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,15 +8,21 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance;
 
-    [Header("Save Settings")]
-    public int activeSlot = -1;
-    public SaveData currentSave;
+    private const int MAX_SLOTS = 4;
+    private int selectedSlot = 0;
 
-    private string saveFolderPath;
-    private string saveFileName = "saveSlot_";
-    private float playTimer;
+    [Header("UI References")]
+    public TextMeshProUGUI slotTitleText;
+    public TextMeshProUGUI playerNameText;
+    public TextMeshProUGUI playTimeText;
+    public TextMeshProUGUI healthText;
+    public TextMeshProUGUI lastSavePointText;
 
-    public bool hasLoaded = false;
+    [Header("Popups")]
+    public GameObject createPopup;
+    public TMP_InputField createNameInput;
+
+    public GameObject deletePopup;
 
     private void Awake()
     {
@@ -22,12 +30,6 @@ public class SaveManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-
-            saveFolderPath = Application.persistentDataPath + "/Saves/";
-            if (!Directory.Exists(saveFolderPath))
-                Directory.CreateDirectory(saveFolderPath);
-
-            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -35,146 +37,193 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    private void Update()
+    // -----------------------------
+    // SLOT SWITCHING
+    // -----------------------------
+    public void ScrollLeft()
     {
-        // Add playtime only when a save is loaded
-        if (hasLoaded)
+        selectedSlot--;
+        if (selectedSlot < 0) selectedSlot = MAX_SLOTS - 1;
+
+        UpdateUISlotInfo();
+    }
+
+    public void ScrollRight()
+    {
+        selectedSlot++;
+        if (selectedSlot >= MAX_SLOTS) selectedSlot = 0;
+
+        UpdateUISlotInfo();
+    }
+
+    // -----------------------------
+    // UI UPDATE FOR CURRENT SLOT
+    // -----------------------------
+    public void UpdateUISlotInfo()
+    {
+        SaveData data = LoadData(selectedSlot);
+
+        slotTitleText.text = $"File {selectedSlot + 1}";
+
+        if (data == null)
         {
-            playTimer += Time.deltaTime;
+            playerNameText.text = "Empty Slot";
+            playTimeText.text = "--:--:--";
+            healthText.text = "--";
+            lastSavePointText.text = "--";
+        }
+        else
+        {
+            playerNameText.text = $"Name: {data.playerName}";
+            healthText.text = $"Health: {data.health}";
+            playTimeText.text = $"Play Time: {FormatTime(data.playTimeSeconds)}";
+            lastSavePointText.text = $"Save Point: {data.lastSavePoint}";
         }
     }
 
-    // ---------------------------------------------------------------------
-    // SAVE / LOAD API
-    // ---------------------------------------------------------------------
-
-    public void CreateNewSave(int slot, string characterName, float startingHealth, string startingSavePoint)
+    private string FormatTime(int totalSeconds)
     {
-        activeSlot = slot;
+        TimeSpan t = TimeSpan.FromSeconds(totalSeconds);
+        return $"{t.Hours:D2}:{t.Minutes:D2}:{t.Seconds:D2}";
+    }
 
-        currentSave = new SaveData
+    // -----------------------------
+    // BUTTONS — CREATE
+    // -----------------------------
+    public void OpenCreatePopup()
+    {
+        createPopup.SetActive(true);
+        createNameInput.text = "";
+    }
+
+    public void ConfirmCreateFile()
+    {
+        string name = createNameInput.text;
+        if (string.IsNullOrEmpty(name)) return;
+
+        SaveData newData = new SaveData
         {
-            characterName = characterName,
-            health = startingHealth,
-            lastSavePointID = startingSavePoint,
-            playTimeSeconds = 0f,
-            inventoryIDs = new string[6]
+            playerName = name,
+            health = 100,
+            lastSavePoint = "None",
+            playTimeSeconds = 0,
+            inventory = new string[9],
+            sceneName = "StartScene" // You can change this!
         };
 
-        // Initialize empty inventory
-        for (int i = 0; i < currentSave.inventoryIDs.Length; i++)
-            currentSave.inventoryIDs[i] = "";
+        SaveDataToDisk(selectedSlot, newData);
 
-        hasLoaded = true;
-        SaveGame();
+        createPopup.SetActive(false);
+        UpdateUISlotInfo();
     }
 
-    public void SaveGame()
+    public void CancelCreateFile()
     {
-        if (activeSlot < 0)
+        createPopup.SetActive(false);
+    }
+
+    // -----------------------------
+    // BUTTONS — LOAD
+    // -----------------------------
+    public void LoadSelectedFile()
+    {
+        SaveData data = LoadData(selectedSlot);
+
+        if (data == null)
         {
-            Debug.LogError("No save slot selected!");
+            Debug.Log("No save file in this slot!");
             return;
         }
 
-        // Update playtime into save data
-        currentSave.playTimeSeconds += playTimer;
-        playTimer = 0f;
+        GlobalLoadedData.loadedSaveData = data;
 
-        string filePath = saveFolderPath + saveFileName + activeSlot + ".json";
-        string json = JsonUtility.ToJson(currentSave, true);
-        File.WriteAllText(filePath, json);
+        // Load the saved scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(data.sceneName);
     }
 
-    public bool LoadGame(int slot)
+    // -----------------------------
+    // BUTTONS — DELETE
+    // -----------------------------
+    public void OpenDeletePopup()
     {
-        activeSlot = slot;
+        deletePopup.SetActive(true);
+    }
 
-        string filePath = saveFolderPath + saveFileName + slot + ".json";
-        if (!File.Exists(filePath))
+    public void ConfirmDeleteFile()
+    {
+        string path = GetSavePath(selectedSlot);
+        if (File.Exists(path)) File.Delete(path);
+
+        deletePopup.SetActive(false);
+        UpdateUISlotInfo();
+    }
+
+    public void CancelDeleteFile()
+    {
+        deletePopup.SetActive(false);
+    }
+
+    // -----------------------------
+    // SAVE SYSTEM CORE
+    // -----------------------------
+    [Serializable]
+    public class SaveData
+    {
+        public string playerName;
+        public float health;
+        public string lastSavePoint;
+        public int playTimeSeconds;
+        public string[] inventory;
+        public string sceneName;   // NEW
+    }
+
+    public void SaveInventoryToSlot(string[] inventoryItems)
+    {
+        SaveData data = LoadData(selectedSlot);
+        if (data == null)
         {
-            Debug.Log("Save file does not exist: " + filePath);
-            return false;
-        }
-
-        string json = File.ReadAllText(filePath);
-        currentSave = JsonUtility.FromJson<SaveData>(json);
-
-        hasLoaded = true;
-        playTimer = 0f;
-
-        return true;
-    }
-
-    public void DeleteSave(int slot)
-    {
-        string filePath = saveFolderPath + saveFileName + slot + ".json";
-        if (File.Exists(filePath))
-            File.Delete(filePath);
-    }
-
-    // ---------------------------------------------------------------------
-    // INVENTORY SAVE / LOAD
-    // ---------------------------------------------------------------------
-
-    public void SaveInventory()
-    {
-        if (currentSave == null)
+            Debug.LogError("Tried to save inventory but slot is empty!");
             return;
-
-        InventoryManager inv = InventoryManager.Instance;
-
-        for (int i = 0; i < currentSave.inventoryIDs.Length; i++)
-        {
-            SO_Items item = inv.GetItemAtIndex(i);
-            currentSave.inventoryIDs[i] = item != null ? item.itemID : "";
         }
+
+        data.inventory = inventoryItems;
+        SaveDataToDisk(selectedSlot, data);
     }
 
-    public void LoadInventory()
+    public string[] LoadInventoryFromSlot()
     {
-        if (!hasLoaded)
-            return;
-
-        InventoryManager inv = InventoryManager.Instance;
-
-        for (int i = 0; i < currentSave.inventoryIDs.Length; i++)
+        SaveData data = LoadData(selectedSlot);
+        if (data == null)
         {
-            string id = currentSave.inventoryIDs[i];
-            SO_Items item = string.IsNullOrEmpty(id)
-                ? null
-                : ItemDatabase.Instance.GetItem(id);
-
-            inv.SetItemAtIndex(i, item);
+            Debug.LogError("Tried to load inventory but slot is empty!");
+            return null;
         }
+
+        return data.inventory;
     }
 
-    // ---------------------------------------------------------------------
-    // SCENE LOADING HOOK
-    // ---------------------------------------------------------------------
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    private string GetSavePath(int slot)
     {
-        if (hasLoaded)
-        {
-            // Load the inventory once the gameplay scene is loaded
-            LoadInventory();
-        }
+        return Application.persistentDataPath + $"/save_{slot}.json";
+    }
+
+    public void SaveDataToDisk(int slot, SaveData data)
+    {
+        string json = JsonUtility.ToJson(data, true);
+        File.WriteAllText(GetSavePath(slot), json);
+    }
+
+    public SaveData LoadData(int slot)
+    {
+        string path = GetSavePath(slot);
+        if (!File.Exists(path)) return null;
+
+        string json = File.ReadAllText(path);
+        return JsonUtility.FromJson<SaveData>(json);
     }
 }
 
-// -----------------------------------------------------------------------------
-// SAVE DATA MODEL
-// -----------------------------------------------------------------------------
-
-[System.Serializable]
-public class SaveData
+public static class GlobalLoadedData
 {
-    public string characterName;
-    public float health;
-    public string lastSavePointID;
-    public float playTimeSeconds;
-
-    // Inventory (6 slot)
-    public string[] inventoryIDs;
+    public static SaveManager.SaveData loadedSaveData;
 }
