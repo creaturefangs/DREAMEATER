@@ -2,21 +2,23 @@ using UnityEngine;
 
 public class SpriteScroller : MonoBehaviour
 {
-    [SerializeField] private float speedX = 0.5f;
-    [SerializeField] private float speedY = 0f;
-    private Renderer rend;
-    private Vector2 offset;
+    [SerializeField] private float scrollSpeedX = 0.2f;
+    [SerializeField] private float scrollSpeedY = 0.0f;
+
+    private Material _mat;
+    private Vector2 _offset;
 
     void Awake()
     {
-        rend = GetComponent<Renderer>();
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        _mat = sr.material;   // makes a unique instance of the material
     }
 
     void Update()
     {
-        offset.x += speedX * Time.deltaTime;
-        offset.y += speedY * Time.deltaTime;
-        // Uses the material instance on this renderer (for testing only)
-        rend.material.mainTextureOffset = offset;
+        _offset.x += scrollSpeedX * Time.deltaTime;
+        _offset.y += scrollSpeedY * Time.deltaTime;
+
+        _mat.mainTextureOffset = _offset;
     }
 }
