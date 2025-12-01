@@ -53,6 +53,31 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    public bool RemoveItemByID(string itemID)
+    {
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if (inventory[i] != null && inventory[i].itemID == itemID)
+            {
+                inventory[i] = null;
+                UpdateInventoryUI();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool HasItem(string itemID)
+    {
+        foreach (var item in inventory)
+        {
+            if (item != null && item.itemID == itemID)
+                return true;
+        }
+        return false;
+    }
+
+
     // Update inventory UI based on current inventory state
     private void UpdateInventoryUI()
     {

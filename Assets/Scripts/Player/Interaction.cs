@@ -4,22 +4,23 @@ using UnityEngine;
 public class Interaction : MonoBehaviour
 {
     [Header("Interaction Settings")]
-    public string interactionMessage = "Press Space to interact";
+    public string interactionMessage = "Press E to interact";
 
     [Header("UI Elements")]
-    public GameObject interactionUI; // UI prompt
+    public GameObject interactionUI;
     public TMP_Text interactionText;
-
-    public ScriptableObject interactionData; // Can be SO_Dialogue, SO_Scrolls, or SO_Tablets
-
+  
     public InteractableObject interactableObject;
 
     private void Update()
     {
-        // Toggle UI based on interaction availability and range
+        // Show or hide the UI
         if (interactionUI != null)
         {
-            bool showUI = interactableObject != null && interactableObject.IsPlayerInRange(transform) && !DialogueManager.Instance.IsDialogueActive();
+            bool showUI = interactableObject != null
+                          && interactableObject.IsPlayerInRange(transform)
+                          && !DialogueManager.Instance.IsDialogueActive();
+
             interactionUI.SetActive(showUI);
 
             if (interactionText != null && showUI)
@@ -28,14 +29,16 @@ public class Interaction : MonoBehaviour
             }
         }
 
-        // Press Space to interact
-        if (interactableObject != null && Input.GetKeyDown(KeyCode.Space) && !DialogueManager.Instance.IsDialogueActive())
+        // Press E to interact
+        if (interactableObject != null
+            && Input.GetKeyDown(KeyCode.E)
+            && !DialogueManager.Instance.IsDialogueActive())
         {
             Interact();
         }
 
-        // Click to interact (only if within range and not mid-dialogue)
-        if (Input.GetMouseButtonDown(0) && !DialogueManager.Instance.IsDialogueActive())
+        // Mouse click interaction
+        if (Input.GetMouseButtonDown(0))
         {
             CheckMouseClick();
         }
@@ -48,33 +51,38 @@ public class Interaction : MonoBehaviour
 
     private void Interact()
     {
-
         Debug.Log("Interaction.Interact() called");
 
+        // Let the interactable handle its own logic
         if (interactableObject != null)
         {
-            interactableObject.onInteract.Invoke(); // Only fire if this doesn’t double-trigger interaction
+
+            interactableObject.Interact();
         }
 
-        if (DialogueManager.Instance != null && interactionData != null && !DialogueManager.Instance.IsDialogueActive())
+        // Start dialogue if applicable
+        if (DialogueManager.Instance != null
+            && interactableObject.interactionData != null
+            && !DialogueManager.Instance.IsDialogueActive())
         {
-            DialogueManager.Instance.StartInteraction(interactionData);
+            DialogueManager.Instance.StartInteraction(interactableObject.interactionData);
         }
     }
-
 
     private void CheckMouseClick()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = 0f; // Keep in 2D space
+        mousePosition.z = 0f;
 
-        Collider2D hitCollider = Physics2D.OverlapPoint(mousePosition);
-        if (hitCollider != null)
+        Collider2D hit = Physics2D.OverlapPoint(mousePosition);
+        if (hit != null)
         {
-            InteractableObject clickedObject = hitCollider.GetComponent<InteractableObject>();
-            if (clickedObject != null && clickedObject.IsPlayerInRange(transform))
+            InteractableObject clicked = hit.GetComponent<InteractableObject>();
+
+            if (clicked != null && clicked.IsPlayerInRange(transform))
             {
-                interactableObject = clickedObject;
+                if (clicked != null && clicked.IsPlayerInRange(transform))
+                    interactableObject = clicked;
                 Interact();
             }
         }

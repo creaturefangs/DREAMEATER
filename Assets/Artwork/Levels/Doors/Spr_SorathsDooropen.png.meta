@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b82487701356d9a4a8f1b5b6ee4e5941
+guid: 123a76ebc4274ce408532d23c73c1cc1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 481270920642533565
-    second: Spr_SorathsDoor_0
+      213: -1193623595091008375
+    second: Spr_SorathsDooropen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spr_SorathsDoor_0
+      name: Spr_SorathsDooropen_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 9
-        width: 167
-        height: 268
+        x: 0
+        y: 0
+        width: 303
+        height: 271
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db89f993a51dda600800000000000000
-      internalID: 481270920642533565
+      spriteID: 98463131aa56f6fe0800000000000000
+      internalID: -1193623595091008375
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1275fc8d04f3833408bb76a5cecf7fb4
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spr_SorathsDoor_0: 481270920642533565
+      Spr_SorathsDooropen_0: -1193623595091008375
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

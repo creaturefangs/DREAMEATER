@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f302e7a97b5e7644ab9ee9bfc61ecff1
+guid: a4f741cd2954ba040b9b93eb15c35f03
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2747724621421007784
-    second: sun room tileset_0
+      213: -5792488147430457941
+    second: sunroom door shine_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sun room tileset_0
+      name: sunroom door shine_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 449
-        width: 376
-        height: 351
+        x: 0
+        y: 0
+        width: 666
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a3d4603cf0e12620800000000000000
-      internalID: 2747724621421007784
+      spriteID: bad3fb648b2fc9fa0800000000000000
+      internalID: -5792488147430457941
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sun room tileset_0: 2747724621421007784
+      sunroom door shine_0: -5792488147430457941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

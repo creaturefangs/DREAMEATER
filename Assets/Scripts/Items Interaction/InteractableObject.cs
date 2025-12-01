@@ -5,33 +5,35 @@ public class InteractableObject : MonoBehaviour
 {
     public UnityEvent onInteract;
 
-    public float interactionRadius = 3f; // Interaction range
+    public float interactionRadius = 3f;
     private Transform player;
+
+    public ScriptableObject interactionData;
+
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player")?.transform; // Find player by tag
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
     }
 
     void Update()
     {
         if (player == null) return;
 
-        // Check if player is within interaction range
         float distance = Vector2.Distance(transform.position, player.position);
         bool isInRange = distance <= interactionRadius;
 
-        // Notify player script if it's nearby
         Interaction playerInteraction = player.GetComponent<Interaction>();
+
         if (playerInteraction != null)
         {
             if (isInRange)
             {
                 playerInteraction.SetInteractable(this);
             }
-            else if (playerInteraction != null && playerInteraction.interactableObject == this)
+            else if (playerInteraction.interactableObject == this)
             {
-                playerInteraction.SetInteractable(null); // Reset when out of range
+                playerInteraction.SetInteractable(null);
             }
         }
     }
@@ -41,7 +43,13 @@ public class InteractableObject : MonoBehaviour
         return Vector2.Distance(transform.position, playerTransform.position) <= interactionRadius;
     }
 
-    // Draw interaction radius in Scene view
+    public void Interact()
+    {
+
+        onInteract?.Invoke();
+
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;

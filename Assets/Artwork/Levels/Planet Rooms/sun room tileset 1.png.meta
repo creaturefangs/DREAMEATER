@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: b82487701356d9a4a8f1b5b6ee4e5941
+guid: 7a7ffc2ff4f2bd947a85471b04c72382
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 481270920642533565
-    second: Spr_SorathsDoor_0
+      213: -1583219174815940060
+    second: sun room tileset 1_0
+  - first:
+      213: -7022244415653715078
+    second: sun room tileset 1_1
+  - first:
+      213: -5919983973544393853
+    second: sun room tileset 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,23 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spr_SorathsDoor_0
+      name: sun room tileset 1_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 9
-        width: 167
-        height: 268
+        x: 27
+        y: 551
+        width: 256
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db89f993a51dda600800000000000000
-      internalID: 481270920642533565
+      spriteID: 422428b7c86470ae0800000000000000
+      internalID: -1583219174815940060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun room tileset 1_1
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 386
+        width: 405
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a736dfec8e9fb8e90800000000000000
+      internalID: -7022244415653715078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun room tileset 1_2
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 6
+        width: 405
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38381e401fdf7dda0800000000000000
+      internalID: -5919983973544393853
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1275fc8d04f3833408bb76a5cecf7fb4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spr_SorathsDoor_0: 481270920642533565
+      sun room tileset 1_0: -1583219174815940060
+      sun room tileset 1_1: -7022244415653715078
+      sun room tileset 1_2: -5919983973544393853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
