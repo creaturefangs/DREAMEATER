@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PillarPuzzleManager : MonoBehaviour
 {
-    public DoorInteractable doorToUnlock;
+    public OnlyDoorInteract doorToUnlock;
 
     [Tooltip("Enter the correct order using the Pillar IDs (e.g. 0, 1, 2, 3)")]
     public List<int> correctOrder = new List<int> { 0, 1, 2, 3 };

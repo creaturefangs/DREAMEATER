@@ -21,6 +21,7 @@ TagManager:
   - Breakable
   - MusicAudio
   - AmbienceAudio
+  - DoorManager
   layers:
   - Default
   - TransparentFX

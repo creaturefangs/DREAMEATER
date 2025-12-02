@@ -9,7 +9,7 @@ public class LevelController : MonoBehaviour
     public AudioSource doorAudio;
     public AudioClip doorUnlocked;
 
-    [SerializeField] private DoorInteractable puzzleDoor;
+    [SerializeField] private OnlyDoorInteract puzzleDoor;
 
     private void Awake()
     {
