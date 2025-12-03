@@ -58,6 +58,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +81,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1885753597
   m_SortingLayer: 5
   m_SortingOrder: 1
@@ -217,7 +220,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  damageAmount: 10
+  stealRange: 2
+  lifeStealAmount: 5
+  stealCooldown: 1.5
+  healthOrbPrefab: {fileID: 1949360927271926975, guid: 9b1b2badf067f5b4a8f4e5137b57b510, type: 3}
+  orbSpeed: 4
 --- !u!82 &3620129962981760768
 AudioSource:
   m_ObjectHideFlags: 0

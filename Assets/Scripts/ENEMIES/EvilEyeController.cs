@@ -4,27 +4,31 @@ using UnityEngine;
 public class EvilEyeController : MonoBehaviour
 {
 
-    public float moveSpeed = 2f; // Speed of the enemy
-    public float damageAmount = 10f; // Damage dealt to the player on collision
+    [Header("Movement")]
+    public float moveSpeed = 2f;
 
-    private Transform player; // Reference to the player
-    private HealthBarManager playerHealth; // Reference to the player's health script
+    [Header("Life Steal Settings")]
+    public float stealRange = 2f;           // Distance where life steal begins
+    public float lifeStealAmount = 5f;      // Amount of health drained
+    public float stealCooldown = 1.5f;      // Delay between each drain
 
-    private bool canDamage; // Prevents rapid damage
+    [Header("Health Steal Visual")]
+    public GameObject healthOrbPrefab;      // The orb that flies from player -> enemy
+    public float orbSpeed = 4f;
+
+    private Transform player;
+    private HealthBarManager playerHealth;
+
+    private bool canSteal = true;
 
     private void Start()
     {
-        canDamage = true;
-        // Find the player object by tag
+        // Find player
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null)
         {
             player = playerObject.transform;
             playerHealth = playerObject.GetComponent<HealthBarManager>();
-        }
-        else
-        {
-            Debug.LogWarning("Player not found! Make sure the player has the 'Player' tag.");
         }
     }
 
@@ -32,25 +36,58 @@ public class EvilEyeController : MonoBehaviour
     {
         if (player != null)
         {
-            // Move towards the player
-            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+            // Move toward player
+            transform.position = Vector2.MoveTowards(
+                transform.position,
+                player.position,
+                moveSpeed * Time.deltaTime
+            );
+
+            // Check for life-steal distance
+            float dist = Vector2.Distance(transform.position, player.position);
+
+            if (dist <= stealRange && canSteal)
+            {
+                StartCoroutine(PerformLifeSteal());
+            }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private IEnumerator PerformLifeSteal()
     {
-        // Check if the enemy collides with the player
-        if (other.CompareTag("Player") && playerHealth != null)
+        canSteal = false;
+
+        // Deal damage to player
+        if (playerHealth != null)
         {
-            playerHealth.TakeDamage(damageAmount);
-            StartCoroutine(DamageCooldown()); // Start cooldown
+            playerHealth.TakeDamage(lifeStealAmount);
         }
+
+        // Spawn the orb visual
+        if (healthOrbPrefab != null)
+        {
+            GameObject orb = Instantiate(healthOrbPrefab, player.position, Quaternion.identity);
+            StartCoroutine(MoveOrbToEnemy(orb));
+        }
+
+        yield return new WaitForSeconds(stealCooldown);
+        canSteal = true;
     }
 
-    private IEnumerator DamageCooldown()
+    private IEnumerator MoveOrbToEnemy(GameObject orb)
     {
-        canDamage = false; // Disable damage
-        yield return new WaitForSeconds(2f); // Wait for 2 seconds
-        canDamage = true; // Re-enable damage
+        while (orb != null && Vector2.Distance(orb.transform.position, transform.position) > 0.1f)
+        {
+            orb.transform.position = Vector2.MoveTowards(
+                orb.transform.position,
+                transform.position,
+                orbSpeed * Time.deltaTime
+            );
+            yield return null;
+        }
+
+        // Destroy on arrival
+        if (orb != null)
+            Destroy(orb);
     }
 }
