@@ -14,6 +14,10 @@ public class SO_Items : ScriptableObject
     public AudioClip iteminteractSFX;
     public AudioClip typeSFX;
 
+    // Hidden item support
+    public bool isHiddenItem = false;             // NEW
+    public string hiddenItemMessage = "";         // NEW
+
     //SFX and ingame-data
 
     public AudioClip itemSFX;

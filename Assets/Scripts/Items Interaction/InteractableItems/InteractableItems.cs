@@ -26,7 +26,18 @@ public class InteractableItems : MonoBehaviour
 
         isInteracting = true;
 
-        // Play SFX
+        // Hidden item check
+        if (itemData.isHiddenItem && !string.IsNullOrWhiteSpace(itemData.hiddenItemMessage))
+        {
+            DialogueManager.Instance.ShowHiddenItemMessage(
+                itemData,
+                OnChoiceMade
+            );
+
+            return; // Stop here so the normal item interaction doesn't run
+        }
+
+        // Normal interaction
         if (itemData.iteminteractSFX != null)
         {
             AudioSource.PlayClipAtPoint(itemData.iteminteractSFX, transform.position);

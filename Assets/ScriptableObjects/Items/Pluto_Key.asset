@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13166ebfde3db6b43acbab071daf69f1, type: 3}
   m_Name: Pluto_Key
   m_EditorClassIdentifier: 
+  itemID: Pluto_Key
   itemText: Key
   itemIcon: {fileID: 1095141833252711340, guid: c06b22361f2f89047b318ba536962fef, type: 3}
   itemLines:

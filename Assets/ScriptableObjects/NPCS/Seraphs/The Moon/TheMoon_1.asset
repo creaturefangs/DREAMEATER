@@ -24,5 +24,5 @@ MonoBehaviour:
   - 'Take this key. '
   - "We shall meet again\u2026 Starlight."
   dialogueSFX: {fileID: 8300000, guid: cfb35284149d3c9418b49ad8474d44e8, type: 3}
-  dialogueFont: {fileID: 0}
+  dialogueFont: {fileID: 11400000, guid: 9c62bfaed8a43954bbf2f191f3d6cc92, type: 2}
   triggersBossBattle: 0

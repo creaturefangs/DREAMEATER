@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -45,7 +46,15 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject wolfBossController; // assign in inspector or dynamically
 
-   
+    // Hidden Item Support
+    private bool showingHiddenItem = false;
+    private System.Action hiddenItemFinishedCallback;
+    private bool hiddenItemLeadsToItemDialogue = false;
+    private SO_Items hiddenItemData;
+    private System.Action<bool> hiddenItemItemCallback;
+
+
+
     private void Awake()
     {
         // Ensure there is only one instance of DialogueManager
@@ -88,6 +97,30 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
+        if (showingHiddenItem)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (isTyping)
+                {
+                    StopCoroutine(typingCoroutine);
+                    dialogueText.text = dialogueText.text; // instantly complete
+                    isTyping = false;
+                }
+                else
+                {
+                    FinishHiddenItemMessage();
+                }
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Return))
+            {
+                FinishHiddenItemMessage();
+            }
+
+            return; // Don't process normal dialogue logic while showing hidden message
+
+        }
     }
 
     public void StartInteraction(object data)
@@ -408,6 +441,43 @@ public class DialogueManager : MonoBehaviour
         {
             ShowItemChoiceButtons(onChoiceMade); // Present pickup/leave choices
         }
+    }
+
+    public void ShowHiddenItemMessage(SO_Items item, System.Action<bool> onChoiceMade)
+    {
+        showingHiddenItem = true;
+
+        hiddenItemLeadsToItemDialogue = true;
+        hiddenItemData = item;
+        hiddenItemItemCallback = onChoiceMade;
+
+        dialoguePanel.SetActive(true);
+        dialogueText.text = "";
+        nameText.text = "";
+        characterPortrait.sprite = null;
+
+        StartTypewriterEffect(item.hiddenItemMessage);
+    }
+
+    private void FinishHiddenItemMessage()
+    {
+        showingHiddenItem = false;
+
+        // If this hidden message should lead into the item dialogue
+        if (hiddenItemLeadsToItemDialogue && hiddenItemData != null)
+        {
+            StartItemInteraction(hiddenItemData, hiddenItemItemCallback);
+
+            // Reset hidden tracking
+            hiddenItemLeadsToItemDialogue = false;
+            hiddenItemData = null;
+            hiddenItemItemCallback = null;
+
+            return;
+        }
+
+        // If it's ONLY a hidden message without item continuation
+        CloseUI();
     }
 
     private void ContinueItemDialogue()

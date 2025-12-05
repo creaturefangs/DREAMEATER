@@ -23,6 +23,18 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        for (int i = 0; i < inventorySlots.Length; i++)
+        {
+            var hover = inventorySlots[i].GetComponent<InventorySlotHover>();
+            if (hover != null)
+            {
+                hover.slotIndex = i;
+            }
+        }
+    }
+
     // Add item to inventory (returns true if added, false if full)
     public bool AddItem(SO_Items item)
     {

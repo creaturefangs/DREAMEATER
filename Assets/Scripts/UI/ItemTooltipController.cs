@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,29 +7,34 @@ public class ItemTooltipController : MonoBehaviour
 {
     public static ItemTooltipController Instance;
 
-    [Header("UI Elements")]
     public GameObject tooltipPanel;
-    public TextMeshProUGUI descriptionText;
+    public TextMeshProUGUI itemNameText;
+    public TextMeshProUGUI itemDescriptionText;
 
     private void Awake()
     {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
-
+        Instance = this;
         tooltipPanel.SetActive(false);
     }
 
-    public void ShowTooltip(string description, Vector2 position)
+    public void ShowTooltip(SO_Items item)
     {
+        if (item == null) return;
+
+        itemNameText.text = item.itemText;
+        itemDescriptionText.text = item.itemDescription;
+
         tooltipPanel.SetActive(true);
-        tooltipPanel.transform.position = position;
-        descriptionText.text = description;
     }
 
     public void HideTooltip()
     {
         tooltipPanel.SetActive(false);
+    }
+
+    private void Update()
+    {
+        // Make tooltip follow mouse (optional)
+        tooltipPanel.transform.position = Input.mousePosition;
     }
 }
